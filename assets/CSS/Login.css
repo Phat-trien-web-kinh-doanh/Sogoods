@@ -1,0 +1,206 @@
+.header__login{
+    background: white;
+    height:50px;    
+    position:sticky; 
+}
+.header__navbar-item-link2{
+    display:inline-block; 
+    font-size: 13px;
+    color: var(--text-main-color);
+    text-decoration: none;
+}
+.header__navbar-item-link2:hover {
+    color: var(--hover-color) ;
+    text-decoration: none;
+    cursor:pointer; 
+}
+.container__login{
+    background: linear-gradient(117.93deg, #FFCCCC 5.92%, #FFE1BD 35.9%, #FCD3F3 70.72%, rgba(152, 196, 236, 0.49) 96.98%);
+    height:530px; 
+}
+.container__signup{
+    background: linear-gradient(117.93deg, #FFCCCC 5.92%, #FFE1BD 35.9%, #FCD3F3 70.72%, rgba(152, 196, 236, 0.49) 96.98%);
+    height:630px; 
+}
+h3{
+    color:var(--text-main-color);
+}
+.left{
+    width:50%; 
+    margin:auto;
+    float:left;
+    padding:30px; 
+    height:100%;
+}
+.text-center{
+    text-align: center;
+    
+}
+.right{
+    width:50%;
+    height:100%;
+    margin:auto;
+    float:left; 
+    padding:30px;
+}
+.login__box{
+    box-sizing: border-box;
+    display:inline-block;
+    width: 430px;
+    height: 460px;
+    background: linear-gradient(117.6deg, rgba(255, 255, 255, 0.5) 18.99%, rgba(255, 255, 255, 0.2) 96.66%);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(7.5px);
+    border-radius: 40px;
+}
+.login__info{
+    text-align:left;
+    padding:0 30px;
+}
+.signup__box{
+    box-sizing: border-box;
+    display:inline-block;
+    width: 430px;
+    height: 580px;
+    background: linear-gradient(117.6deg, rgba(255, 255, 255, 0.5) 18.99%, rgba(255, 255, 255, 0.2) 96.66%);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(7.5px);
+    border-radius: 40px;
+}
+.signup__info{
+    text-align:left;
+    padding:0 30px;
+}
+#text{
+    font-size: 16px;
+    color:var(--text-main-color);
+}
+#text2{
+    font-size: 13px;
+    color:var(--text-main-color);
+}
+.input__bar{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    width:350px; 
+    height:40px; 
+    margin: 10px 0;
+}
+.input__bar input{
+    background: transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: var(--text-main-color) ;
+}
+.button1{
+    text-align: center;
+    display:inline-block;
+    background:#FF9E8F;
+    border-radius: 30px;
+    width:140px; 
+    height:40px; 
+    margin:10px 0;
+}
+.login__button{
+    width:140px; 
+    height:40px; 
+    background:transparent;
+    border-radius: 30px;
+    outline:none;
+    border:0;
+    color:var(--text-sub-color);
+    font-weight:700; 
+}
+.signup__button{
+    width:140px; 
+    height:40px; 
+    background:transparent;
+    border-radius: 30px;
+    outline:none;
+    border:0;
+    color:var(--text-sub-color);
+    font-weight:700; 
+}
+.forget__pass{
+    color:var(--text-main-color);
+    font-size: 12px;
+}
+.forget__pass:hover{
+    color:var(--hover-color);
+}
+.sign_up{
+    color:var(--text-main-color);
+    font-size: 16px;
+    font-weight:600;
+}
+.sign_up:hover{
+    color:var(--hover-color);
+}
+.shape{
+    display:block;
+    text-align: center;
+    
+}
+.shape__line{
+    display:flex;
+    align-items: center;
+    width:300px;
+    margin:0 63px;
+}
+.line{
+    height: 1px;
+    width: 50%;
+    background-color: var(--text-main-color);
+    flex:1;
+    display:block;
+}
+.button2{
+    border-radius: 25px;
+    padding: 0 2px;
+    margin:10px 20px;
+    height: 40px;
+    justify-content: space-between; 
+    display:flex; 
+}
+.facebook{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border:0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    padding: 0 2px;
+    width: 120px;
+    height: 40px;
+    color:var(--text-main-color);
+}
+.google{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border:0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    padding: 0 2px;
+    width: 120px;
+    height: 40px;
+    color:var(--text-main-color);
+}
+.apple{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border:0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    padding: 0 2px;
+    width: 120px;
+    height: 40px;
+    color:var(--text-main-color);
+}
