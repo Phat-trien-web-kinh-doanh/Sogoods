@@ -128,8 +128,12 @@ p{
 .sidebarmain {
     position: relative;
     z-index: 1;
+    
+     
+    z-index: 1;
 }
 .sidebar {
+    
     position: fixed;
     width: 250px;
     height: 100%;
@@ -139,6 +143,7 @@ p{
     transition: left 0.4s ease;
 }
 .sidebar.show {
+    background: white;
     left: -0px;
 }
 .sidebar .text {
