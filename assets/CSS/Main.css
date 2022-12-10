@@ -8,7 +8,11 @@ body{
     --hover-text-color: #973aa8; 
     --hover-menu1-color: #FCD3F3;
     --hover-menu2-color: #FFEED9;
+    --light-purple: #FFEBFB; 
     --header-with-search-height:50px; 
+    --price-color: #F80808;
+    --orange: #FF7917;
+    --yellow: #FFD43E; 
     }
 p{
     color:var(--text-main-color);
@@ -51,6 +55,7 @@ p{
     margin: -3px auto 0;
     display: block;
     text-align: center;
+    
 }
 .header__navbar-list{
     list-style:none;

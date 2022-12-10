@@ -1,0 +1,77 @@
+.account__right-box2{
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 700px;
+    height: 250px;
+    margin-left: 50px;
+}
+.tbl__editaccount{
+    display:flex;
+    justify-content:center;
+    padding:10px 5px;
+}
+.tbl__editaccount td{
+    padding: 5px 15px;
+    color:var(--text-main-color);
+    font-size: 16px;
+    text-align: left;
+}
+.tbl__editaccount td input{
+    color:var(--text-main-color);
+    outline: none;
+}
+.tbl__editaccount td option{
+    color:var(--text-main-color);
+    outline: none;
+}
+.edit__title{
+    font-weight:600;
+}
+.btn_edit{
+    background:var(--light-purple);
+    color:var(--text-main-color);
+    border:1px solid var(--hover-menu1-color);
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
+.btn_edit a{
+    text-decoration: none;
+    color:var(--text-main-color);
+}
+.btn_edit:hover{
+    background:var(--hover-menu1-color);
+    color:var(--text-main-color);
+    border:0;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
+.btn_edit:focus{
+    outline: none;
+}
+.btn_update:focus{
+    outline: none;
+}
+.btn_update{
+    background:var(--light-purple);
+    color:var(--text-main-color);
+    border:1px solid var(--hover-menu1-color);
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
+.btn_update a{
+    text-decoration: none;
+    color:var(--text-main-color);
+}
+.btn_update:hover{
+    background:var(--hover-menu1-color);
+    color:var(--text-main-color);
+    border:0;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
