@@ -127,6 +127,7 @@ p{
 /* sidebar is on the content-wrapper when click btn */
 .sidebarmain {
     position: relative;
+    z-index: 1;
 }
 .sidebar {
     position: fixed;
@@ -135,11 +136,9 @@ p{
     left: -250px;
     background: white;
     box-shadow:0 4px 25px 0 rgba(214, 214, 214, 0.425);
-    margin-top: 5px;
     transition: left 0.4s ease;
 }
 .sidebar.show {
-    position: absolute;
     left: -0px;
 }
 .sidebar .text {
@@ -331,7 +330,7 @@ nav ul li a i.rotate {
     color: var(--text-main-color)!important;
 }
 .text-danger {
-    color: #dc3545!important;
+    color: #FF7917!important;
 }
 .text-center {
     text-align: center!important;
