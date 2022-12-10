@@ -104,7 +104,7 @@ h3{
     height:40px; 
     margin:10px 0;
 }
-.login__button{
+#login__button{
     width:140px; 
     height:40px; 
     background:transparent;
@@ -114,7 +114,7 @@ h3{
     color:var(--text-sub-color);
     font-weight:700; 
 }
-.login__button:focus{
+#login__button:focus{
     outline:none;
     background:#ff816e;
 }
@@ -186,6 +186,13 @@ h3{
     height: 40px;
     color:var(--text-main-color);
 }
+.facebook:focus{
+    outline:none;
+    background:var(--text-sub-color);
+}
+.facebook:hover{
+    background:var(--text-sub-color);
+}
 .google{
     display:flex;
     align-items: center;
@@ -199,6 +206,13 @@ h3{
     height: 40px;
     color:var(--text-main-color);
 }
+.google:focus{
+    outline:none;
+    background:var(--text-sub-color);
+}
+.google:hover{
+    background:var(--text-sub-color);
+}
 .apple{
     display:flex;
     align-items: center;
@@ -211,4 +225,11 @@ h3{
     width: 120px;
     height: 40px;
     color:var(--text-main-color);
+}
+.apple:focus{
+    outline:none;
+    background:var(--text-sub-color);
+}
+.apple:hover{
+    background:var(--text-sub-color);
 }

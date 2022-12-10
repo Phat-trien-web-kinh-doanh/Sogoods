@@ -127,8 +127,12 @@ p{
 /* sidebar is on the content-wrapper when click btn */
 .sidebarmain {
     position: relative;
+    z-index: 1;
+    
+     
 }
 .sidebar {
+    
     position: fixed;
     width: 250px;
     height: 100%;
@@ -140,6 +144,7 @@ p{
 }
 .sidebar.show {
     position: absolute;
+    background: white;
     left: -0px;
 }
 .sidebar .text {
