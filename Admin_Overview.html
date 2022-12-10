@@ -7,24 +7,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Our Style-->
+    <link rel="stylesheet" href="assets/CSS/Main.css">
     <link rel="stylesheet" href="assets/CSS/Admin_Overview.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" rel="stylesheet"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
         <header class="header">
             <div class="grid">
+                <div class="btn" id="menu-toggle">
+                    <span class="fas fa-bars"></span>
+                </div>
                 <div class="header-with-search">
-                    <div class="header-logo">
-                        <a href>
-                            <img src="assets/Image/logo.png" alt="logo" height="55px">
-                        </a>
-                    </div>
-
-                    <form action class="header__search-bar">
+                    
+                    <form action="" class="header__search-bar">
                         <button type="submit">
                             <i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -32,52 +33,47 @@
                     </form>
 
                     <div class="header__navbar">
+                        <ul >
+                            <li class="header__navbar-icon">
+                              <a class="header__navbar-icon-link2" href="">
+                                <span><i class="header_navbar-icon fa-solid fa-bell"></i></span>
+                                <span class="badge badge-warning navbar-badge">15</span>
+                              </a>
+                            </li>
+                        </ul> 
                         <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
-                                    <span><i class="header__navbar-icon fa-solid fa-bell"></i></span>
+                                <a class="header__navbar-icon-link2" href="">
+                                    <span><img src="assets\Image\Admin_Overview\flag.png" height="30px"></span>
                                 </a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
-                                    <span><img src="assets\Image\Admin_Overview\flag.png" height="50px"></span>
+                                <a class="header__navbar-icon-text" href="">
+                                    <span><b>Vietnam</b></span>
                                 </a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
-                                    <span>Vietnam</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
+                                <a class="header__navbar-icon-link2" href="">
                                     <span><i class="header__navbar-icon fa-solid fa-chevron-down"></i></span>
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
-                                    <span><img src="assets\Image\Admin_Overview\avatar.png" height="110px"></span>
+                                <a class="header__navbar-icon-link2" href="">
+                                    <span><img src="assets\Image\Admin_Overview\avatar.png" height="60px"></span>
                                 </a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
-                                    <span>Tường Vy</span>
+                                <a class="header__navbar-icon-text" href="">
+                                    <span font-size="10px"><b>Tường Vy</b></span>
+                                </a>
+                                <a class="header__navbar-icon-text" href="">
                                     <span>Quản trị viên</span>
                                 </a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="header__navbar-icon">
-                                <a class="header__navbar-link2" href>
+                                <a class="header__navbar-icon-link2" href="">
                                     <span><i class="fa-solid fa-circle-chevron-down"></i></span>
                                 </a>
                             </li>
@@ -86,6 +82,522 @@
                 </div>
             </div>
         </header>
+        <!--Sidebar-->
+        <div class="sidebarmain">
+            <nav class="sidebar">
+                <div class="text">MENU</div>
+                <ul>
+                    <li>
+                        <a href="#">Tổng quan</a>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn">
+                            Dashboard
+                            <i class="fa-solid fa-chevron-right first"></i>
+                        </a>
+                        <ul class="feat-show">
+                            <li>
+                                <a href="#">Sales</a>
+                            </li>
+                            <li>
+                                <a href="#">Users</a>
+                            </li>
+                            <li>
+                                <a href="#">CRM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn1">
+                            Đơn hàng
+                            <i class="fa-solid fa-chevron-right second"></i>
+                        </a>
+                        <ul class="feat-show1">
+                            <li>
+                                <a href="#">Tất cả đơn hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Chưa hoàn tất</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn2">
+                            Vận chuyển
+                            <i class="fa-solid fa-chevron-right third"></i>
+                        </a>
+                        <ul class="feat-show2">
+                            <li>
+                                <a href="#">Tổng quan</a>
+                            </li>
+                            <li>
+                                <a href="#">Vận chuyển</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="feat-btn3">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-right fourth"></i>
+                        </a>
+                        <ul class="feat-show3">
+                            <li>
+                                <a href="#">Tất cả sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#">Nhóm sản phẩm</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Khách hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.Sidebar -->
+        <!--Main content-->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                    </div>
+                </div>
+            </section>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="card-title text-bold"> Kết quả kinh doanh tuần này:</h2>
+                                            <div class="card-tools">
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem chi tiết</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-2">
+                                            <div class="row">
+                                                <div class="col-md-6 border py-4">
+                                                    <h4 class="text-uppercase">Doanh thu thuần:</h4>
+                                                    <h5>100.000.000 VNĐ</h5>
+                                                </div>
+                                                <div class="col-md-6 border py-4">
+                                                    <h4 class="text-uppercase">Tổng số đơn hàng:</h4>
+                                                    <h5>200 đơn</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 d-flex flex-fill">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                            <h2 class="card-title text-bold">Trạng thái đơn hàng:</h2>
+                                            <div class="card-tools">
+
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem thêm</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <ul class="list-group list-group-flush flex-column">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        9 đơn hàng <b>chưa thanh toán</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        13 đơn hàng <b>chưa giao hàng</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        20 đơn hàng <b>đang giao</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        2 đơn hàng <b>bị huỷ</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="card-title text-bold">Đơn hàng:</h2>
+                                            <div class="card-tools">
+
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem thêm</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="progress-group">
+                                                Chưa thanh toán
+                                                <span class="float-right">9/14</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar my-progress-bar" style="width: 64%;"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="progress-group">
+                                                Chưa giao hàng
+                                                <span class="float-right">4/14</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar my-progress-bar" style="width: 28%;"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="progress-group">
+                                                Đang giao
+                                                <span class="float-right">0/14</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar my-progress-bar" style="width: 0%;"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="progress-group">
+                                                Bị huỷ
+                                                <span class="float-right">1/14</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar my-progress-bar" style="width: 7%;"></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 d-flex flex-fill">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                            <h2 class="card-title text-bold">Trạng thái sản phẩm:</h2>
+                                            <div class="card-tools">
+
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem thêm</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <ul class="list-group list-group-flush flex-column">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        205 sản phẩm <b>còn hàng</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        98 sản phẩm <b>sắp hết hàng</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="text-dark">
+                                                        200 sản phẩm <b>hết hàng</b>
+                                                    <i class="fas fa-angle-right float-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <h3 class="card-header card-title">Sản phẩm</h3>
+                                        <div class="card-body">
+                                            <canvas id="donutChart"
+                                                style="min-height: 150px; height: 150px; max-height: 150px; max-width: 100%;"></canvas>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card card-widget widget-user-2">
+                                        <!-- Add the bg color to the header using any of the bg-* classes -->
+                                        <div class="card-header">
+                                            <!-- <h2 class="col-12 card-title">Hôm nay</h2> -->
+                                            <select class="card-title custom-select form-control-border" id="exampleSelectBorder">
+                                                <option>Hôm nay</option>
+                                                <option>Hôm qua</option>
+                                                <option>Hôm kia</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h3>Đơn hàng</h3>
+                                            <h2>14</h2>
+                                            <p class="text-muted"><span class="text-danger"><i
+                                                        class="fas fa-arrow-down"></i> -2,1%</span> so với tuần trước
+                                            </p>
+                                            <p class="text-muted">Đơn hàng từ 01/11/2022</p>
+                                            <div class="chart">
+                                                <canvas id="lineChart"
+                                                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+
+                                            <ul class="list-group list-group-flush flex-column">
+                                                <li class="list-group-item ">
+                                                    <a href="#" class="text-dark ">
+                                                        Tổng số đơn hàng <span
+                                                            class="float-right badge bg-primary">14</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item ">
+                                                    <a href="#" class="text-dark ">
+                                                        Doanh thu thuần <span
+                                                            class="float-right badge bg-info">1,000,000</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item ">
+                                                    <a href="#" class="text-dark ">
+                                                        Lượng hàng đã bán <span
+                                                            class="float-right badge bg-success">16</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item ">
+                                                    <a href="#" class="text-dark ">
+                                                        Sản phẩm bán chạy
+                                                        <ul>
+                                                            <li>Lightstick BLACKPINK</li>
+                                                            <li>'ANTIFRAGILE' - LE SSERAFIM</li>
+                                                            <li>Album 'BORN PINK'</li>
+                                                        </ul>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="card-title">Hoạt động</h2>
+                                            <div class="card-tools">
+
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem thêm</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="text-muted text-center">Hôm nay, 15/11/2022</h5>
+                                            <ul>
+                                                <li><a class="text-dark" href="#">19:40 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:35 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:30 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:25 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">18:30 Yến Nhi đã thêm một bài viết mới.</a></li>
+                                            </ul>
+                                            <h5 class="text-muted text-center">Hôm qua, 24/11/2022</h5>
+                                            <ul>
+                                                <li><a class="text-dark" href="#">19:40 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:35 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:30 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">19:25 Tường Vy đã thêm một sản phẩm mới.</a></li>
+                                                <li><a class="text-dark" href="#">18:30 Yến Nhi đã thêm một bài viết mới.</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+    <script>
+        $('.btn').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function(){
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.feat-btn1').click(function(){
+            $('nav ul .feat-show1').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('.feat-btn2').click(function(){
+            $('nav ul .feat-show2').toggleClass("show2");
+            $('nav ul .third').toggleClass("rotate");
+        });
+        $('.feat-btn3').click(function(){
+            $('nav ul .feat-show3').toggleClass("show3");
+            $('nav ul .fourth').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+        $(function () {
+            //- AREA CHART -
+            //--------------
+
+            // Get context with jQuery - using jQuery's .get() method.
+            // var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+
+            var areaChartData = {
+                labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                datasets: [
+                    {
+                        label: 'Tuần này',
+                        backgroundColor: '#D69077',
+                        borderColor: '#D69077',
+                        pointRadius: false,
+                        pointColor: '#D69077',
+                        pointStrokeColor: '#D69077',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188,1)',
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    },
+                    {
+                        label: 'Tuần trước',
+                        backgroundColor: 'rgba(210, 214, 222, 1)',
+                        borderColor: 'rgba(210, 214, 222, 1)',
+                        pointRadius: false,
+                        pointColor: 'rgba(210, 214, 222, 1)',
+                        pointStrokeColor: '#c1c7d1',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(220,220,220,1)',
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+                ]
+            }
+
+            var areaChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: true,
+                    position:'bottom'
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                },
+                elements:{
+                    line:{
+                        tension:0
+                    }
+                }
+            }
+
+            // This will get the first returned node in the jQuery collection.
+            
+
+            //-------------
+            //- LINE CHART -
+            //--------------
+            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+            var lineChartOptions = $.extend(true, {}, areaChartOptions)
+            var lineChartData = $.extend(true, {}, areaChartData)
+            lineChartData.datasets[0].fill = false;
+            lineChartData.datasets[1].fill = false;
+            lineChartOptions.datasetFill = false
+
+            var lineChart = new Chart(lineChartCanvas, {
+                type: 'line',
+                data: lineChartData,
+                options: lineChartOptions
+            })
+
+            //-------------
+            //- DONUT CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+            var donutData = {
+                labels: [
+                    'Còn hàng',
+                    'Sắp hết',
+                    'Hết hàng'
+                ],
+                datasets: [
+                    {
+                        data: [205, 98, 150],
+                        backgroundColor: ['#D69077', '#E8B29E', '#EBC8BC'],
+                        
+                    }
+                ]
+            }
+            var donutOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend:{
+                    display:true,
+                    position:'bottom'
+                },
+            }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            new Chart(donutChartCanvas, {
+                type: 'doughnut',
+                data: donutData,
+                options: donutOptions
+            })
+
+           
+        })
+    </script>
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="plugins/sparklines/sparkline.js"></script>
 </body>
 </html>
