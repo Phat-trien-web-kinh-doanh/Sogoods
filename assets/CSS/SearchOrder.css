@@ -83,14 +83,7 @@
     height:40px;
     border-radius: 30px;
 }
-/* .account__button-btn:focus{
-    width:220px;
-    color:var(--text-main-color);
-    background:var(--hover-menu1-color);
-    height:40px;
-    border-radius: 30px;
-    outline: none;
-} */
+
 .order__menu{
    
     list-style: none;
