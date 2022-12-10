@@ -130,6 +130,7 @@ p{
     z-index: 1;
     
      
+    z-index: 1;
 }
 .sidebar {
     
@@ -139,11 +140,9 @@ p{
     left: -250px;
     background: white;
     box-shadow:0 4px 25px 0 rgba(214, 214, 214, 0.425);
-    margin-top: 5px;
     transition: left 0.4s ease;
 }
 .sidebar.show {
-    position: absolute;
     background: white;
     left: -0px;
 }
@@ -336,7 +335,7 @@ nav ul li a i.rotate {
     color: var(--text-main-color)!important;
 }
 .text-danger {
-    color: #dc3545!important;
+    color: #FF7917!important;
 }
 .text-center {
     text-align: center!important;

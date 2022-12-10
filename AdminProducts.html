@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Admin Products</title>
+    </head>
+    <body>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Tất cả đơn hàng</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body" ng-controller="adminProductController">
+                                <button class="btn btn-my my-1">Tạo mới</button>
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã nhóm sản phẩm</th>
+                                            <th>Ngày tạo</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Nhóm sản phẩm</th>
+                                            <th>Đơn giá</th>
+                                            <th>Số lượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="p in products">
+                                            <td>{{p.id}}</td>
+
+                                            <td>{{p.createdAt}}</td>
+                                            <td>{{p.name}}</td>
+                                            <td>{{p.category}}</td>
+                                            <td>{{p.price | currency:"":0}} VND</td>
+                                            <td>{{p.stock}}</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Mã nhóm sản phẩm</th>
+                                            <th>Ngày tạo</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Nhóm sản phẩm</th>
+                                            <th>Đơn giá</th>
+                                            <th>Số lượng</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+.container{
+    width: 100%;}
+.main{
+    display: flex;
+    min-height: 460px; margin-top: 30px; margin-left: 30px; 
+}
+.main #cottrai{
+     float: left;
+}
+.main #cotphai{
+    float: right; margin-left: 20px; margin-right: 40px;
+}
+#cotphai > hr{
+    width: 100%; border: 1px solid #FF9E8F;
+}
+.headspace{
+    border-inline-color: none; width: 100%;
+}
+.headspace > h1{
+    align-items: left; vertical-align: middle; margin-top: 3px;
+}
+.header__search-bar {
+    justify-content: right; float: right;
+}
+/* .headerspace  #headname {
+    float: left;
+}
+.headerspace #search {
+    float: right;
+}
+.headerspace #search input{
+    width: 200px; height: 30px; border: 1px solid #FF9E8F; border-radius: 5px; padding-left: 10px;
+} */
+#listidol {
+    display: flex; flex-wrap: wrap; justify-content: center; margin: 10px 0px;
+
+}
+#listidol > .idol {
+    text-align: left;  margin: 10px;
+}
+
+#listidol > hr {
+    width: 100%; border: 1px solid #FF9E8F;
+}
+/* #listidol > .idol >img {
+    max-width: 90%; height: 237px; margin-top: 10px; border-radius: 10px;
+} */
+#thumb > img {
+    max-width: 90%; height: 237px; margin-top: 10px; border-radius: 10px; float: left;}
+#logo > img {
+    max-width: 90%; height: 50px; margin-top: 10px; border-radius: 10px; float: right;
+}
+#info {
+    margin-left: 20px; margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: left; text-align: justify;
+}
+#info > h2 {
+    margin-left: 40px; margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: left;
+}
+#next {
+    text-align: right; justify-content: right; float: right; margin-top: 0px; margin-bottom: 0px;
+}
+#next > a {
+    color: #FF9E8F;
+}
+#accordion {
+    width: 200px; margin: 10px 0px;
+    padding-bottom: 10px;
+    background-color: #FFEED9;
+}
+#accordion>.cap  { 
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: bold; text-transform: uppercase; 
+    cursor: pointer; color: black ;font-size: 18px;
+}
+#accordion > .ct > label {
+    margin: 8px 0 8px 30px;
+    color: black;
+    font-size: 18px; 
+    display: block; 
+    cursor: pointer; 
+}
+#accordion > .ct input { width: 16px; height: 16px; margin-right: 10px; accent-color: #FF9E8F;}
+.seemore{
+    width:auto; text-align: center; justify-content: center; margin-top: 10px; margin-bottom: 40px; align-items: center;
+
+}
+.seemore > button {
+    background-color: #FF9E8F; color: white; border: none; border-radius: 48px; padding: 10px 20px; font-size: 18px; outline: none;
+}
+.seemore > button:hover {
+    background-color: #f96953; color: white; border: none; border-radius: 48px; padding: 10px 20px; font-size: 18px; 
+}
+.header__search-bar2{
+    width: 70%;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #FF9E8F;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;  
+    margin: 0 0 0 30px;
+    float: right;
+}
+.header__search-bar2 input{
+    background: transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 24px 10px;
+    font-size: 13px;
+    color: var(--text-main-color) ;
+}
+.header__search-bar-icon2{
+    color: #FF9E8F;; 
+}
+.header__search-bar2 button {
+    border:0;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    background:transparent;
+    cursor: pointer;  
+}
+
+/* change the placeholder header search bar 2 color */
+.header__search-bar2 input::-webkit-input-placeholder {
+    color: #FF9E8F;
+}
