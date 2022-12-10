@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Sogoods</title>
+    <link rel="stylesheet" href="assets\CSS\Homepage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -140,58 +141,65 @@
                 </div>       
         </header>
         <!-- Chỗ để code nội dug ở giữa, css ra một link khác, k để chung trong link main.css để k bị rối-->
-        <div class="container__contact">
-          <div class="left">
-            <div class="text-center">
-                <h3 >THÔNG TIN LIÊN HỆ</h3>
-                <div>
-                    <table align="center" class="contact__method">
-                        <tr>
-                            <td class="contact__title">Hotline:</td>
-                            <td class="contact__content">1800 1990</td>
-                        </tr>
-                        <tr>
-                            <td class="contact__title">Địa chỉ:</td>
-                            <td class="contact__content">50 Xô Viết Nghệ Tĩnh, quận Bình Thạnh, TP Hồ Chí Minh</td>
-                        </tr>
-                        <tr>
-                            <td class="contact__title">Email:</td>
-                            <td class="contact__content">cskh.sogoods@gmail.com</td>
-                        </tr>
+        <div class="container_homepage">
+          <div class="slider">
+            <div class="slides">
+              <!-- radio button start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!-- radio button end -->
+              <!-- slide images start -->
+              <div class="slide first">
+                <img src="assets\Image\Homepage\b1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets\Image\Homepage\b2.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets\Image\Homepage\b3.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets\Image\Homepage\b4.png" alt="">
+              </div>
+              <!-- slide images end -->
+              <!-- auto navigation start -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+               <!-- auto navigation end -->
+              </div>
+            </div>
+             <!-- manual navigation start -->
+             <div class="navi-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+             </div>
+              <!-- manual navigation emd -->
+          </div>
+          <!--image slider end-->
+          <br>
+            <div class="newproduct">
+            <h2> <b> SẢN PHẨM MỚI </b></h2>
+        
+              <div class="idol">
+                <div id="thumb">
+                <img src="assets\Image\Homepage\product1.png">
+                </div>
+                <div id="info">
+                 <img src="assets\Image\Homepage\lesserafim.png" alt="">
+                </div>
+                <!-- <div id="next"><a href="">Chi tiết sản phẩm &rsaquo; </a></div> -->
+            </div>
 
-                    </table>
-                </div>
-                <img class="map" src="assets/Image/Contact/map.png">
             </div>
-          </div>
-          <div class="right">
-            <div class="text-center">
-                <h3>HỖ TRỢ QUA EMAIL</h3>
-                <div class="contact__box">
-                        <div class="contact__info">
-                            <div id="text">Họ tên:</div>
-                            <form class="input__bar">
-                                <input type="text" >
-                            </form>
-                            <div id="text">Email:</div>
-                            <form class="input__bar">
-                                <input type="text" >
-                            </form>  
-                            <div id="text">Số điện thoại:</div>
-                            <form class="input__bar">
-                                <input type="text" >
-                            </form> 
-                            <div id="text">Nội dung cần hỗ trợ:</div>
-                            <form class="input__bar__content">
-                                <input type="text" >
-                            </form>  
-                        </div>
-                        <div class="button1">
-                            <button type="button" class="contact__button">GỬI NGAY</button>
-                        </div>
-                </div>
-            </div>
-          </div>
+            
+      
         </div> 
         <footer class="footer">
             <div class="grid2">
