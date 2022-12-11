@@ -5,8 +5,19 @@
     border-radius: 10px;
     width: 700px;
     max-width: 90%;
-    height: 250px;
+    height: 220px;
     margin-left: 50px;
+}
+.account__right-box3{
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 700px;
+    max-width: 90%;
+    height: 230px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 .tbl__editaccount{
     display:flex;
@@ -22,6 +33,7 @@
 .tbl__editaccount td input{
     color:var(--text-main-color);
     outline: none;
+    
 }
 .tbl__editaccount td option{
     color:var(--text-main-color);
@@ -29,6 +41,8 @@
 }
 .edit__title{
     font-weight:600;
+    text-align: left;
+    padding: 5px 15px;
 }
 .btn_edit{
     background:var(--light-purple);

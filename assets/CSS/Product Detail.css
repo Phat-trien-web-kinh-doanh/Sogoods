@@ -77,7 +77,7 @@ h2{
   outline:none; 
   
 }
-.add-btn{
+#add-btn{
     background: var(--hover-menu2-color);
     color:var(--hover-color);
     font-weight:600; 
@@ -89,7 +89,7 @@ h2{
     width:200px; 
     height:40px; 
 }
-.add-btn:hover{
+#add-btn:hover{
     background: var(--hover-color);
     color:var(--text-sub-color);
     font-weight:600; 
@@ -100,10 +100,10 @@ h2{
     width:200px; 
     height:40px; 
 }
-.add-btn:focus{
+#add-btn:focus{
   outline:none;
 }
-.like-btn{
+#like-btn{
     background: #E2FFDD;
     color:#50B05A;
     font-weight:600; 
@@ -115,7 +115,7 @@ h2{
     width:200px; 
     height:40px; 
 }
-.like-btn:hover{
+#like-btn:hover{
     background: #50B05A;
     color:var(--text-sub-color);
     font-weight:600; 
@@ -126,7 +126,11 @@ h2{
     width:200px; 
     height:40px; 
 }
-.like-btn:focus{
+#like-btn a{
+    color:#50B05A;
+    text-decoration: none;
+}
+#like-btn:focus{
   outline:none;
 }
 .seemore-btn{

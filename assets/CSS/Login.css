@@ -116,9 +116,9 @@ h3{
 }
 #login__button:focus{
     outline:none;
-    background:#ff816e;
+    background:#e9624d;;
 }
-.signup__button{
+#signup__button{
     width:140px; 
     height:40px; 
     background:transparent;
@@ -128,9 +128,9 @@ h3{
     color:var(--text-sub-color);
     font-weight:700; 
 }
-.signup__button:focus{
+#signup__button:focus{
     outline:none;
-    background:#ff816e;
+    background:#e9624d;;
 }
 .forget__pass{
     color:var(--text-main-color);
