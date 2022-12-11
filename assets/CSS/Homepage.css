@@ -1,9 +1,10 @@
-body{
-    display: flex;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .container_homepage{
-
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,14 +103,384 @@ body{
 }
 /* css for new product */
 h2{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-product{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.idol{
+    width: 1440px;
+    height: 516px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #thumb > img {
-    max-width: 100%; height: 516px; margin-top: 10px; border-radius: 10px; float: left;}
+    max-width: 100%; height: 516px;  float: left;}
+#thumb > img:hover {
+    cursor: pointer; opacity: 0.5;
+}
 #info {
     max-width: 100%; height: 516px;
-    margin-left: 20px; margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: left; text-align: justify;
+    margin-left: 20px; display: flex; flex-wrap: wrap; justify-content: left; text-align: justify;
 }
-#next {
-    text-align: right; justify-content: right; float: right; margin-top: 0px; margin-bottom: 0px;
+#info > div {
+    width: 100%; margin-bottom: 10px;
+}
+
+/* product */
+.product__title{
+    color: var(--text-main-color);
+    font-size: 16px;
+    font-weight:500;
+}
+.img__content{
+    padding:0 8px;
+}
+.cmt__info{
+    padding:0 15px;
+}
+.cmt__container{
+    margin: 10px 0 10px 100px; 
+}
+.product__content{
+    color: var(--text-main-color);
+    font-size: 16px;
+    padding:0 15px;
+}
+.product__content2{
+   
+    padding:15px 15px;
+}
+.product__content3{
+   
+    padding:0 15px;
+}
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.icon{
+    color:#6F7680;
+}
+.grid{
+    width:1200px;
+    max-width:100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width:100%;
+}
+.grid__row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+    text-align: center;
+}
+.grid__column-12{
+    padding-left: 12px;
+    padding-right: 12px;
+    width:100%;
+}
+.grid__column-2-4{
+    padding-left: 10px;
+    padding-right: 10px;
+    width:20%;
+}
+.sub__title{
+  display: inline-flex;
+  
+
+}
+.home-product {
+    margin-bottom: 10px;
+  }
+  .home-product-item {
+    display: block;
+    position: relative;
+    height: 100%;
+    margin-top: 10px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow:0 9px 10px 0 rgba(214, 214, 214, 0.425);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    text-decoration: none;
+  }
+
+  .home-product-item:hover {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+  }
+  .home-product-item__img {
+    height:120px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  .home-product-item__name {
+    font-size: 16px;
+    color: var(--text-main-color);
+    margin-top: 115px;
+  }
+  .home-product-item__price {
+    display: flex;
+    margin-left: 5px;
+    align-items: baseline;
+  }
+  .home-product-item__price-old {
+    font-size: 13px;
+    text-decoration: line-through;
+    color:var(--text-main-color);
+    margin: 10px 0 0 10px;
+  }
+  .home-product-item__price-current {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight:450;
+    color: var(--price-color);
+  }
+  .home-product-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 10px 0;
+  }
+  .home-product-item__like {
+    font-size: 13px;
+  }
+  
+  .home-product-item__like--liked .home-product-item__like-icon-fill {
+    display: inline-block;
+  }
+  
+  .home-product-item__like--liked .home-product-item__like-icon-empty {
+    display: none;
+  }
+  
+  i.home-product-item__like-icon-fill {
+    color:var(--price-color);
+    display:none;
+  }
+  i.home-product-item__like-icon-empty{
+    color:var(--text-main-color);
+  }
+  
+  .home-product-item__rating {
+    display: flex;
+    align-items:center;
+    margin:-1px 5px 0 auto ;
+    font-size: 11px;
+  }
+  .home-product-item__rating2 {
+    display: flex;
+    align-items:baseline;
+    margin:-1px 5px 0 auto ;
+    font-size: 11px;
+  }
+  
+  .home-product-item__star--gold {
+    color: var(--yellow);
+  }
+  
+  .home-product-item__sold {
+    font-size: 13px;
+    color: var(--text-main-color);
+    margin-left: 5px;
+  }
+  .home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    background-color: rgba(255, 216, 64, 0.92);
+    border-top-right-radius: 2px;
+  }
+  
+  .home-product-item__sale-off::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    border-width: 0 20px 5px;
+    border-style: solid;
+    color: rgba(255, 216, 64, 0.92);
+    border-color: transparent currentColor transparent currentColor;
+  }
+  
+  .home-product-item__sale-off-percent {
+    color: var(--price-color);
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 2px;
+    
+  }
+  .home-product-item__sale-off-label {
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+    font-weight: 600;
+    color: var(--text-sub-color);
+  }
+  
+  .home-product__pagination {
+    margin: 40px 0 30px 1000px;
+    padding-left: 0;
+    
+  }
+  .pagination-item__link{
+    color: var(--text-main-color);
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .pagination-item__link:hover{
+    color: var(--hover-color);
+    margin-left: 10px;
+    font-size: 16px;
+  }
+.product-link:hover{
+    text-decoration: none;
+  }
+
+  /* features */
+  .heading{
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  }
+  .features .box-container .box{
+    padding:3rem 2rem;
+    background:#fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+
+  }
+  .features .box-container .box:hover{
+    outline: var(--outline-hover);
+    transform: translateY(-1rem);
+    box-shadow: var(--shadow-hover);
+  }
+  .features .box-container .box img{
+    margin:1rem 0;
+    height: 15rem;
+  }
+  .features .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    
+  }
+
+
+
+  /* IDOL KPOP */
+.slide-container {
+    width: 100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.image-slider >h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+}
+
+.button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+    background-color: rgba(67, 67, 151, 0.2);
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~.image-slider #button-1{
+    width:380px;
+    height: 585px;
+    background-color: transparent;
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~.image-slider #button-2{
+    width:380px;
+    height: 585px;
+    background-color: transparent;
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~.image-slider #button-3{
+    width:380px;
+    height: 585px;
+    background-color: transparent;
+}
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~.image-slider #button-4{
+    width:380px;
+    height: 585px;
+    background-color: transparent;
+}
+
+#slider-span1:target ~.image-slider{
+    left:20%;
+}
+#slider-span2:target ~.image-slider{
+    left:0%;
+}
+#slider-span3:target ~.image-slider{
+    left:-20%;
+}
+#slider-span4:target ~.image-slider{
+  left:-40%;
 }
