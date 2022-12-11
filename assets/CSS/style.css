@@ -6,7 +6,7 @@ body{
     font-family: Montserrat-Bold;
     z-index: 9999;
   } 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     background:black;
     width:4px;
     height: 20px;
@@ -15,7 +15,7 @@ body{
     ::-webkit-scrollbar-thumb {         
     background:white !important;
     border-radius: 30px;
-    }
+    } */
   /* Add a dark background color with a little bit see-through */ 
 .navbar {
     margin-bottom: 0;
