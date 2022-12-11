@@ -6,7 +6,7 @@ body{
     font-family: Montserrat-Bold;
     z-index: 9999;
   } 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     background:black;
     width:4px;
     height: 20px;
@@ -15,7 +15,7 @@ body{
     ::-webkit-scrollbar-thumb {         
     background:white !important;
     border-radius: 30px;
-    }
+    } */
   /* Add a dark background color with a little bit see-through */ 
 .navbar {
     margin-bottom: 0;
@@ -106,7 +106,7 @@ ul li ul.dropdown li{
       padding-bottom: 150px;
   }
   .nv{
-      background: rgb(20, 97, 197);
+      background: #FF9E8F;
       border: 1px solid rgb(255, 255, 255);  
       width: 100px;
       text-align: center;
@@ -120,7 +120,7 @@ ul li ul.dropdown li{
      font-weight: 600;
   }
   .nv1{
-    background: royalblue;
+    background: #FF9E8F;
     border: 1px solid rgb(255, 255, 255);  
     width: 100px;
     text-align: center;
@@ -132,20 +132,18 @@ ul li ul.dropdown li{
     font-weight: 600;
   }
   .nv:hover, .nv:active{
-      background: white;
-      border: 1px solid black;
-      color: black;
+      background: #e9624d;
+      color: white;
   }
   .nv1:hover, .nv1:active{
-      background: white;
-      border: 1px solid black;
-      color: black;
+      background: #e9624d;
+      color: white;
   }
   thead tr th{
       color: rgb(255, 255, 255);
       font-size: 14px;
       font-weight: 600;
-      background: #006bcf;
+      background: #FF9E8F;
       text-align: center !important;
   }
   tbody tr td{
@@ -157,7 +155,7 @@ ul li ul.dropdown li{
       font-size: 30px;
       color: black;
   }
-  #myInput {
+  /* #myInput {
     background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
@@ -168,11 +166,11 @@ ul li ul.dropdown li{
     margin-bottom: 12px;
     border-radius: 20px;
     outline: none !important;
-  }
+  } */
   .header{
       color: rgb(255, 255, 255);
       font-size: 13px;
-      background: #006bcf;
+      background: #FF9E8F;
   }
 
   #myTable {
@@ -233,6 +231,9 @@ ul li ul.dropdown li{
     display: none;
     opacity: 1;
     opacity: 0.9;
+  }
+  .fas{
+    color: white;
   }
   .myInput{
     position: relative;
@@ -400,4 +401,17 @@ table.table td .add {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
+}
+.headsearch{
+  border-inline-color: none;
+  width: 100%;
+  
+}
+.headsearch > h2{
+  float: left;
+  align-items: center;
+}
+.header__search-bar{
+  float: right;
+
 }

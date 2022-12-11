@@ -169,23 +169,22 @@
                 <div class="grid__column-8">
                     <div class="text-center">
                         <div class="account__right-box2">
-                            <div class="edit__content">
-                                <div id="edit1" class="edit__content-item">
+                                <div class="edit__content-item">
                                     <Table class="tbl__editaccount">
                                         <tr>
-                                            <td class="edit__title">Họ tên:</td>
-                                            <td class="edit__title">Email:</td>
-                                            <td class="edit__title">Số điện thoại:</td>
+                                            <th class="edit__title">Họ tên:</th>
+                                            <th class="edit__title">Email:</th>
+                                            <th class="edit__title">Số điện thoại:</th>
                                         </tr>
                                         <tr>
-                                            <td>Victoria Huỳnh</td>
+                                            <td id="txt_name">Victoria Huỳnh</td>
                                             <td>victoriahuynh2504@gmail.com</td>
                                             <td>083564607</td>
                                         </tr>
                                         <tr>
-                                            <td class="edit__title">Địa chỉ:</td>
-                                            <td class="edit__title">Giới tính:</td>
-                                            <td class="edit__title">Ngày sinh:</td>
+                                            <th class="edit__title">Địa chỉ:</th>
+                                            <th class="edit__title">Giới tính:</th>
+                                            <th class="edit__title">Ngày sinh:</th>
                                         </tr>
                                         <tr>
                                             <td>KTX khu B ĐHQG tp.HCM</td>
@@ -194,95 +193,43 @@
                                         </tr>
                                     </Table>
                                 </div>
-                                <div id="edit2" class="edit__content-item">
-                                    <Table class="tbl__editaccount">
-                                        <tr>
-                                            <td class="edit__title">Họ tên:</td>
-                                            <td class="edit__title">Email:</td>
-                                            <td class="edit__title">Số điện thoại:</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text"></td>
-                                            <td><input type="text"></td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="edit__title">Địa chỉ:</td>
-                                            <td class="edit__title">Giới tính:</td>
-                                            <td class="edit__title">Ngày sinh:</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text"></td>
-                                            <td><select style="height:30px">
-                                                <option>Giới tính</option>
-                                                <option>Nam</option>
-                                                <option>Nữ</option>
-                                            </select></td>
-                                            <td><select>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                                <option>11</option>
-                                                <option>12</option>
-                                            </select> 
-                                            <select>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                                <option>11</option>
-                                                <option>12</option>
-                                                <option>13</option>
-                                                <option>14</option>
-                                                <option>15</option>
-                                                <option>16</option>
-                                                <option>17</option>
-                                                <option>18</option>
-                                                <option>19</option>
-                                                <option>20</option>
-                                                <option>21</option>
-                                                <option>22</option>
-                                                <option>23</option>
-                                                <option>24</option>
-                                                <option>26</option>
-                                                <option>27</option>
-                                                <option>28</option>
-                                                <option>29</option>
-                                                <option>30</option>
-                                                <option>31</option>
-                                            </select> 
-                                            <select>
-                                                <option>1999</option>
-                                                <option>2000</option>
-                                                <option>2001</option>
-                                                <option>2002</option>
-                                                <option>2003</option>
-                                                <option>2004</option>
-                                                <option>2005</option>
-                                                <option>2006</option>
-                                                <option>2007</option>
-                                            </select> (Month, DD, YYYY)</td>                                    
-                                        </tr>
-                                    </Table>
-                                </div>
-                            </div>
                             <div>
-                                <button class="btn_edit"><a href="#edit2">Chỉnh sửa</a></button>
-                                <button class="btn_update"><a href="#edit1">Cập nhật</a></button>
+                                <button class="btn_edit">Chỉnh sửa</button>
+                               
                             </div>
+                        </div>
+                        <div class="account__right-box3">
+                          <div class="edit__content-item2">
+                            <Table class="tbl__editaccount">
+                                <tr>
+                                    <th class="edit__title">Họ tên:</th>
+                                    <th class="edit__title">Email:</th>
+                                    <th class="edit__title">Số điện thoại:</th>
+                                </tr>
+                                <tr>
+                                    <td><input id="edt_name" type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th class="edit__title">Địa chỉ:</th>
+                                    <th class="edit__title">Giới tính:</th>
+                                    <th class="edit__title">Ngày sinh:</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td ><select style=" height: 30px;">
+                                      <option>Giới tính</option>
+                                      <option>Nam</option>
+                                      <option>Nữ</option>
+                                    </select></td>
+                                    <td><input type="date"></td>                                    
+                                </tr>
+                            </Table>
+                            <div>
+                              <button class="btn_update">Cập nhật</button>
+                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -373,31 +320,32 @@
   <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
 <script>
   $(document).ready(function(){
-      $('.edit__content-item').hide();
-      $('.edit__content-item:first-child').show();
+      $('.account__right-box3').hide();
+      $('.edit__content-item').show();
       $('.btn_edit').click(function(){
-    
-    
     //show menu__content when click
-      let id_edit_content = $(this).children('a').attr('href');
-
-      $('.edit__content-item').hide();
-      $(id_edit_content).show();
+      $('.account__right-box3').show();
       
       return false;
     });
-    
-  
   });
 </script>
+<!-- <script>
+  $(document).ready(function(){
+        $('.btn_update').click(function(){
+          document.getElementById("txt_name"). == document.getElementById("edt_name").value; ;
+        });
+      });
+   
+</script> -->
 <script>
     $(document).ready(function(){
         $('.btn_update').click(function(){
             alert("Bạn đã cập nhật thành công")
             // get link
-            let id_edit_content = $(this).children('a').attr('href');
-            $('.edit__content-item').hide();
-            $(id_edit_content).show();
+            
+            $('.account__right-box3').hide();
+          
             
             // get value
 
@@ -415,6 +363,7 @@
       }
     });
   });
+  //edit profile
   </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

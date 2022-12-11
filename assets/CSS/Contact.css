@@ -77,7 +77,7 @@ h3{
 .button1{
     text-align: center;
     display:inline-block;
-    background:#FF9E8F;
+    background:var(--hover-color);
     border-radius: 30px;
     width:140px; 
     height:40px; 
@@ -85,10 +85,10 @@ h3{
 }
 .contact__button:focus{
     outline:none;
-    background:#ff816e;
+    background:#e9624d;;
 }
 .contact__button:hover{
-    background:#ff816e;
+    background:#e9624d;;
 }
     
 .contact__button{

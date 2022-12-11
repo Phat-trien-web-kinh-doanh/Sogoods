@@ -9,6 +9,7 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <!--===============================================================================================-->
         <link rel="stylesheet" href="assets/CSS/style.css">
+        <link rel="stylesheet" href="assets/CSS/Main.css">
         <!-- Latest compiled and minified CSS -->
         <!--===============================================================================================-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -22,13 +23,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
         <!--===============================================================================================-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
-        <!--===============================================================================================-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <!--===============================================================================================-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+
+        <!--===============================================================================================-->            
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
+        <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->    
         <script type="text/javascript">
             //Phân Trang Cho Table
             function Pager(tableName, itemsPerPage) {
@@ -105,10 +106,16 @@
 <div class="container-fluid al">
     <div id="clock"></div>
     <Br>
-    <p class="timkiemnhanvien"><b>TÌM KIẾM NHÂN VIÊN:</b></p><Br><Br>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên nhân viên cần tìm...">
-    <i class="fa fa-search" aria-hidden="true"></i>
-
+        <table class="headsearch">
+            <tr>
+        <td><h2>TẤT CẢ SẢN PHẨM:</h2></td>
+        <td><form action="" class="header__search-bar" >
+            <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
+            <input id="myInput" type="text" placeholder="Tìm kiếm sản phẩm" onkeyup="searchTable()" name="q">
+          </form>
+        </td>
+            </tr>
+        </table>
     <form action="">
 
     </form>
@@ -130,6 +137,7 @@
     <table class="table table-bordered" id="myTable">
         <thead>
             <tr class="ex">
+                <th>Ảnh đại diện</th>
                 <th width="auto">Tên Nhân Viên</th>
                 <th width="auto">Giới Tính</th>
                 <th>Ngày Sinh</th>
@@ -140,6 +148,7 @@
         </thead>
         <tbody>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Võ Trường</td>
                 <td>Nam</td>
                 <td>15/03/2000</td>
@@ -156,6 +165,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Trần Khả Ái</td>
                 <td>Nữ</td>
                 <td>12/02/1999</td>
@@ -172,6 +182,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Nguyễn Tấn Trung</td>
                 <td>Nam</td>
                 <td>07/10/1997</td>
@@ -188,6 +199,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Trần Trúc An</td>
                 <td>Nữ</td>
                 <td>22/12/1999</td>
@@ -204,6 +216,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Phạm Thu Cúc</td>
                 <td>Nữ</td>
                 <td>02/06/1998</td>
@@ -220,6 +233,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Nguyễn Thị Kim Ngân</td>
                 <td>Nữ</td>
                 <td>06/04/1998</td>
@@ -235,6 +249,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Nguyễn Anh Tuấn</td>
                 <td>Nam</td>
                 <td>23/07/1996</td>
@@ -250,6 +265,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Huỳnh Cẩm Thu</td>
                 <td>Nữ</td>
                 <td>19/01/1997</td>
@@ -265,6 +281,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Nguyễn Xuân Ly</td>
                 <td>Nữ</td>
                 <td>30/10/1999</td>
@@ -280,6 +297,7 @@
                 </td>
             </tr>
             <tr>
+                <td><img src="https://i.imgur.com/0sg1lX8.jpg" alt="Avatar" class="avatar"></td>
                 <td>Hoàng Xuân Nam</td>
                 <td>Nữ</td>
                 <td>20/7/1989</td>
@@ -304,23 +322,30 @@
         pager.showPage(1);
     </script>
 </div>
+<script src="js/text.js" type="text/javascript"></script>
 <script type="text/javascript">
-    //Tìm kiếm
-    function myFunction() {
+    //function to search
+    function searchTable() {
+        //get the value of the input field
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
+        //loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
+            td = tr[i].getElementsByTagName("td")[1];
             if (td) {
                 txtValue = td.textContent || td.innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                     tr[i].style.display = "";
                 } else {
-                    tr[i].style.display = "none";  }}}}
-    //Lọc bảng
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
     function sortTable() {
         var table, rows, switching, i, x, y, shouldSwitch;
         table = document.getElementById("myTable");
@@ -385,6 +410,7 @@
         }
     }
 
+
     //Thêm
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -393,6 +419,8 @@
             $(this).attr("disabled", "disabled");
             var index = $("table tbody tr:last-child").index();
             var row = '<tr>' +
+                // Insert avatar
+                '<td><input type="file" accept=".jpg,.png" class="form-control" name="avt" id="avt" placeholder="Nhập ID"></td>' +
                 '<td><input type="text" class="form-control" name="name" id="name" placeholder="Nhập Tên"></td>' +
                 '<td><input type="text" class="form-control" name="gioitinh" id="gioitinh" placeholder="Nhập Giới Tính"></td>' +
                 '<td><input type="text" class="form-control" name="namsinh" id="namsinh" value="" placeholder="Nhập Ngày Sinh"></td>' +

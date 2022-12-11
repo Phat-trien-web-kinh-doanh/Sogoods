@@ -208,12 +208,12 @@
           <div class="btn__product">
             <table>
               <tr>
-                <td><button class="buy-btn">MUA NGAY</button></td>
-                <td class="product__content2"><button class="add-btn">THÊM VÀO GIỎ HÀNG</button></td>
+                <td><a href=""><button class="buy-btn">MUA NGAY</button></a></td>
+                <td class="product__content2"><button id="add-btn">THÊM VÀO GIỎ HÀNG</button></td>
               </tr>
               <tr>
                 <td></td>
-                <td class="product__content3"><button class="like-btn">THÊM VÀO YÊU THÍCH</button></td>
+                <td class="product__content3"><button id="like-btn">THÊM VÀO YÊU THÍCH</button></td>
               </tr>
             </table>
           </div>
@@ -360,7 +360,7 @@
                       </div>
                       <div class="home-product-item__action">
                         <span
-                          class="home-product-item__like home-product-item__like--liked"
+                          class="home-product-item__like "
                         >
                           <i
                             class="home-product-item__like-icon-empty far fa-heart"
@@ -516,7 +516,7 @@
                       </div>
                       <div class="home-product-item__action">
                         <span
-                          class="home-product-item__like home-product-item__like--liked" 
+                          class="home-product-item__like" 
                         >
                           <i
                             class="home-product-item__like-icon-empty far fa-heart"
@@ -722,6 +722,19 @@
   </div>
 
   
+<script>
+ var btnAdd = document.getElementById('add-btn');
+        btnAdd.onclick = function () {
+          
+            alert("Đã thêm vào giỏ hàng.");
+                    ;}     
+var btnLike = document.getElementById('like-btn');
+        btnLike.onclick = function () {
+          
+            alert("Đã thêm vào yêu thích.");
+                    ;}                       
+</script>
+
 
   
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
