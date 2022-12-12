@@ -21,7 +21,7 @@
     <div class="app">
       <header class="header">
        
-          <div class="grid">
+          
               <nav class="header__navbar1">
                   <ul class="header__navbar-list">
                       <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
@@ -68,7 +68,7 @@
               <div class="header__menu">
                 <ul class="header__menu-list">
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-item-link">Trang chủ</a>
+                    <a href="Homepage.html" class="header__menu-item-link">Trang chủ</a>
                   </li>
                   <li class="header__menu-item">
                     <a href="" class="header__menu-item-link">Sản phẩm</a>
@@ -85,7 +85,7 @@
                     </ul>
                   </li>
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-item-link">Idol Kpop</a>
+                    <a href="PageIdol.html" class="header__menu-item-link">Idol Kpop</a>
                     <ul class="header__menu-list2">
                       <li class="header__menu-item2">
                         <a class="header__menu-item-link2" href="">BlackPink</a>
@@ -125,7 +125,7 @@
                     <a href="" class="header__menu-item-link">Blog</a>
                   </li>
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-item-link">Hướng dẫn mua hàng</a>
+                    <a href="Guide.html" class="header__menu-item-link">Hướng dẫn mua hàng</a>
                   </li>
                   <li class="header__menu-item">
                     <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
@@ -133,7 +133,7 @@
   
                 </ul>
               </div>
-              </div>
+           
        
         
       </header>
@@ -177,9 +177,9 @@
                                             <th class="edit__title">Số điện thoại:</th>
                                         </tr>
                                         <tr>
-                                            <td id="txt_name">Victoria Huỳnh</td>
-                                            <td>victoriahuynh2504@gmail.com</td>
-                                            <td>083564607</td>
+                                            <td id="username">Victoria Huỳnh</td>
+                                            <td id="email">victoriahuynh2504@gmail.com</td>
+                                            <td id="phone">083564607</td>
                                         </tr>
                                         <tr>
                                             <th class="edit__title">Địa chỉ:</th>
@@ -187,9 +187,9 @@
                                             <th class="edit__title">Ngày sinh:</th>
                                         </tr>
                                         <tr>
-                                            <td>KTX khu B ĐHQG tp.HCM</td>
-                                            <td>Nữ</td>
-                                            <td>25/04/2002</td>
+                                            <td id="address">KTX khu B ĐHQG tp.HCM</td>
+                                            <td id="gender">Nữ</td>
+                                            <td id="date">25/04/2002</td>
                                         </tr>
                                     </Table>
                                 </div>
@@ -207,7 +207,7 @@
                                     <th class="edit__title">Số điện thoại:</th>
                                 </tr>
                                 <tr>
-                                    <td><input id="edt_name" type="text"></td>
+                                    <td><input type="text"></td>
                                     <td><input type="text"></td>
                                     <td><input type="text"></td>
                                 </tr>
@@ -330,24 +330,11 @@
     });
   });
 </script>
-<!-- <script>
-  $(document).ready(function(){
-        $('.btn_update').click(function(){
-          document.getElementById("txt_name"). == document.getElementById("edt_name").value; ;
-        });
-      });
-   
-</script> -->
 <script>
     $(document).ready(function(){
         $('.btn_update').click(function(){
-            alert("Bạn đã cập nhật thành công")
-            // get link
-            
+            alert("Chức năng này hiện chưa khả dụng. Xin lỗi vì sự bất tiện này!")            
             $('.account__right-box3').hide();
-          
-            
-            // get value
 
         });
             
@@ -363,7 +350,7 @@
       }
     });
   });
-  //edit profile
+  
   </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

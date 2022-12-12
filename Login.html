@@ -45,15 +45,15 @@
                         <div class="login__info">
                             <div id="text">Nhập tên đăng nhập / Số điện thoại:</div>
                             <form class="input__bar">
-                                <input id="accname" type="text" >
+                                <input id="tên đăng nhập" type="text" >
                             </form>
                             <div id="text">Nhập mật khẩu:</div>
                             <form class="input__bar">
-                                <input id="accpass" type="password" >
+                                <input id="password" type="password" >
                             </form>   
                         </div>
                         <div class="button1">
-                            <button type="button" id="login__button">ĐĂNG NHẬP</button>
+                            <button onclick="login()" type="button" id="login__button">ĐĂNG NHẬP</button>
                             <div id="text"><a class="forget__pass" href=""><u>Quên mật khẩu?</u></a></div>
                         </div>
                         <div class="shape">
@@ -161,21 +161,7 @@
             </div>
         </footer>
       </div>
-      <script>
-        var Name = document.getElementById('accname');
-        var Password = document.getElementById('accpass');
-        var btnLogin = document.getElementById('login__button');
-        btnLogin.onclick = function () {
-            if (Name.value == "admin" && Password.value == "123456") {
-                alert('Đăng nhập thành công với quyền admin');
-                window.location.href = "Admin_Overview.html";
-            }else if(Name.value=="client"&& Password.value == "123456"){
-                alert('Đăng nhập thành công');
-                window.location.href = "Homepage.html";
-            }else{
-                alert("Sai tài khoản hoặc mật khẩu!");
-            }
-        }
+      <script src="assets/signup.js">
     </script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
