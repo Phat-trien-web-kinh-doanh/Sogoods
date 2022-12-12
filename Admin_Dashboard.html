@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Our Style-->
     <link rel="stylesheet" href="assets/CSS/Main.css">
-    <link rel="stylesheet" href="assets/CSS/Admin_Overview.css">
+    <link rel="stylesheet" href="assets/CSS/Admin_Order.css">
     <link rel="stylesheet" href="assets/CSS/Admin_Dashboard.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
                     <span class="fas fa-bars"></span>
                 </div>
                 <div class="header-with-search">
-                    
+                  <div class="header__logo"><a href=""><img src="assets/Image/logo.png" height="55px"></a></div>
                     <form action="" class="header__search-bar">
                         <button type="submit">
                             <i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i>
@@ -87,80 +87,80 @@
         </header>
         <!--Sidebar-->
         <div class="sidebarmain">
-            <nav class="sidebar">
-                <div class="text">MENU</div>
-                <ul>
-                    <li>
-                        <a href="#">Tổng quan</a>
-                    </li>
-                    <li>
-                        <a href="#" class="feat-btn">
-                            Dashboard
-                            <i class="fa-solid fa-chevron-right first"></i>
-                        </a>
-                        <ul class="feat-show">
-                            <li>
-                                <a href="#">Sales</a>
-                            </li>
-                            <li>
-                                <a href="#">Users</a>
-                            </li>
-                            <li>
-                                <a href="#">CRM</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="feat-btn1">
-                            Đơn hàng
-                            <i class="fa-solid fa-chevron-right second"></i>
-                        </a>
-                        <ul class="feat-show1">
-                            <li>
-                                <a href="#">Tất cả đơn hàng</a>
-                            </li>
-                            <li>
-                                <a href="#">Chưa hoàn tất</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="feat-btn2">
-                            Vận chuyển
-                            <i class="fa-solid fa-chevron-right third"></i>
-                        </a>
-                        <ul class="feat-show2">
-                            <li>
-                                <a href="#">Tổng quan</a>
-                            </li>
-                            <li>
-                                <a href="#">Vận chuyển</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="feat-btn3">
-                            Sản phẩm
-                            <i class="fa-solid fa-chevron-right fourth"></i>
-                        </a>
-                        <ul class="feat-show3">
-                            <li>
-                                <a href="#">Tất cả sản phẩm</a>
-                            </li>
-                            <li>
-                                <a href="#">Nhóm sản phẩm</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+          <nav class="sidebar">
+              <div class="text">MENU</div>
+              <ul>
+                  <li>
+                      <a href="Admin_Overview.html">Tổng quan</a>
+                  </li>
+                  <li>
+                      <a href="Admin_Dashboard.html" class="feat-btn">
+                          Dashboard
+                          <i class="fa-solid fa-chevron-right first"></i>
+                      </a>
+                      <ul class="feat-show">
+                          <li>
+                              <a href="#">Sales</a>
+                          </li>
+                          <li>
+                              <a href="#">Users</a>
+                          </li>
+                          <li>
+                              <a href="#">CRM</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="Admin_Order.html" class="feat-btn1">
+                          Đơn hàng
+                          <i class="fa-solid fa-chevron-right second"></i>
+                      </a>
+                      <ul class="feat-show1">
+                          <li>
+                              <a href="#">Tất cả đơn hàng</a>
+                          </li>
+                          <li>
+                              <a href="#">Chưa hoàn tất</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="Admin_Delivery_Detail.html" class="feat-btn2">
+                          Vận chuyển
+                          <i class="fa-solid fa-chevron-right third"></i>
+                      </a>
+                      <ul class="feat-show2">
+                          <li>
+                              <a href="#">Tổng quan</a>
+                          </li>
+                          <li>
+                              <a href="#">Vận chuyển</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="Admin_ProductDetail.html" class="feat-btn3">
+                          Sản phẩm
+                          <i class="fa-solid fa-chevron-right fourth"></i>
+                      </a>
+                      <ul class="feat-show3">
+                          <li>
+                              <a href="Admin_ProductDetail.html">Tất cả sản phẩm</a>
+                          </li>
+                          <li>
+                              <a href="Admin_ProductGroup.html">Nhóm sản phẩm</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="Admin_Customer.html">Khách hàng</a>
+                  </li>
+                  <li>
+                      <a href="Admin_Blog.html">Blog</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
         <!-- /.Sidebar -->
         <!-- MAIN CONTENT -->
         <section class="home-section">   
@@ -218,15 +218,15 @@
                 <div class="sales-details">
                   <ul class="details">
                     <li class="topic">Ngày</li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
-                    <li><a href="#">02/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
+                    <li><a href="#">05/12/2022</a></li>
                   </ul>
                   <ul class="details">
                   <li class="topic">Khách hàng</li>
@@ -394,7 +394,7 @@
                 });
                 </script>
                 <script>
-                  var xValues = ["1/11", "2/11", "3/11", "4/11", "5/11"];
+                  var xValues = ["1/12", "2/12", "3/12", "4/12", "5/12"];
                   var yValues = [55, 49, 44, 24, 35];
                   var barColors = "#FF9E8F";
                   
