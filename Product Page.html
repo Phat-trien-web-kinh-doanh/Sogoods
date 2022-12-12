@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sogoods</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Our Style-->
+    <link rel="stylesheet" href="assets/CSS/Productpage.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <!-- <div class="box"> -->
+        <div>
+            <nav class="header__navbar1">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
+                    <a class="header__navbar-icon-link" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                </ul>
+            </nav>
+            <div class="header-with-search">
+                <div class="header__logo"><a href=""><img src="assets/Image/logo.png" height="55px"></a></div>
+                <form action="" class="header__search-bar" >
+                  <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
+                  <input type="text" placeholder="Tìm kiếm sản phẩm" name="q">
+                </form>
+                <div class="header__navbar">
+                  <!-- <ul >
+                    <li class="header__navbar-icon">
+                      <a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-heart"></i></a><br>
+                    </li>
+                  </ul>  
+                  <ul><li class="header__navbar-icon"><a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></a><br></li></ul> 
+                  <ul><li class="header__navbar-icon"><a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-user"></i></a><br></li></ul>      -->
+                  <ul >
+                    <li class="header__navbar-icon">
+                      <a class="header__navbar-icon-link2" href="Favourite.html">
+                        <span><i class="header_navbar-icon fa-solid fa-heart"></i></span>
+                        <span class="info">Thêm vào yêu thích</span>
+                      </a>
+                    </li>
+                  </ul>  
+                  <ul>
+                    <li class="header__navbar-icon">
+                      <a class="header__navbar-icon-link2" href="SearchOrder.html">
+                        <span><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></span>
+                        <span class="info">Tra cứu đơn hàng</span>
+                      </a>
+                    </li>
+                  </ul> 
+                  <ul>
+                    <li class="header__navbar-icon">
+                      <a class="header__navbar-icon-link2" href="EditAccount.html">
+                        <span><i class="header_navbar-icon fa-solid fa-user"></i></span>
+                        <span class="info">Tài khoản</span>
+                      </a>
+                    </li>
+                  </ul>     
+                </div>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Trang chủ</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Sản phẩm</a>
+                  <ul class="header__menu-list2">
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Lightstick</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Album</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Phụ kiện</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Idol Kpop</a>
+                  <ul class="header__menu-list2">
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">BlackPink</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">BTS</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Red Velvet</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">(G)-idle</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Twice</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Về chúng tôi</a>
+                  <ul class="header__menu-list2">
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Giới thiệu</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Hệ thống cửa hàng</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Tuyển dụng</a>
+                    </li>
+                    <li class="header__menu-item2">
+                      <a class="header__menu-item-link2" href="">Các chính sách</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Blog</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-item-link">Hướng dẫn mua hàng</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
+                </li>
+
+              </ul>
+            </div>
+            </div>
+        <!-- </div> -->
+      
+    </header>
+    <!-- Chỗ để code nội dug ở giữa, css ra một link khác, k để chung trong link main.css để k bị rối-->
+
+    <div id="bannerslider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="assets\Image\Homepage\b1.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+            <img src="assets\Image\Homepage\b3.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+            <img src="assets\Image\Homepage\b4.png" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Category section starts -->
+      <section class="services">
+        <h1 class="heading">Danh mục sản phẩm</h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="assets\Image\Product Page\light-stick 1.png" alt="">
+            <h5>LIGHTSTICK</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\music 1.png" alt="">
+            <h5>ALBUM</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\doll (1) 1.png" alt="">
+            <h5>DOLL</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\calendar (5) 1.png" alt="">
+            <h5>LỊCH</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\flash-cards 1.png" alt="">
+            <h5>CARD</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\event-poster 1.png" alt="">
+            <h5>POSTER</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\magazine 1.png" alt="">
+            <h5>TẠP CHÍ</h5>
+          </div>
+          <div class="box">
+            <img src="assets\Image\Product Page\online-store 1.png" alt="">
+            <h5>PHỤ KIỆN</h5>
+
+
+
+        </div>
+
+      </section>
+    <!-- Category section ends -->
+    
+    <!-- product list-->
+    <section class="product-list">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom"> <a class="navbar-brand ml-2 font-weight-bold" href="#">SẢN PHẨM</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarColor">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Bán chạy</a> </li>
+          <li class="nav-item"><a class="nav-link" href="#">Mới nhất</a> </li>
+          <li class="nav-item "><a class="nav-link" href="#">Giá thấp đến cao</a> </li>
+          <li class="nav-item "><a class="nav-link" href="#">Giá cao đến thấp</a> </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+        <div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+        </div>
+        <div id="mobile-filter">
+        <div>
+        <h6 class="p-1 border-bottom">Loại sản phẩm</h6>
+        <ul>
+          <li><a href="#">Lightstick</a></li>
+          <li><a href="#">Album</a></li>
+          <li><a href="#">Lịch</a></li>
+          <li><a href="#">Poster</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Tạp chí</a></li>
+          <li><a href="#">Doll</a></li>
+          <li><a href="#">Phụ kiện</a></li>
+        </ul>
+        </div>
+        <div>
+        <h6 class="p-1 border-bottom">Filter By</h6>
+        <p class="mb-2">Idol Kpop</p>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="blackpink"></span>BlackPink </a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="redvelvet"></span>Red Velvet </a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="gilde"></span>(G)-IDLE</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="aespa"></span>aespa</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="twice"></span>Twice</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="itzy"></span>Itzy</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="loona"></span>Loona</a></li>
+        </ul>
+        </div>
+        <div>
+        <h6>Type</h6>
+        <form class="ml-md-2">
+          <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="under100"> <label for="under100" class="pl-1 pt-sm-0 pt-1">Dưới 100.000đ</label> </div>
+          <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="100to500"> <label for="100to500" class="pl-1 pt-sm-0 pt-1">Từ 100.000đ - 500.000đ</label> </div>
+          <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="500to1000"> <label for="500ro1000" class="pl-1 pt-sm-0 pt-1">Từ 500.000đ - 1.000.000đ</label> </div>
+          <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="above1000"> <label for="above1000" class="pl-1 pt-sm-0 pt-1">Trên 1.000.000đ</label> </div>
+        </form>
+        </div>
+        </div>
+        <section id="sidebar">
+        <div>
+        <h6 class="p-1 border-bottom">Loại sản phẩm</h6>
+        <ul>
+          <li><a href="#">Lightstick</a></li>
+          <li><a href="#">Album</a></li>
+          <li><a href="#">Lịch</a></li>
+          <li><a href="#">Poster</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Tạp chí</a></li>
+          <li><a href="#">Doll</a></li>
+          <li><a href="#">Phụ kiện</a></li>
+        </ul>
+        </div>
+        <div>
+        <h6 class="p-1 border-bottom">Bộ lọc</h6>
+        <p class="mb-2">Idol Kpop</p>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="blackpink"></span>BlackPink </a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="redvelvet"></span>Red Velvet </a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="gilde"></span>(G)-IDLE</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="aespa"></span>aespa</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="twice"></span>Twice</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="itzy"></span>Itzy</a></li>
+          <li class="list-group-item list-group-item-action mb-2 rounded"><a href="#"> <span class="fa fa-circle pr-1" id="loona"></span>Loona</a></li>
+        </ul>
+        </div>
+        <div>
+        <h6>Giá</h6>
+        <form class="ml-md-2">
+          <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="under100"> <label for="under100" class="pl-1 pt-sm-0 pt-1">Dưới 100.000đ</label> </div>
+          <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="100to500"> <label for="100to500" class="pl-1 pt-sm-0 pt-1">Từ 100.000đ - 500.000đ</label> </div>
+          <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="500to1000"> <label for="500ro1000" class="pl-1 pt-sm-0 pt-1">Từ 500.000đ - 1.000.000đ</label> </div>
+          <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="above1000"> <label for="above1000" class="pl-1 pt-sm-0 pt-1">Trên 1.000.000đ</label> </div>
+        </form>
+        </div>
+        </section>
+        <!-- products section -->
+        <section id="products">
+        <div class="product">
+          <div class="grid">
+            <div class="grid__row">
+              <div class="grid__column-12">
+                <div class="home-product">
+                  <div class="grid__row">
+                    <!-- Product item -->
+                    <div class="grid__column-2-4">
+                      <a class="product-link" href="#" >
+                        <div class="home-product-item">
+                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls5.jpg"></div>
+                          <h4 class="home-product-item__name">
+                            Lightstick BTS BANGTAN
+                          </h4>
+                          <div class="home-product-item__price">
+                            <span class="home-product-item__price-current"
+                              >1.250.000đ</span
+                            >
+                          </div>
+                          <div class="home-product-item__action">
+                            <span
+                              class="home-product-item__like home-product-item__like--liked"
+                            >
+                              <i
+                                class="home-product-item__like-icon-empty far fa-heart"
+                              ></i>
+                              <i
+                                class="home-product-item__like-icon-fill fas fa-heart"
+                              ></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="home-product-item__sold">Đã bán 200</div>
+                          </div> 
+                        </div>
+                      </a>
+                    </div>
+                    <div class="grid__column-2-4 ">
+                      <a class="product-link" href="#">
+                        <div class="home-product-item">
+                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls6.jpg"></div>
+                          <h4 class="home-product-item__name">
+                            Lightstick (G)I-dle
+                          </h4>
+                          <div class="home-product-item__price">
+                            <span class="home-product-item__price-old"
+                              >1.250.000đ</span
+                            >
+                            <span class="home-product-item__price-current"
+                              >1.000.000đ</span
+                            >
+                          </div>
+                          <div class="home-product-item__action">
+                            <span
+                              class="home-product-item__like home-product-item__like--liked"
+                            >
+                              <i
+                                class="home-product-item__like-icon-empty far fa-heart"
+                              ></i>
+                              <i
+                                class="home-product-item__like-icon-fill fas fa-heart"
+                              ></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="home-product-item__sold">Đã bán 130</div>
+                          </div>          
+                          <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent"
+                              >20%</span
+                            >
+                            <span class="home-product-item__sale-off-label"
+                              >GIẢM</span
+                            >
+                          </div>
+                        </div>
+                        
+                      </a>
+                    </div>
+                    <div class="grid__column-2-4 ">
+                      <a class="product-link" href="#">
+                        <div class="home-product-item">
+                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls7.jpg"></div>
+                          <h4 class="home-product-item__name">
+                            Lightstick GFRIEND ver 2 
+                          </h4>
+                          <div class="home-product-item__price">
+                            <span class="home-product-item__price-old"
+                              >1.000.000đ</span
+                            >
+                            <span class="home-product-item__price-current"
+                              >700.000đ</span
+                            >
+                          </div>
+                          <div class="home-product-item__action">
+                            <span
+                              class="home-product-item__like home-product-item__like--liked"
+                            >
+                              <i
+                                class="home-product-item__like-icon-empty far fa-heart"
+                              ></i>
+                              <i
+                                class="home-product-item__like-icon-fill fas fa-heart"
+                              ></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                            </div>
+                            <div class="home-product-item__sold">Đã bán 80</div>
+                          </div>          
+                          <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent"
+                              >30%</span
+                            >
+                            <span class="home-product-item__sale-off-label"
+                              >GIẢM</span
+                            >
+                          </div>
+                        </div>
+                        
+                      </a>
+                    </div>
+                    <div class="grid__column-2-4">
+                      <a class="product-link" href="#">
+                        <div class="home-product-item">
+                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls8.jpg"></div>
+                          <h4 class="home-product-item__name">
+                            Lighstick TREASURE   
+                          </h4>
+                          <div class="home-product-item__price">
+        
+                            <span class="home-product-item__price-current"
+                              >650.000đ</span
+                            >
+                          </div>
+                          <div class="home-product-item__action">
+                            <span
+                              class="home-product-item__like home-product-item__like--liked" 
+                            >
+                              <i
+                                class="home-product-item__like-icon-empty far fa-heart"
+                              ></i>
+                              <i
+                                class="home-product-item__like-icon-fill fas fa-heart"
+                              ></i>
+                            </span>
+                            
+                            <div class="home-product-item__rating">
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="home-product-item__sold">Đã bán 500</div>
+                          </div>      
+                        </div>
+                            
+                        
+                      </a>
+                    </div>
+                    <div class="grid__column-2-4">
+                      <a class="product-link" href="#">
+                        <div class="home-product-item">
+                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls9.jpeg"></div>
+                          <h4 class="home-product-item__name">
+                            Lightstick BigBang 
+                          </h4>
+                          <div class="home-product-item__price">
+                            <span class="home-product-item__price-old"
+                              >1.900.000đ</span
+                            >
+                            <span class="home-product-item__price-current"
+                              >1.425.000đ</span
+                            >
+                          </div>
+                          <div class="home-product-item__action">
+                            <span
+                              class="home-product-item__like home-product-item__like--liked"
+                            >
+                              <i
+                                class="home-product-item__like-icon-empty far fa-heart"
+                              ></i>
+                              <i
+                                class="home-product-item__like-icon-fill fas fa-heart"
+                              ></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                              <i
+                                class="home-product-item__star--gold fas fa-star"
+                              ></i>
+                            </div>
+                            <div class="home-product-item__sold">Đã bán 700</div>
+                          </div>          
+                          <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent"
+                              >25%</span>
+                            <span class="home-product-item__sale-off-label"
+                              >GIẢM</span
+                            >
+                          </div>
+                        </div>
+                        
+                      </a>
+                    </div>
+                    
+                  
+                  </div>
+                  <div class="grid">
+                    <div class="grid__row">
+                      <div class="grid__column-12">
+                        <div class="home-product">
+                          <div class="grid__row">
+                            <!-- Product item -->
+                            <div class="grid__column-2-4">
+                              <a class="product-link" href="#" >
+                                <div class="home-product-item">
+                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls5.jpg"></div>
+                                  <h4 class="home-product-item__name">
+                                    Lightstick BTS BANGTAN
+                                  </h4>
+                                  <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current"
+                                      >1.250.000đ</span
+                                    >
+                                  </div>
+                                  <div class="home-product-item__action">
+                                    <span
+                                      class="home-product-item__like home-product-item__like--liked"
+                                    >
+                                      <i
+                                        class="home-product-item__like-icon-empty far fa-heart"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                      ></i>
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div class="home-product-item__sold">Đã bán 200</div>
+                                  </div> 
+                                </div>
+                              </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                              <a class="product-link" href="#">
+                                <div class="home-product-item">
+                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls6.jpg"></div>
+                                  <h4 class="home-product-item__name">
+                                    Lightstick (G)I-dle
+                                  </h4>
+                                  <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old"
+                                      >1.250.000đ</span
+                                    >
+                                    <span class="home-product-item__price-current"
+                                      >1.000.000đ</span
+                                    >
+                                  </div>
+                                  <div class="home-product-item__action">
+                                    <span
+                                      class="home-product-item__like home-product-item__like--liked"
+                                    >
+                                      <i
+                                        class="home-product-item__like-icon-empty far fa-heart"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                      ></i>
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div class="home-product-item__sold">Đã bán 130</div>
+                                  </div>          
+                                  <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent"
+                                      >20%</span
+                                    >
+                                    <span class="home-product-item__sale-off-label"
+                                      >GIẢM</span
+                                    >
+                                  </div>
+                                </div>
+                                
+                              </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                              <a class="product-link" href="#">
+                                <div class="home-product-item">
+                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls7.jpg"></div>
+                                  <h4 class="home-product-item__name">
+                                    Lightstick GFRIEND ver 2 
+                                  </h4>
+                                  <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old"
+                                      >1.000.000đ</span
+                                    >
+                                    <span class="home-product-item__price-current"
+                                      >700.000đ</span
+                                    >
+                                  </div>
+                                  <div class="home-product-item__action">
+                                    <span
+                                      class="home-product-item__like home-product-item__like--liked"
+                                    >
+                                      <i
+                                        class="home-product-item__like-icon-empty far fa-heart"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                      ></i>
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                    </div>
+                                    <div class="home-product-item__sold">Đã bán 80</div>
+                                  </div>          
+                                  <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent"
+                                      >30%</span
+                                    >
+                                    <span class="home-product-item__sale-off-label"
+                                      >GIẢM</span
+                                    >
+                                  </div>
+                                </div>
+                                
+                              </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                              <a class="product-link" href="#">
+                                <div class="home-product-item">
+                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls8.jpg"></div>
+                                  <h4 class="home-product-item__name">
+                                    Lighstick TREASURE   
+                                  </h4>
+                                  <div class="home-product-item__price">
+                
+                                    <span class="home-product-item__price-current"
+                                      >650.000đ</span
+                                    >
+                                  </div>
+                                  <div class="home-product-item__action">
+                                    <span
+                                      class="home-product-item__like home-product-item__like--liked" 
+                                    >
+                                      <i
+                                        class="home-product-item__like-icon-empty far fa-heart"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                      ></i>
+                                    </span>
+                                    
+                                    <div class="home-product-item__rating">
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div class="home-product-item__sold">Đã bán 500</div>
+                                  </div>      
+                                </div>
+                                    
+                                
+                              </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                              <a class="product-link" href="#">
+                                <div class="home-product-item">
+                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls9.jpeg"></div>
+                                  <h4 class="home-product-item__name">
+                                    Lightstick BigBang 
+                                  </h4>
+                                  <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old"
+                                      >1.900.000đ</span
+                                    >
+                                    <span class="home-product-item__price-current"
+                                      >1.425.000đ</span
+                                    >
+                                  </div>
+                                  <div class="home-product-item__action">
+                                    <span
+                                      class="home-product-item__like home-product-item__like--liked"
+                                    >
+                                      <i
+                                        class="home-product-item__like-icon-empty far fa-heart"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                      ></i>
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                      <i
+                                        class="home-product-item__star--gold fas fa-star"
+                                      ></i>
+                                    </div>
+                                    <div class="home-product-item__sold">Đã bán 700</div>
+                                  </div>          
+                                  <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent"
+                                      >25%</span>
+                                    <span class="home-product-item__sale-off-label"
+                                      >GIẢM</span
+                                    >
+                                  </div>
+                                </div>
+                                
+                              </a>
+                            </div>
+                            
+                          
+                          </div>
+                          <div class="grid">
+                            <div class="grid__row">
+                              <div class="grid__column-12">
+                                <div class="home-product">
+                                  <div class="grid__row">
+                                    <!-- Product item -->
+                                    <div class="grid__column-2-4">
+                                      <a class="product-link" href="#" >
+                                        <div class="home-product-item">
+                                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls5.jpg"></div>
+                                          <h4 class="home-product-item__name">
+                                            Lightstick BTS BANGTAN
+                                          </h4>
+                                          <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current"
+                                              >1.250.000đ</span
+                                            >
+                                          </div>
+                                          <div class="home-product-item__action">
+                                            <span
+                                              class="home-product-item__like home-product-item__like--liked"
+                                            >
+                                              <i
+                                                class="home-product-item__like-icon-empty far fa-heart"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__like-icon-fill fas fa-heart"
+                                              ></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 200</div>
+                                          </div> 
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="grid__column-2-4 ">
+                                      <a class="product-link" href="#">
+                                        <div class="home-product-item">
+                                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls6.jpg"></div>
+                                          <h4 class="home-product-item__name">
+                                            Lightstick (G)I-dle
+                                          </h4>
+                                          <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old"
+                                              >1.250.000đ</span
+                                            >
+                                            <span class="home-product-item__price-current"
+                                              >1.000.000đ</span
+                                            >
+                                          </div>
+                                          <div class="home-product-item__action">
+                                            <span
+                                              class="home-product-item__like home-product-item__like--liked"
+                                            >
+                                              <i
+                                                class="home-product-item__like-icon-empty far fa-heart"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__like-icon-fill fas fa-heart"
+                                              ></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 130</div>
+                                          </div>          
+                                          <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent"
+                                              >20%</span
+                                            >
+                                            <span class="home-product-item__sale-off-label"
+                                              >GIẢM</span
+                                            >
+                                          </div>
+                                        </div>
+                                        
+                                      </a>
+                                    </div>
+                                    <div class="grid__column-2-4 ">
+                                      <a class="product-link" href="#">
+                                        <div class="home-product-item">
+                                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls7.jpg"></div>
+                                          <h4 class="home-product-item__name">
+                                            Lightstick GFRIEND ver 2 
+                                          </h4>
+                                          <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old"
+                                              >1.000.000đ</span
+                                            >
+                                            <span class="home-product-item__price-current"
+                                              >700.000đ</span
+                                            >
+                                          </div>
+                                          <div class="home-product-item__action">
+                                            <span
+                                              class="home-product-item__like home-product-item__like--liked"
+                                            >
+                                              <i
+                                                class="home-product-item__like-icon-empty far fa-heart"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__like-icon-fill fas fa-heart"
+                                              ></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 80</div>
+                                          </div>          
+                                          <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent"
+                                              >30%</span
+                                            >
+                                            <span class="home-product-item__sale-off-label"
+                                              >GIẢM</span
+                                            >
+                                          </div>
+                                        </div>
+                                        
+                                      </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                      <a class="product-link" href="#">
+                                        <div class="home-product-item">
+                                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls8.jpg"></div>
+                                          <h4 class="home-product-item__name">
+                                            Lighstick TREASURE   
+                                          </h4>
+                                          <div class="home-product-item__price">
+                        
+                                            <span class="home-product-item__price-current"
+                                              >650.000đ</span
+                                            >
+                                          </div>
+                                          <div class="home-product-item__action">
+                                            <span
+                                              class="home-product-item__like home-product-item__like--liked" 
+                                            >
+                                              <i
+                                                class="home-product-item__like-icon-empty far fa-heart"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__like-icon-fill fas fa-heart"
+                                              ></i>
+                                            </span>
+                                            
+                                            <div class="home-product-item__rating">
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 500</div>
+                                          </div>      
+                                        </div>
+                                            
+                                        
+                                      </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                      <a class="product-link" href="#">
+                                        <div class="home-product-item">
+                                          <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls9.jpeg"></div>
+                                          <h4 class="home-product-item__name">
+                                            Lightstick BigBang 
+                                          </h4>
+                                          <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old"
+                                              >1.900.000đ</span
+                                            >
+                                            <span class="home-product-item__price-current"
+                                              >1.425.000đ</span
+                                            >
+                                          </div>
+                                          <div class="home-product-item__action">
+                                            <span
+                                              class="home-product-item__like home-product-item__like--liked"
+                                            >
+                                              <i
+                                                class="home-product-item__like-icon-empty far fa-heart"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__like-icon-fill fas fa-heart"
+                                              ></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                              <i
+                                                class="home-product-item__star--gold fas fa-star"
+                                              ></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 700</div>
+                                          </div>          
+                                          <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent"
+                                              >25%</span>
+                                            <span class="home-product-item__sale-off-label"
+                                              >GIẢM</span
+                                            >
+                                          </div>
+                                        </div>
+                                        
+                                      </a>
+                                    </div>
+                                    
+                                  
+                                  </div>
+                                  <div class="grid">
+                                    <div class="grid__row">
+                                      <div class="grid__column-12">
+                                        <div class="home-product">
+                                          <div class="grid__row">
+                                            <!-- Product item -->
+                                            <div class="grid__column-2-4">
+                                              <a class="product-link" href="#" >
+                                                <div class="home-product-item">
+                                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls5.jpg"></div>
+                                                  <h4 class="home-product-item__name">
+                                                    Lightstick BTS BANGTAN
+                                                  </h4>
+                                                  <div class="home-product-item__price">
+                                                    <span class="home-product-item__price-current"
+                                                      >1.250.000đ</span
+                                                    >
+                                                  </div>
+                                                  <div class="home-product-item__action">
+                                                    <span
+                                                      class="home-product-item__like home-product-item__like--liked"
+                                                    >
+                                                      <i
+                                                        class="home-product-item__like-icon-empty far fa-heart"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                                      ></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                    <div class="home-product-item__sold">Đã bán 200</div>
+                                                  </div> 
+                                                </div>
+                                              </a>
+                                            </div>
+                                            <div class="grid__column-2-4 ">
+                                              <a class="product-link" href="#">
+                                                <div class="home-product-item">
+                                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls6.jpg"></div>
+                                                  <h4 class="home-product-item__name">
+                                                    Lightstick (G)I-dle
+                                                  </h4>
+                                                  <div class="home-product-item__price">
+                                                    <span class="home-product-item__price-old"
+                                                      >1.250.000đ</span
+                                                    >
+                                                    <span class="home-product-item__price-current"
+                                                      >1.000.000đ</span
+                                                    >
+                                                  </div>
+                                                  <div class="home-product-item__action">
+                                                    <span
+                                                      class="home-product-item__like home-product-item__like--liked"
+                                                    >
+                                                      <i
+                                                        class="home-product-item__like-icon-empty far fa-heart"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                                      ></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                    <div class="home-product-item__sold">Đã bán 130</div>
+                                                  </div>          
+                                                  <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent"
+                                                      >20%</span
+                                                    >
+                                                    <span class="home-product-item__sale-off-label"
+                                                      >GIẢM</span
+                                                    >
+                                                  </div>
+                                                </div>
+                                                
+                                              </a>
+                                            </div>
+                                            <div class="grid__column-2-4 ">
+                                              <a class="product-link" href="#">
+                                                <div class="home-product-item">
+                                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls7.jpg"></div>
+                                                  <h4 class="home-product-item__name">
+                                                    Lightstick GFRIEND ver 2 
+                                                  </h4>
+                                                  <div class="home-product-item__price">
+                                                    <span class="home-product-item__price-old"
+                                                      >1.000.000đ</span
+                                                    >
+                                                    <span class="home-product-item__price-current"
+                                                      >700.000đ</span
+                                                    >
+                                                  </div>
+                                                  <div class="home-product-item__action">
+                                                    <span
+                                                      class="home-product-item__like home-product-item__like--liked"
+                                                    >
+                                                      <i
+                                                        class="home-product-item__like-icon-empty far fa-heart"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                                      ></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                    </div>
+                                                    <div class="home-product-item__sold">Đã bán 80</div>
+                                                  </div>          
+                                                  <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent"
+                                                      >30%</span
+                                                    >
+                                                    <span class="home-product-item__sale-off-label"
+                                                      >GIẢM</span
+                                                    >
+                                                  </div>
+                                                </div>
+                                                
+                                              </a>
+                                            </div>
+                                            <div class="grid__column-2-4">
+                                              <a class="product-link" href="#">
+                                                <div class="home-product-item">
+                                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls8.jpg"></div>
+                                                  <h4 class="home-product-item__name">
+                                                    Lighstick TREASURE   
+                                                  </h4>
+                                                  <div class="home-product-item__price">
+                                
+                                                    <span class="home-product-item__price-current"
+                                                      >650.000đ</span
+                                                    >
+                                                  </div>
+                                                  <div class="home-product-item__action">
+                                                    <span
+                                                      class="home-product-item__like home-product-item__like--liked" 
+                                                    >
+                                                      <i
+                                                        class="home-product-item__like-icon-empty far fa-heart"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                                      ></i>
+                                                    </span>
+                                                    
+                                                    <div class="home-product-item__rating">
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i class="home-product-item__star--gold fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                    <div class="home-product-item__sold">Đã bán 500</div>
+                                                  </div>      
+                                                </div>
+                                                    
+                                                
+                                              </a>
+                                            </div>
+                                            <div class="grid__column-2-4">
+                                              <a class="product-link" href="#">
+                                                <div class="home-product-item">
+                                                  <div class="home-product-item__img"><img class="card-img-top"   src="assets/Image/Product detail/ls9.jpeg"></div>
+                                                  <h4 class="home-product-item__name">
+                                                    Lightstick BigBang 
+                                                  </h4>
+                                                  <div class="home-product-item__price">
+                                                    <span class="home-product-item__price-old"
+                                                      >1.900.000đ</span
+                                                    >
+                                                    <span class="home-product-item__price-current"
+                                                      >1.425.000đ</span
+                                                    >
+                                                  </div>
+                                                  <div class="home-product-item__action">
+                                                    <span
+                                                      class="home-product-item__like home-product-item__like--liked"
+                                                    >
+                                                      <i
+                                                        class="home-product-item__like-icon-empty far fa-heart"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__like-icon-fill fas fa-heart"
+                                                      ></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                      <i
+                                                        class="home-product-item__star--gold fas fa-star"
+                                                      ></i>
+                                                    </div>
+                                                    <div class="home-product-item__sold">Đã bán 700</div>
+                                                  </div>          
+                                                  <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__sale-off-percent"
+                                                      >25%</span>
+                                                    <span class="home-product-item__sale-off-label"
+                                                      >GIẢM</span
+                                                    >
+                                                  </div>
+                                                </div>
+                                                
+                                              </a>
+                                            </div>
+                                            <ul class="pagination home-product__pagination">
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">
+                                                  <i class="pagination-item__icon fas fa-angle-left"></i>
+                                                </a>
+                                              </li>
+                                              <li class="pagination-item pagination-item--active">
+                                                <a href="" class="pagination-item__link">1</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">2</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">3</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">4</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">5</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">...</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">14</a>
+                                              </li>
+                                              <li class="pagination-item">
+                                                <a href="" class="pagination-item__link">
+                                                  <i class="pagination-item__icon fas fa-angle-right"></i>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          
+                                          </div>
+              </div>
+              </section> 
+            </div>
+          
+        
+   
+      
+  
+  
+    <footer class="footer">
+        <div class="grid2">
+          <div class="grid2__row">
+            <div class="grid2__column-3">
+              <a class="footer__logo-link" href=""><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
+              <br>
+              <p font-size:13px>Copyright © 2021 SOGOODS 
+              <br>All rights reserved</p>
+              <ul class="footer-icon-list">
+                <li class="footer-icon"><a href="" class="footer-icon-link">
+                  <i class="footer-icon fa-brands fa-twitter"></i>
+                </a></li>
+                <li class="footer-icon"><a href="" class="footer-icon-link">
+                  <i class="footer-icon fa-brands fa-facebook"></i>
+                </a></li>
+                <li class="footer-icon"><a href="" class="footer-icon-link">
+                  <i class="footer-icon fa-brands fa-instagram"></i>
+                </a></li>
+                <li class="footer-icon"><a href="" class="footer-icon-link">
+                  <i class="footer-icon fa-brands fa-youtube"></i>
+                </a></li>
+              </ul>
+            
+            </div>
+            <div class="grid2__column-3">
+              <h6 class="footer__heading">Về chúng tôi</h6>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Giới thiệu</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Hệ thống cửa hàng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Tuyển dụng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid2__column-3">
+              <h6 class="footer__heading">Chính sách</h6>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Chính sách thanh toán</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Chính sách đổi trả</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item-link">Điều khoản dịch vụ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid2__column-3">
+              <h6 class="footer__heading">Đăng ký Email</h6>
+              <form action="" class="footer__email" >
+                <input type="text" placeholder="Nhập email" >
+                <button type="submit"><i class="footer__email-icon fa-solid fa-paper-plane"></i></button>
+              </form>
+              <img src="assets/Image/bct.png" height="50px">
+            </div>
+            
+          </div>
+        </div>
+    </footer> 
+  </div>
+
+  
+
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html> 
