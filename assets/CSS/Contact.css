@@ -83,15 +83,15 @@ h3{
     height:40px; 
     margin:10px 0;
 }
-.contact__button:focus{
+#contact__button:focus{
     outline:none;
     background:#e9624d;;
 }
-.contact__button:hover{
+#contact__button:hover{
     background:#e9624d;;
 }
     
-.contact__button{
+#contact__button{
     width:140px; 
     height:40px; 
     background:transparent;
