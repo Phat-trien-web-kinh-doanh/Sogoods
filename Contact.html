@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
                   <div class="header-with-search">
-                    <div class="header__logo"><a href=""><img src="assets/Image/logo.png" height="55px"></a></div>
+                    <div class="header__logo"><a href="Homepage.html"><img src="assets/Image/logo.png" height="55px"></a></div>
                     <form action="" class="header__search-bar" >
                       <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
                       <input type="text" placeholder="Tìm kiếm sản phẩm" name="q">
@@ -66,7 +66,7 @@
                 <div class="header__menu">
                   <ul class="header__menu-list">
                     <li class="header__menu-item">
-                      <a href="" class="header__menu-item-link">Trang chủ</a>
+                      <a href="Homepage.html" class="header__menu-item-link">Trang chủ</a>
                     </li>
                     <li class="header__menu-item">
                       <a href="" class="header__menu-item-link">Sản phẩm</a>
@@ -83,7 +83,7 @@
                       </ul>
                     </li>
                     <li class="header__menu-item">
-                      <a href="" class="header__menu-item-link">Idol Kpop</a>
+                      <a href="PageIdol.html" class="header__menu-item-link">Idol Kpop</a>
                       <ul class="header__menu-list2">
                         <li class="header__menu-item2">
                           <a class="header__menu-item-link2" href="">BlackPink</a>
@@ -123,10 +123,10 @@
                       <a href="" class="header__menu-item-link">Blog</a>
                     </li>
                     <li class="header__menu-item">
-                      <a href="" class="header__menu-item-link">Hướng dẫn mua hàng</a>
+                      <a href="Guide.html" class="header__menu-item-link">Hướng dẫn mua hàng</a>
                     </li>
                     <li class="header__menu-item">
-                      <a href="" class="header__menu-item-link">Liên hệ</a>
+                      <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
                     </li>
     
                   </ul>
@@ -165,23 +165,23 @@
                         <div class="contact__info">
                             <div id="text">Họ tên:</div>
                             <form class="input__bar">
-                                <input type="text" >
+                                <input id="name" type="text" >
                             </form>
                             <div id="text">Email:</div>
                             <form class="input__bar">
-                                <input type="text" >
+                                <input id="email" type="text" >
                             </form>  
                             <div id="text">Số điện thoại:</div>
                             <form class="input__bar">
-                                <input type="text" >
+                                <input id="numb" type="text" >
                             </form> 
                             <div id="text">Nội dung cần hỗ trợ:</div>
                             <form class="input__bar__content">
-                                <input type="text" >
+                                <input id="content" type="text" >
                             </form>  
                         </div>
                         <div class="button1">
-                            <button type="button" class="contact__button">GỬI NGAY</button>
+                            <button type="button" id="contact__button">GỬI NGAY</button>
                         </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@
             <div class="grid2">
               <div class="grid2__row">
                 <div class="grid2__column-3">
-                  <a class="footer__logo-link" href=""><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
+                  <a class="footer__logo-link" href="Homepage.html"><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
                   <br>
                   <p font-size:13px>Copyright © 2021 SOGOODS 
                   <br>All rights reserved</p>
@@ -258,6 +258,17 @@
             </div>
         </footer>
       </div>
+      <script>
+        document.getElementById('contact__button').onclick = function() {
+          alert('Cảm ơn bạn đã gửi phản hồi. Chúng tôi sẽ hỗ trợ bạn trong thời gian sớm nhất!');
+          document.getElementById('name').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('numb').value = '';
+          document.getElementById('content').value = '';
+        }
+         
+      
+        </script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     

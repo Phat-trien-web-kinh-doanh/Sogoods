@@ -20,7 +20,7 @@
 }
 .container__signup{
     background: linear-gradient(117.93deg, #FFCCCC 5.92%, #FFE1BD 35.9%, #FCD3F3 70.72%, rgba(152, 196, 236, 0.49) 96.98%);
-    height:630px; 
+    height:690px; 
 }
 h3{
     color:var(--text-main-color);
@@ -61,7 +61,8 @@ h3{
     box-sizing: border-box;
     display:inline-block;
     width: 430px;
-    height: 580px;
+    max-width: 100%;
+    height: 100%;
     background: linear-gradient(117.6deg, rgba(255, 255, 255, 0.5) 18.99%, rgba(255, 255, 255, 0.2) 96.66%);
     border: 2px solid #FFFFFF;
     backdrop-filter: blur(7.5px);
@@ -87,6 +88,9 @@ h3{
     margin: 10px 0;
 }
 .input__bar input{
+    border-radius: 25px;
+    width:350px; 
+    height:40px; 
     background: transparent;
     flex:1;
     border:0;
@@ -94,6 +98,35 @@ h3{
     padding: 8px 20px;
     font-size: 16px;
     color: var(--text-main-color) ;
+}
+.input__bar input:focus{
+    border-radius: 25px;
+    width:350px; 
+    height:40px; 
+    border:1.5px solid #98c4ec;
+}
+.input_txt{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    outline: none;
+    padding: 8px 20px;
+    border:0;
+    width:350px; 
+    height:40px; 
+    margin: 10px 0;
+}
+.input_txt:focus{
+    border-radius: 25px;
+    border:1.5px solid #98c4ec;
+    padding: 8px 20px;
+    width:350px; 
+    height:40px; 
+}
+.error-message{
+    font-size: 12px;
+    color:var(--price-color);
+    margin-top: -5px;
+    text-align: left;
 }
 .button1{
     text-align: center;
@@ -232,4 +265,23 @@ h3{
 }
 .apple:hover{
     background:var(--text-sub-color);
+}
+.form{
+    position:relative;
+}
+.fa-eye-slash{
+    position:absolute;
+    transform:translateY(-50%);
+    cursor:pointer;
+    right: 30px;
+    top: 65%;
+    color:var(--text-main-color);
+}
+#show_pass2{
+    position:absolute;
+    transform:translateY(-50%);
+    cursor:pointer;
+    right: 60px;
+    top: 45%;
+    color:var(--text-main-color);
 }

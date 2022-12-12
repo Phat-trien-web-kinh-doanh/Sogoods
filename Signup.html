@@ -20,7 +20,7 @@
         <header class="header__login">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item"><a class="header__navbar-item-link2" href=""><img src="assets/Image/logo.png" height=40px></a></li>
+                        <li class="header__navbar-item"><a class="header__navbar-item-link2" href="Homepage.html"><img src="assets/Image/logo.png" height=40px></a></li>
                     </ul>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item"  style="margin: 15px 0 0 0;"><a class="header__navbar-item-link2" href="">Bạn cần giúp đỡ?</a></li>
@@ -43,25 +43,33 @@
                             <h3 style="text-align:left; padding:20px 0px 5px 20px;">ĐĂNG KÝ</h3>
                         </div>
                         <div class="signup__info">
-                            <div id="text">Nhập tên đăng nhập:</div>
-                            <form class="input__bar">
-                                <input id="text1" type="text" >
-                            </form>
-                            <div id="text">Nhập mật khẩu:</div>
-                            <form class="input__bar">
-                                <input id="text1" type="password" >
-                            </form>   
-                            <div id="text">Nhập số điện thoại:</div>
-                            <form class="input__bar">
-                                <input id="text1" type="text" >
-                            </form> 
-                            <div id="text">Nhập Email:</div>
-                            <form class="input__bar">
-                                <input id="text1" type="text" >
-                            </form> 
+                          <div class="form">
+                            <label id="text">Nhập tên đăng nhập:</label>
+                            <div class="error-message"></div>
+                            <input class="input_txt" id="tên đăng nhập" type="text" >
+                            
+                          </div>
+                          <div class="form">
+                            <label id="text">Nhập mật khẩu:</label>
+                            <div class="error-message"></div>
+                            <input class="input_txt" id="password" type="password">
+                            <i id="show_pass" class="fa-regular fa-eye-slash"></i>                                                      
+                          </div> 
+                          <div class="form">
+                            <label id="text">Nhập số điện thoại:</label>
+                            <div class="error-message"></div>
+                            <input class="input_txt" id="số điện thoại" type="text" >
+                            
+                          </div>
+                          <div class="form">
+                            <label id="text">Nhập Email:</label>
+                            <div class="error-message"></div>
+                            <input class="input_txt" id="email" type="text" >
+                            
+                          </div>                       
                         </div>
                         <div class="button1">
-                            <button type="button" id="signup__button">ĐĂNG KÝ</button>
+                            <button onclick="addAccount()" type="button" id="signup__button">ĐĂNG KÝ</button>
         
                         </div>
                         <div class="shape">
@@ -102,7 +110,7 @@
             <div class="grid2">
               <div class="grid2__row">
                 <div class="grid2__column-3">
-                  <a class="footer__logo-link" href=""><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
+                  <a class="footer__logo-link" href="Homepage.html"><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
                   <br>
                   <p font-size:13px>Copyright © 2021 SOGOODS 
                   <br>All rights reserved</p>
@@ -169,16 +177,7 @@
             </div>
         </footer>
       </div>
-      <script>
-        var btnSignup = document.getElementById('signup__button');
-        btnSignup.onclick = function () {
-          if(document.getElementById('text1').value != null){
-            alert("Đăng ký thành công");
-            window.location.href = "Login.html";
-            ;}        
-          
-            }
-          
+      <script src="assets/signup.js">
       </script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
