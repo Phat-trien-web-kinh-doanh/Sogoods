@@ -616,8 +616,8 @@
                           empty = true;
                       } else {
                           $(this).removeClass("error");
-                          alert("Bạn chưa nhập dữ liệu!")
-                          alert.close()
+                        //   alert("Bạn chưa nhập dữ liệu!")
+                        //   alert.close()
 
                       }
                   });
@@ -625,11 +625,12 @@
                   if (!empty) {
                       input.each(function () {
                           $(this).parent("td").html($(this).val());
-                          alert("Thêm thành công!");
-                          alert.close()
+                        //   alert("Thêm thành công!");
+                        //   alert.close()
 
                         
                       });
+                      alert("Lưu thành công!");
                       $(this).parents("tr").find(".addsp, .editsp").toggle();
                       $(".addto").removeAttr("disabled");
                   }
@@ -649,12 +650,12 @@
                   $(this).parents("tr").find(".addsp, .editsp").toggle();
                   $(".addto").attr("disabled", "disabled");
               });
-              jQuery(function () {
-                  jQuery(".addsp").click(function () {
-                    alert("Sửa thành công!")
+            //   jQuery(function () {
+            //       jQuery(".addsp").click(function () {
+            //         alert("Sửa thành công!")
                     
-                  });
-              });
+            //       });
+            //   });
               // Xóa
               $(document).on("click", ".deletesp", function () {
                   $(this).parents("tr").remove();
