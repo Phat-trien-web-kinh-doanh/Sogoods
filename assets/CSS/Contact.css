@@ -49,6 +49,12 @@ h3{
     height:35px; 
     margin: 10px 0;
 }
+.input__bar input:focus{
+    border:1.5px solid #98c4ec;
+    width:370px; 
+    height:35px; 
+    
+}
 .input__bar__content{
     background: white;
     border: 1px solid #b5b5b6; 
@@ -64,6 +70,14 @@ h3{
     padding: 5px 20px;
     font-size: 16px;
     color: var(--text-main-color) ;
+}
+.input__bar__content input:focus{
+    flex:1;
+    border:1.5px solid #98c4ec;
+    width:370px; 
+    height:100px; 
+    outline: none;
+    padding: 5px 20px;
 }
 .input__bar input{
     background: transparent;

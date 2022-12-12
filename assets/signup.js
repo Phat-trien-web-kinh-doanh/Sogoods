@@ -8,10 +8,8 @@ function validateInput(){
         inputElement[i].parentElement.querySelector('.error-message').innerHTML = ''
       }
     }
-      
   }
   function addAccount(){
-    event.preventDefault();
     validateInput()
     let formElement = document.querySelector('.signup__info')
     let errorElement = formElement.querySelectorAll('.error-message')
@@ -37,7 +35,7 @@ function validateInput(){
       window.location.href = 'Login.html';}
     }
 function login(){
-    event.preventDefault(); 
+   
     let name = document.getElementById('tên đăng nhập').value;
     let password = document.getElementById('password').value;
     let listAccount = localStorage.getItem('username');
@@ -56,3 +54,12 @@ function login(){
             }
         
 }
+// const showPassword = document.querySelector('#show_pass');
+//       const password = document.querySelector('#password');
+//       showPassword.addEventListener('click', function(){
+//         this.classList.toggle('fa-eye');
+//         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//         password.setAttribute('type', type);
+//       });     
+
+        
