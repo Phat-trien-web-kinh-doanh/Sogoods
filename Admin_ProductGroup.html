@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>ADMIN | CHI TIẾT SẢN PHẨM</title>
+    <title>ADMIN | NHÓM SẢN PHẨM</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -261,7 +261,7 @@
               <div class="searchframe"></div>
               <form action="" class="header__search-bar" >
                   <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
-                  <input id="myInput" type="text" placeholder="Tìm tên sản phẩm" onkeyup="searchTable()" name="q">
+                  <input id="myInput" type="text" placeholder="Tìm tên nhóm sản phẩm" onkeyup="searchTable()" name="q">
               </form>
                   </span>
               </div>
@@ -287,8 +287,8 @@
               <thead>
                   <tr class="ex">
                       <th width="auto">Mã Nhóm Sản Phẩm</th>
-                      <th width="auto">Ngày Tạo</th>
-                      <th>Nhóm Sản Phẩm</th>
+                      <th width="auto">Nhóm Sản Phẩm</th>
+                      <th>Ngày Tạo</th>
                       <th>Nhà Cung Cấp</th>
                       <th>Số Lượng</th>
                       <th width="5px; !important">Tính Năng</th>
@@ -297,8 +297,8 @@
               <tbody>
                   <tr>
                       <td>GP100031</td>
-                      <td>11/11/2022</td>
                       <td>Album</td>
+                      <td>11/11/2022</td>                    
                       <td>Nguyễn Ngọc Yến Nhi</td>
   
                       <td>500</td>
@@ -313,8 +313,8 @@
                   </tr>
                   <tr>
                     <td>GP100030</td>
-                    <td>12/11/2022</td>
                     <td>Photo Album</td>
+                    <td>12/11/2022</td>                
                     <td>Võ Ngọc Tường Vy</td>
 
                     <td>600</td>
@@ -329,8 +329,8 @@
                   </tr>
                   <tr>
                     <td>GP100029</td>
+                    <td>Lightstick</td>
                       <td>06/11/2022</td>
-                      <td>Lightstick</td>
                       <td>Huỳnh Nhi Thanh Thảo</td>
   
                       <td>500</td>
@@ -345,8 +345,8 @@
                   </tr>
                   <tr>
                     <td>GP100028</td>
-                      <td>11/07/2022</td>
-                      <td>Card</td>
+                    <td>Card</td>
+                      <td>11/07/2022</td> 
                       <td>Hồ Thị Minh Nguyên</td>
   
                       <td>800</td>
@@ -362,8 +362,8 @@
                   </tr>
                   <tr>
                     <td>GP100027</td>
-                      <td>15/11/2022</td>
-                      <td>Poster</td>
+                    <td>Poster</td>
+                      <td>15/11/2022</td>         
                       <td>Trịnh Thị Minh Khai</td>
   
                       <td>600</td>
@@ -378,8 +378,8 @@
                   </tr>
                   <tr>
                     <td>GP100026</td>
-                      <td>11/10/2022</td>
-                      <td>Sticker</td>
+                    <td>Sticker</td>
+                      <td>11/10/2022</td>                 
                       <td>Jenifer Nguyễn</td>
   
                       <td>300</td>
@@ -394,8 +394,8 @@
                   </tr>
                   <tr>
                     <td>GP100025</td>
-                      <td>11/10/2022</td>
-                      <td>T-shirts</td>
+                    <td>T-shirts</td>
+                      <td>11/10/2022</td>            
                       <td>Naomi Trịnh</td>
   
                       <td>500</td>
@@ -410,8 +410,8 @@
                   </tr>
                   <tr>
                     <td>GP100024</td>
-                      <td>08/11/2022</td>
-                      <td>Jewel</td>
+                    <td>Jewel</td>
+                      <td>08/11/2022</td>  
                       <td>Nguyễn Ngọc Yến Nhi</td>
   
                       <td>1000</td>
@@ -426,8 +426,8 @@
                   </tr>
                   <tr>
                     <td>GP100023</td>
+                    <td>Myster Box</td>
                       <td>11/11/2022</td>
-                      <td>Myster Box</td>
                       <td>Sakura Khai</td>
   
                       <td>500</td>
@@ -442,8 +442,8 @@
                   </tr>
                   <tr>
                     <td>GP100022</td>
-                      <td>20/11/2022</td>
-                      <td>Sourvenir</td>
+                    <td>Sourvenir</td>
+                      <td>20/11/2022</td>                
                       <td>Trần Minh Hiếu</td>
   
                       <td>700</td>
@@ -579,17 +579,17 @@
                   $(this).attr("disabled", "disabled");
                   var index = $("table tbody tr:last-child").index();
                   var row = '<tr>' +
-                      '<td><input type="text" class="form-control" name="name" id="name" placeholder="Nhập Mã Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="gioitinh" id="gioitinh" placeholder="Nhập Tên Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="namsinh" id="namsinh" value="" placeholder="Nhập Nhóm Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="diachi" id="diachi" value="" placeholder="Nhập Số Lượng"></td>' +
-                      '<td><input type="text" class="form-control" name="chucvu" id="chucvu" value="" placeholder="Nhập Đơn Giá"></td>' +
+                      '<td><input type="text" class="form-control" name="name" id="name" placeholder="Nhập Mã Nhóm Sản Phẩm"></td>' +
+                      '<td><input type="text" class="form-control" name="gioitinh" id="gioitinh" placeholder="Nhập Tên Nhóm Sản Phẩm"></td>' +
+                      '<td><input type="text" class="form-control" name="namsinh" id="namsinh" value="" placeholder="Nhập Ngày Tạo"></td>' +
+                      '<td><input type="text" class="form-control" name="diachi" id="diachi" value="" placeholder="Nhập Nhà Cung Cấp"></td>' +
+                      '<td><input type="text" class="form-control" name="chucvu" id="chucvu" value="" placeholder="Nhập Đơn Số Lượng"></td>' +
                       '<td>' + actions + '</td>' +
                       '</tr>';
                   $(".table").append(row);
                   $("table tbody tr").eq(index + 1).find(".addsp, .editsp").toggle();
                   $('[data-toggle="tooltip"]').tooltip();
-              });
+              });              
               //Kiểm tra rỗng
               $(document).on("click", ".addsp", function () {
                   var empty = false;
@@ -603,8 +603,8 @@
                           
                       } else {
                           $(this).removeClass("error");
-                          alert("Bạn chưa nhập dữ liệu!")
-                          alert.close()
+                         //  alert("Bạn chưa nhập dữ liệu!")
+                        //   alert.close()
 
                       }
                       
@@ -613,33 +613,30 @@
                   if (!empty) {
                       input.each(function () {
                           $(this).parent("td").html($(this).val());
-                          alert("Thêm thành công!");
-                          alert.close()
-
-                        
-                      });
-                      
+                         //  alert("Thêm thành công!");
+                        //   alert.close()                      
+                      });                 
+                      alert("Lưu thành công!");
                       $(this).parents("tr").find(".addsp, .editsp").toggle();
                       $(".addto").removeAttr("disabled");
                   }
               });
+              //Sửa
+                $(document).on("click", ".editsp", function () {
+                    $(this).parents("tr").find("td:not(:last-child)").each(function () {
+                        $(this).html('<input type="text" class="form-control" value="' + $(this)
+                            .text() + '">');
+                    });
+                    $(this).parents("tr").find(".addsp, .editsp").toggle();
+                    $(".addto").attr("disabled", "disabled");
+                });
 
-              // Sửa
-              $(document).on("click", ".editsp", function () {
-
-                  $(this).parents("tr").find("td:not(:last-child)").each(function () {
-                      $(this).html('<input type="text" class="form-control" value="' + $(this)
-                          .text() + '">');
-                  });
-                  $(this).parents("tr").find(".addsp, .editsp").toggle();
-                  $(".addto").attr("disabled", "disabled");
-              });
-              jQuery(function () {
-                  jQuery(".addsp").click(function () {
-                    alert("Sửa thành công!")
-                    
-                  });
-              });
+            //    jQuery(function () {
+            //       jQuery(".addsp").click(function () {
+            //         alert("Sửa thành công!")
+            //           });
+        // });
+        
               // Xóa
               $(document).on("click", ".deletesp", function () {
                   $(this).parents("tr").remove();
