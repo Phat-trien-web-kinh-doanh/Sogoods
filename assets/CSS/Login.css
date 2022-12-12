@@ -88,6 +88,9 @@ h3{
     margin: 10px 0;
 }
 .input__bar input{
+    border-radius: 25px;
+    width:350px; 
+    height:40px; 
     background: transparent;
     flex:1;
     border:0;
@@ -95,6 +98,12 @@ h3{
     padding: 8px 20px;
     font-size: 16px;
     color: var(--text-main-color) ;
+}
+.input__bar input:focus{
+    border-radius: 25px;
+    width:350px; 
+    height:40px; 
+    border:1.5px solid #98c4ec;
 }
 .input_txt{
     background: rgba(255, 255, 255, 0.6);
@@ -105,6 +114,13 @@ h3{
     width:350px; 
     height:40px; 
     margin: 10px 0;
+}
+.input_txt:focus{
+    border-radius: 25px;
+    border:1.5px solid #98c4ec;
+    padding: 8px 20px;
+    width:350px; 
+    height:40px; 
 }
 .error-message{
     font-size: 12px;
@@ -249,4 +265,23 @@ h3{
 }
 .apple:hover{
     background:var(--text-sub-color);
+}
+.form{
+    position:relative;
+}
+.fa-eye-slash{
+    position:absolute;
+    transform:translateY(-50%);
+    cursor:pointer;
+    right: 30px;
+    top: 65%;
+    color:var(--text-main-color);
+}
+#show_pass2{
+    position:absolute;
+    transform:translateY(-50%);
+    cursor:pointer;
+    right: 60px;
+    top: 45%;
+    color:var(--text-main-color);
 }

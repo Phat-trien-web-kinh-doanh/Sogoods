@@ -33,6 +33,7 @@
 .tbl__editaccount td input{
     color:var(--text-main-color);
     outline: none;
+    padding-left: 5px;
     
 }
 .tbl__editaccount td option{
