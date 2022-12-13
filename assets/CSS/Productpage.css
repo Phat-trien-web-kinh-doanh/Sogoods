@@ -281,6 +281,39 @@ p{
     color:var(--text-main-color);
 }
 
+.cart-number-badge {
+    position: relative;
+    border-radius: 2.75rem;
+    width: 1%;
+   
+    padding: 0 0.2rem;
+    text-align: center;
+    height: 10px;
+    border: .125rem solid var(--brand-primary-color,#FF9E8F);
+    color: var(--brand-primary-color,#FF9E8F);
+    background-color: #FF9E8F;
+    left: -1.125rem;
+    top: -.5rem;
+    margin-right: -10px;
+}
+.cart-number-badge {
+    top: -30px;
+    left: 165px;
+}
+.cart-number-badge span {
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+    top:-2.5px;
+    left: 0px;
+    position: absolute;
+}
+.fa-bag-shopping:before, .fa-shopping-bag:before {
+    content: "\f290";
+    width: 20px;
+    height: auto;
+}
+
 
 /* Banner slider */
 .carousle slide{
@@ -402,7 +435,6 @@ p{
         display: block;
         position: relative;
         height: 100%;
-        margin-top: 10px;
         background-color: var(--white-color);
         border-radius: 2px;
         box-shadow:0 9px 10px 0 rgba(214, 214, 214, 0.425);
@@ -562,7 +594,7 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px;}
+        margin-bottom: 20px;}
     .home-filter_all{
         display: flex;
         align-items: center;

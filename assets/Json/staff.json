@@ -1,0 +1,33 @@
+[
+    {
+        "img":"thao.jpg",
+        "name":"Huỳnh Nhi Thanh Thảo",
+        "role":"Founder",
+        "id":"K204110584"
+    },
+    {
+        
+        "img":"nguyen.jpg",
+        "name":"Hồ Thị Minh Nguyên",
+        "role":"Co Founder",
+        "id":"K204110576"
+    },
+    {
+        "img":"nhi.jpg",
+        "name":"Nguyễn Ngọc Yến Nhi",
+        "role":"Co Founder",
+        "id":"K204110578"
+    },
+    {
+        "img":"khai.JPG",
+        "name":"Trịnh Thị Minh Khai",
+        "role":"Co Founder",
+        "id":"K204111777"
+    },
+    {
+        "img":"vy.jpg",
+        "name":"Võ Ngọc Tường Vy",
+        "role":"Co Founder",
+        "id":"K204111793"
+    }
+]
