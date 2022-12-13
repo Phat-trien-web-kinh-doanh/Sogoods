@@ -29,7 +29,8 @@ document.getElementById("cart-total").innerHTML = localStorage.getItem("totalPri
 function calculateTotalPrice1() {
   var cartTotalPrice = document.getElementById("cart-total").innerHTML;
   var totalPrice = document.getElementById("total");
-  totalPrice.innerHTML = parseInt(cartTotalPrice) + ".000đ";
+ //total price = cart total price 
+  totalPrice.innerHTML = cartTotalPrice;
 }
 calculateTotalPrice1();
 
