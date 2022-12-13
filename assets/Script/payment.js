@@ -29,7 +29,8 @@ document.getElementById("cart-total").innerHTML = localStorage.getItem("totalPri
 function calculateTotalPrice1() {
   var cartTotalPrice = document.getElementById("cart-total").innerHTML;
   var totalPrice = document.getElementById("total");
-  totalPrice.innerHTML = parseInt(cartTotalPrice) + ".000đ";
+ //total price = cart total price 
+  totalPrice.innerHTML = cartTotalPrice;
 }
 calculateTotalPrice1();
 
@@ -88,6 +89,9 @@ btnThanhtoan.addEventListener('click', function() {
     document.getElementById("total").innerHTML = "0";
     document.getElementById("shipping-fee").innerHTML = "0";
     document.getElementById("cart-total").innerHTML = "0";
+   
+
+   
   }
 }
 );
@@ -99,7 +103,7 @@ var btnCard = document.getElementById("card");
 btnCard.addEventListener('click', function() {
   document.getElementById("cc-number").setAttribute("required", "true");
   document.getElementById("cc-name").setAttribute("required", "true");
-  document.getElementById("cc-date").setAttribute("required", "true");
+  document.getElementById("cc-expiration").setAttribute("required", "true");
   document.getElementById("cc-cvv").setAttribute("required", "true");
 }
 );
@@ -111,7 +115,35 @@ btnBanking.addEventListener('click', function() {
   document.getElementById("b-expiration").setAttribute("required", "true");
 
 }
+
 );
+
+//if the radio id='cash'is checked, both input of card and banking are not required
+var btnCash = document.getElementById("cod");
+btnCash.addEventListener('click', function() {
+  document.getElementById("cc-number").removeAttribute("required");
+  document.getElementById("cc-name").removeAttribute("required");
+  document.getElementById("cc-expiration").removeAttribute("required");
+  document.getElementById("cc-cvv").removeAttribute("required");
+  document.getElementById("b-number").removeAttribute("required");
+  document.getElementById("b-name").removeAttribute("required");
+  document.getElementById("b-expiration").removeAttribute("required");
+}
+);
+//if the radio id='momo'is checked, both input of card and cash are not required
+var btnMomo = document.getElementById("momo");
+btnMomo.addEventListener('click', function() {
+  document.getElementById("cc-number").removeAttribute("required");
+  document.getElementById("cc-name").removeAttribute("required");
+  document.getElementById("cc-expiration").removeAttribute("required");
+  document.getElementById("cc-cvv").removeAttribute("required");
+  document.getElementById("b-number").removeAttribute("required");
+  document.getElementById("b-name").removeAttribute("required");
+  document.getElementById("b-expiration").removeAttribute("required");
+}
+);
+
+
 //if select tỉnh thành is checked , display the shipping fee, if not select, display none
 var selectTinhThanh = document.getElementById("province");
 var ship = document.getElementById("shipping-fee");

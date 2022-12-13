@@ -21,7 +21,6 @@
 <body>
     <div class="app">
         <header class="header">
-           
                 <nav class="header__navbar1">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
@@ -29,6 +28,7 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
                         <a class="header__navbar-icon-link" href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                        <div class="cart-number-badge"><span>4</span></div>
                     </ul>
                 </nav>
                   <div class="header-with-search">
@@ -135,29 +135,33 @@
                       
         </header>
         <!-- Chỗ để code nội dug ở giữa, css ra một link khác, k để chung trong link main.css để k bị rối-->
-        <div class="container_homepage">
-          <!--image slider start-->
-          <div id="bannerslider" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="assets\Image\Homepage\b1.png" class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item">
-                <img src="assets\Image\Homepage\b2.png" class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets\Image\Homepage\b3.png" class="d-block w-100" alt="">
-                  </div>
-                <div class="carousel-item">
-                <img src="assets\Image\Homepage\b4.png" class="d-block w-100" alt="">
-                </div>
-            </div>
+        <div class="slider">
+          <div class="slide active">
+            <img src="assets\Image\Homepage\b1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets\Image\Homepage\b2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets\Image\Homepage\b3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets\Image\Homepage\b4.png" alt="">
+          </div>
+          <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+          </div>
+          <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+          </div>
         </div>
-          <!--image slider end-->     
-        </div> 
         <section class="about" id="about">
 
-          <h1 class="heading"> <span><b> SẢN PHẨM MỚI </b> </span></h1>
+         <h1 class="heading"> <span><b> SẢN PHẨM MỚI </b> </span></h1>
       
           <div class="row">
       
@@ -855,7 +859,7 @@
               </div>
               <!-- SALE CUỐI NĂM -->
               <div class="similar__product">
-                <h2 class="heading"><b>SALE CUỐI NĂM</b></h2>
+                <a><h2 class="heading"><b>SALE CUỐI NĂM</b></h2></a>
                 <div class="grid">
                   <div class="grid__row">
                     <div class="grid__column-12">
@@ -1333,6 +1337,87 @@
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+      <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+    
+        //image slider next button
+        nextBtn.addEventListener("click", () => {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+    
+          slideNumber++;
+    
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+    
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        });
+    
+        //image slider previous button
+        prevBtn.addEventListener("click", () => {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+    
+          slideNumber--;
+    
+          if(slideNumber < 0){
+            slideNumber = numberOfSlides - 1;
+          }
+    
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        });
+    
+        //image slider autoplay
+        var playSlider;
+    
+        var repeater = () => {
+          playSlider = setInterval(function(){
+            slides.forEach((slide) => {
+              slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+              slideIcon.classList.remove("active");
+            });
+    
+            slideNumber++;
+    
+            if(slideNumber > (numberOfSlides - 1)){
+              slideNumber = 0;
+            }
+    
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+          }, 4000);
+        }
+        repeater();
+    
+        //stop the image slider autoplay on mouseover
+        slider.addEventListener("mouseover", () => {
+          clearInterval(playSlider);
+        });
+    
+        //start the image slider autoplay again on mouseout
+        slider.addEventListener("mouseout", () => {
+          repeater();
+        });
+      </script>
 </body>
 </html>
