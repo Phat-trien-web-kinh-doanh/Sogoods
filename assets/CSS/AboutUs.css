@@ -17,6 +17,7 @@ body{
 p{
     color:var(--text-main-color);
     margin:10px 0;
+    text-align: justify;
 }
 .header{
     background-color: white;
