@@ -116,7 +116,8 @@
 }
 .linechart {
   float: left;
-  width: 31.5%;
+  position: relative;
+  width: 31%;
   background: #fff;
   padding: 20px 30px;
   margin-top: 30px;
@@ -132,9 +133,10 @@
   margin-bottom: 10px;
 }
 .piechart{
+  position: relative;
   float: right;
   background: #fff;
-  width: 31.5%;
+  width: 31%;
   padding: 20px 30px;
   margin-top: 30px;
   margin-right: 20px;
@@ -148,10 +150,11 @@
   margin-bottom: 10px;
 }
 .barchart{
+  position: relative;
   float: left;
-  justify-content: center;
+  margin-left: 15px;
   background: #fff;
-  width: 31.5%;
+  width: 31%;
   padding: 20px 30px;
   margin-top: 30px;
   margin-bottom: 40px;

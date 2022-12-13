@@ -184,6 +184,8 @@ nav ul li.active a{
 } 
 nav ul li a:hover {
     color: #e9624d;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 nav ul ul {
