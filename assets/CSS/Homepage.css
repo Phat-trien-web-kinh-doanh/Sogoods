@@ -265,7 +265,7 @@ h2{
   }
   
   .home-product__pagination {
-    margin: 40px 0 30px 1000px;
+    margin: 40px 0 30px 700px;
     padding-left: 0;
     
   }
@@ -293,7 +293,7 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
   }
   .features .box-container .box{
-    padding:3rem 2rem;
+    padding:1rem 0;
     background:#fff;
     outline: var(--outline);
     outline-offset: -1rem;
@@ -320,7 +320,7 @@ h2{
 
   /* IDOL KPOP */
 .slide-container {
-    width: 100%;
+    width: 50%;
     height:85vh;
     display: flex;
     align-items: center;
