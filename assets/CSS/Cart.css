@@ -493,44 +493,43 @@ ol {
 	border: 2px solid #FF9E8F;
 	border-radius: 48px;	
 	display:block;
+	margin-bottom: 20px;
 	
 }
 .cart-item-update  {
-	
+	color: #ffffff;
+	background: #FF9E8F;
     font-size: 16px;
-    font-weight: 500;
     width: 250px;
-	height: auto;
-    color: #ffffff;
-    background: #FF9E8F;
-	border-radius: 48px;
-	/* button center in the cart__total */
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-
+    height: auto;
+    font-weight: 500;
+    border: 2px solid #FF9E8F;
+    border-radius: 48px;
+    display: block;
+    margin-bottom: 20px;
 }
+  
+	
 	
 
 .cart-item-update:hover {
-	font-size: 16px;
-    font-weight: 500;
+	color: #ffffff;
+	background: #e9624d;
+    font-size: 16px;
     width: 250px;
-	height: auto;
-    color: #ffffff;
-    background: #e9624d;
-	border-radius: 48px;
-	/* button center in the cart__total */
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
+    height: auto;
+    font-weight: 500;
+    border: 2px solid #e9624d;
+    border-radius: 48px;
+    display: block;
+    margin-bottom: 20px;
 	
 }
 .btn-checkout  {
 	
     font-size: 16px;
     font-weight: 500;
-    width: 250px;
+	padding: 10px 100px;
 	height: auto;
     color: #ffffff;
     background: #FF9E8F;
@@ -547,7 +546,7 @@ ol {
 .btn-checkout:hover {
 	font-size: 16px;
     font-weight: 500;
-    width: 250px;
+	padding: 10px 100px;
 	height: auto;
     color: #ffffff;
     background: #e9624d;
@@ -556,6 +555,7 @@ ol {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
+
 	
 }
 
