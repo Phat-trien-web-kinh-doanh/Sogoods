@@ -171,7 +171,7 @@ document.getElementsByClassName("price-cart-total")[0].innerText = totalPrice;
     );
 
   
- //count the number of items in the cart and display it on the cart icon
+//count the number of items in the cart and display it on the cart icon
  var rowCount = $('.cart-item >tbody >tr').length;
 //show the number of items on the cart icon
 document.getElementsByClassName("badge-pill")[0].innerText = rowCount;
