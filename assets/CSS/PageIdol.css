@@ -38,7 +38,6 @@
 #listidol > .idol {
     text-align: left;  margin: 10px;
 }
-
 #listidol > hr {
     width: 100%; border: 1px solid #FF9E8F;
 }
@@ -81,15 +80,17 @@
     cursor: pointer; 
 }
 #accordion > .ct input { width: 16px; height: 16px; margin-right: 10px; accent-color: #FF9E8F;}
-.seemore{
-    width:auto; text-align: center; justify-content: center; margin-top: 10px; margin-bottom: 40px; align-items: center;
-
+#accordion > .huyloc{
+    width: 100%; text-align: center; justify-content: center; margin-top: 15px; margin-bottom: 15px; align-items: center
 }
-.seemore > button {
-    background-color: #FF9E8F; color: white; border: none; border-radius: 48px; padding: 10px 20px; font-size: 18px; outline: none;
+.huyloc button {
+    background-color: #FF9E8F; color: white; border: none; border-radius: 20px; padding: 5px 20px; font-size: 18px; outline: none; align-items: center;
 }
-.seemore > button:hover {
-    background-color: #f96953; color: white; border: none; border-radius: 48px; padding: 10px 20px; font-size: 18px; 
+.huyloc > button:hover {
+    background-color: #e9624d; color: white; border: none; border-radius: 20px; padding: 5px 20px; font-size: 18px;
+}
+.footer{
+    margin-top: 25px;
 }
 .header__search-bar2{
     width: 70%;
