@@ -15,6 +15,7 @@ p{
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
+  text-align: left;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,14 +43,12 @@ p{
   min-width: 60px;
   text-align: center
 }
-.sidebar .logo-details .logo_name{
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
+.logo_name{
+  display: flex;
 }
-.sidebar .nav-links{
+/* .sidebar .nav-links{
   margin-top: 10px;
-}
+} */
 .sidebar .nav-links li{
   position: relative;
   list-style: none;
@@ -512,6 +511,7 @@ nav .profile-details i{
     margin: 0 0;
 }
 .btn-delete-order {
+    text-align: center;
     width: 30%;
     height: 35px;
     background: var(--hover-color);
