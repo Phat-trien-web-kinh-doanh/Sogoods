@@ -302,8 +302,8 @@ p{
     font-size: 8px;
     font-weight: 700;
     color: #fff;
-    top:-3.5px;
-    left: 1px;
+    top:-2.5px;
+    left: 0px;
     position: absolute;
 }
 .fa-bag-shopping:before, .fa-shopping-bag:before {
