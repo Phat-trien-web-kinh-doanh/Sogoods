@@ -208,6 +208,9 @@ p{
     cursor:pointer; 
     text-decoration: none;
 }
+.btn__social-login{
+	text-decoration: none;
+}
 .footer{
     box-shadow:0 -4px 25px 0 rgba(214, 214, 214, 0.425);
 }

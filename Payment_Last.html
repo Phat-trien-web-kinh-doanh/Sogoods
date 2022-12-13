@@ -30,26 +30,20 @@
                 </ul>
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
-                    <a class="header__navbar-icon-link" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="header__navbar-icon-link" href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
                 </ul>
             </nav>
               <div class="header-with-search">
                 <div class="header__logo"><a href=""><img src="assets/Image/logo.png" height="55px"></a></div>
                 <form action="" class="header__search-bar" >
                   <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
-                  <input type="text" placeholder="Tìm kiếm sản phẩm" name="q" id="header_search">
+                  <input  placeholder="Tìm kiếm sản phẩm" name="q" >
                 </form>
                 <div class="header__navbar">
-                  <!-- <ul >
-                    <li class="header__navbar-icon">
-                      <a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-heart"></i></a><br>
-                    </li>
-                  </ul>  
-                  <ul><li class="header__navbar-icon"><a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></a><br></li></ul> 
-                  <ul><li class="header__navbar-icon"><a class="header__navbar-icon-link2" href=""><i class="header_navbar-icon fa-solid fa-user"></i></a><br></li></ul>      -->
+                  
                   <ul >
                     <li class="header__navbar-icon">
-                      <a class="header__navbar-icon-link2" href="">
+                      <a class="header__navbar-icon-link2" href="Favourite.html">
                         <span><i class="header_navbar-icon fa-solid fa-heart"></i></span>
                         <span class="info">Thêm vào yêu thích</span>
                       </a>
@@ -57,7 +51,7 @@
                   </ul>  
                   <ul>
                     <li class="header__navbar-icon">
-                      <a class="header__navbar-icon-link2" href="">
+                      <a class="header__navbar-icon-link2" href="SearchOrder.html">
                         <span><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></span>
                         <span class="info">Tra cứu đơn hàng</span>
                       </a>
@@ -65,7 +59,7 @@
                   </ul> 
                   <ul>
                     <li class="header__navbar-icon">
-                      <a class="header__navbar-icon-link2" href="">
+                      <a class="header__navbar-icon-link2" href="EditAccount.html">
                         <span><i class="header_navbar-icon fa-solid fa-user"></i></span>
                         <span class="info">Tài khoản</span>
                       </a>
@@ -76,10 +70,10 @@
             <div class="header__menu">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Trang chủ</a>
+                  <a href="Homepage.html" class="header__menu-item-link">Trang chủ</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Sản phẩm</a>
+                  <a href="Product Page.html" class="header__menu-item-link">Sản phẩm</a>
                   <ul class="header__menu-list2">
                     <li class="header__menu-item2">
                       <a class="header__menu-item-link2" href="">Lightstick</a>
@@ -93,7 +87,7 @@
                   </ul>
                 </li>
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Idol Kpop</a>
+                  <a href="PageIdol.html" class="header__menu-item-link">Idol Kpop</a>
                   <ul class="header__menu-list2">
                     <li class="header__menu-item2">
                       <a class="header__menu-item-link2" href="">BlackPink</a>
@@ -113,7 +107,7 @@
                   </ul>
                 </li>
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Về chúng tôi</a>
+                  <a href="AboutUs.html" class="header__menu-item-link">Về chúng tôi</a>
                   <ul class="header__menu-list2">
                     <li class="header__menu-item2">
                       <a class="header__menu-item-link2" href="">Giới thiệu</a>
@@ -130,10 +124,10 @@
                   </ul>
                 </li>
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Blog</a>
+                  <a href="Blog.html" class="header__menu-item-link">Blog</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="" class="header__menu-item-link">Hướng dẫn mua hàng</a>
+                  <a href="Guide.html" class="header__menu-item-link">Hướng dẫn mua hàng</a>
                 </li>
                 <li class="header__menu-item">
                   <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
@@ -175,8 +169,8 @@
                 <hr class="mb-4" >
               </li>
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <span>Tổng tiền</span>
-                    <strong style="color: red;" id="total">1.082.000đ</strong>
+                    <span  ">TỔNG CỘNG</span>
+                    <strong style="color: #F80808;" id="total">1.082.000đ</strong>
                 </li>
                   <li>
                     <br>
@@ -261,7 +255,7 @@
                           <input id="cod" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
                           <label class="custom-control-label" for="cod">Thanh toán khi giao hàng</label>
                       </div>
-
+                      
                       <div class="custom-control custom-radio">
                           <input id="banking" name="paymentMethod" type="radio" class="custom-control-input" required="">
                           <label class="custom-control-label" for="banking">Chuyển khoản ngân hàng</label>
@@ -269,20 +263,20 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="b-name">Tên thẻ</label>
-                                    <input type="text" class="form-control" id="b-name" placeholder="" required="">
+                                    <input type="text" class="form-control" id="b-name" placeholder="">
                                     <small class="text-muted">Tên đầy đủ trên thẻ</small>
                                     <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="b-number">Số thẻ</label>
-                                    <input type="text" class="form-control" id="b-number" placeholder="" required="">
+                                    <input type="text" class="form-control" id="b-number" placeholder="">
                                     <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
                                 </div>
                             </div>
                             <div class="row">
                               <div class="col-md-4 mb-4">
                                   <label for="b-expiration">Tháng/năm phát hành</label>
-                                  <input type="text" class="form-control" id="b-expiration" placeholder="" required="">
+                                  <input type="text" class="form-control" id="b-expiration" placeholder="">
                                   <div class="invalid-feedback"> Vui lòng nhập tháng năm phát hành. </div>
                               </div>
                               
@@ -298,26 +292,26 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="cc-name">Tên thẻ</label>
-                                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" >
                                     <small class="text-muted">Tên đầy đủ trên thẻ</small>
                                     <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="cc-number">Số thẻ</label>
-                                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" >
                                     <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
                                 </div>
                             </div>
                             <div class="row">
                               <div class="col-md-3 mb-3">
                                   <label for="cc-expiration">Tháng/năm hết hạn</label>
-                                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                  <input type="text" class="form-control" id="cc-expiration" placeholder="" >
                                   <div class="invalid-feedback"> Vui lòng nhập thời gian hết hạn. </div>
                               </div>
                               <div class="col-md-3 mb-3">
                                   <label for="cc-cvv">CVV</label>
                                   <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                                  <div class="invalid-feedback"> Security code required </div>
+                                  <div class="invalid-feedback"> Vui lòng nhập mã CVV </div>
                               </div>
                           </div>
                         </div>
@@ -339,7 +333,7 @@
         <div class="grid2">
           <div class="grid2__row">
             <div class="grid2__column-3">
-              <a class="footer__logo-link" href=""><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
+              <a class="footer__logo-link" href="Homepage.html"><img class="footer__logo" src="assets/Image/logo.png" height="70px"></a>
               <br>
               <p font-size:13px>Copyright © 2021 SOGOODS 
               <br>All rights reserved</p>
@@ -363,7 +357,7 @@
               <h6 class="footer__heading">Về chúng tôi</h6>
               <ul class="footer-list">
                 <li class="footer-item">
-                  <a href="" class="footer-item-link">Giới thiệu</a>
+                  <a href="AboutUs.html" class="footer-item-link">Giới thiệu</a>
                 </li>
                 <li class="footer-item">
                   <a href="" class="footer-item-link">Hệ thống cửa hàng</a>
@@ -396,7 +390,7 @@
             <div class="grid2__column-3">
               <h6 class="footer__heading">Đăng ký Email</h6>
               <form action="" class="footer__email" >
-                <input type="text" placeholder="Nhập email" id="email_footer" >
+                <input  placeholder="Nhập email" id="email_footer" >
                 <button type="submit"><i class="footer__email-icon fa-solid fa-paper-plane"></i></button>
               </form>
               <img src="assets/Image/bct.png" height="50px">
@@ -417,10 +411,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>  
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
 
   <script src="assets\Script\payment.js"></script>
   <script src="assets\Script\app.js"></script>
+
+  <script>
+  
+
+
+  
+  </script>
  
 </body>
 </html> 
