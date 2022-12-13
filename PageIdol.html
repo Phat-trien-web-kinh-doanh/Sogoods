@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+ 
+    <script src="assets/Script/fitleridol.js">
+</script>
 </head>
 <body>
   <div class="app">
@@ -141,17 +143,16 @@
                 <div id="accordion">
                     <div class="cap">Bộ lọc</div>
                     <div class="ct" > 
-                        <label><input type="checkbox" class="boloc" value="SM">SM</label>
-                        <label><input type="checkbox" class="boloc" value="YG">YG</label>
-                        <label><input type="checkbox" class="boloc" value="HYPE">HYPE</label>
-                        <label><input type="checkbox" class="boloc" value="JYP">JYP</label>
-                        <label><input type="checkbox" class="boloc" value="Cube">Cube</label>
-                        <label><input type="checkbox" class="boloc" value="Pledis">Pledis</label>
-                        <label><input type="checkbox" class="boloc" value="Woolim">Woolim</label>
-                        <label><input type="checkbox" class="boloc" value="FNC">FNC</label>
-                        <label><input type="checkbox" class="boloc" value="Starship">Starship</label>
-                        <label><input type="checkbox" class="boloc" value="Stonemusic">Stone music</label>
+                        <label><input type="checkbox" class="boloc" value="SM" id="ctsm" onchange="showIdol()">SM</label>
+                        <label><input type="checkbox" class="boloc" value="YG" id="ctyg" onchange="showIdol()">YG</label>
+                        <label><input type="checkbox" class="boloc" value="HYPE" id="cthype" onchange="showIdol()">HYPE</label>
+                        <label><input type="checkbox" class="boloc" value="JYP" id="ctjyp" onchange="showIdol()">JYP</label>
+                        <label><input type="checkbox" class="boloc" value="Cube" id="ctcube" onchange="showIdol()">Cube</label>
+                        <label><input type="checkbox" class="boloc" value="Pledis" id="ctpledis" onchange="showIdol()">Pledis</label>
+                        <label><input type="checkbox" class="boloc" value="Starship" id="ctstarship" onchange="showIdol()">Starship</label>
+                        
                     </div> 
+                    <div class="huyloc"><button id="cancel" onclick="cancelFilter()">Hủy lọc</button></div>
                 </div> 
             </div>
         <div id="cotphai">
@@ -164,18 +165,9 @@
               </form></td>
             </tr>
             </table>
-            <!-- <div id="headname">
-            <h2>IDOL KPOP</h2></div>
-            <div id="search">
-            <form action="" class="header__search-bar" >
-              <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
-              <input type="text" placeholder="Tìm kiếm" name="q">
-            </form>
-          </div> -->
-          <!-- </div>   -->
             <hr>
         <div id="listidol">
-            <div class="idol">
+            <div class="idol" id="sm1">
                 <div id="thumb">
                 <img src="assets/Image/PageIdol/redvelvet.jpeg">
                 </div>
@@ -196,10 +188,35 @@
                     </li>
                 </ul>
                 </div>
-                <div id="next"><a href="">Chi tiết sản phẩm &rsaquo; </a></div>
+                <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+                
             </div>
-            <hr>
-            <div class="idol">
+            <hr id="smr1">
+            <div class="idol" id="jyp1">
+              <div id="thumb">
+              <img src="assets/Image/PageIdol/tw.jpg">
+              </div>
+              <div id="logo">
+              <img src="assets/Image/PageIdol/twicelogo.png">
+              </div>
+              <div id="info">
+                  <h2>Twice</h2> 
+              <ul>
+                  <li>
+                      <p>Twice là một nhóm nhạc nữ Hàn Quốc được thành lập bởi JYP Entertainment. Nhóm bao gồm 9 thành viên: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung và Tzuyu. Twice được thành lập trong chương trình truyền hình Sixteen và chính thức ra mắt vào ngày 20 tháng 10 năm 2015, với EP The Story Begins.</p>
+                  </li>
+                  <li>
+                      <p>
+                          Các sản phẩm tiêu biểu: TT, Cheer Up, Likey, What is Love?, Fancy, ...
+                      </p>
+                  </li>
+              </ul>
+              </div>
+              <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+              
+          </div>
+          <hr id="jypr1">
+            <div class="idol" id="sm2">
                 <div id="thumb">
                     <img src="assets/Image/PageIdol/nct.jpg">
                     </div>
@@ -219,10 +236,34 @@
                     </li>
                 </ul>
                 </div>
-                <div id="next"><a href="">Chi tiết sản phẩm &rsaquo; </a></div>
+                <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+                
             </div>
-            <hr>
-            <div class="idol">
+            <hr id="smr2">
+            <div class="idol" id="pledis1">
+              <div id="thumb">
+                  <img src="assets/Image/PageIdol/17.jpg">
+                  </div>
+                  <div id="logo">
+                  <img src="assets/Image/PageIdol/17logo.jpg">
+                  </div>
+              <div id="info">
+              <h2>Seventeen</h2> 
+              <ul>
+                  <li>
+                    <p>Seventeen là một nhóm nhạc nam Hàn Quốc gồm 13 thành viên được thành lập bởi Pledis Entertainment. Nhóm ra mắt vào ngày 26 tháng 5 năm 2015. Nhóm bao gồm 13 thành viên được chia thành ba nhóm nhỏ, mỗi nhóm có một lĩnh vực chuyên môn khác nhau: Hip-Hop Team, Vocal Team và Performance Team.</p>
+                  </li>
+                  <li>
+                      <p>
+                          Các sản phẩm tiêu biểu: Adore U, Pretty U, Home, Hit, ...
+                      </p>
+                  </li>
+              </ul>
+              </div>
+              <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+          </div>
+          <hr id="pledisr1">
+            <div class="idol" id="sm3">
                 <div id="thumb">
                     <img src="assets/Image/PageIdol/aespa.jpg">
                     </div>
@@ -242,17 +283,163 @@
                     </li>
                 </ul>
             </div>
-            <div id="next"><a href="">Chi tiết sản phẩm &rsaquo; </a></div>
+            <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+            
             </div>
-            <hr>
+            <hr id="smr3">
+            
+            <div class="idol" id="yg1">
+              <div id="thumb">
+                  <img src="assets/Image/PageIdol/bp.jpg">
+                  </div>
+                  <div id="logo">
+                  <img src="assets/Image/PageIdol/blackpinklogo.png">
+                  </div>
+              <div id="info">
+              <h2>BLACKPINK</h2> 
+              <ul>
+                  <li>
+                      <p>Blackpink là một nhóm nhạc nữ Hàn Quốc do công ty YG Entertainment thành lập và quản lý. Nhóm gồm 4 thành viên bao gồm Jisoo, Jennie, Rosé, Lisa. Blackpink chính thức ra mắt với album đĩa đơn đầu tay mang tên Square One gồm hai ca khúc "Boombayah" và "Whistle".</p>                             
+                  </li>
+                  <li>
+                      <p>
+                          Các sản phẩm tiêu biểu: How you like that, Boombayah, Kill this love, ...
+                      </p>
+                  </li>
+              </ul>
+              </div>
+              <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+              
+          </div>
+          <hr id="ygr1">
+          <div class="idol" id="hype1">
+            <div id="thumb">
+                <img src="assets/Image/PageIdol/bts.jpg">
+                </div>
+                <div id="logo">
+                <img src="assets/Image/PageIdol/btslogo.png">
+                </div>
+            <div id="info">
+            <h2>BTS</h2> 
+            <ul>
+                <li>
+                <p>BTS, còn được gọi là Bangtan Boys, là một nhóm nhạc nam Hàn Quốc được thành lập vào năm 2010 và ra mắt vào năm 2013 bởi Big Hit Entertainment. Nhóm bao gồm 7 thành viên: Jin, Suga, J-Hope, RM, Jimin, V và Jungkook—đồng sáng tác và sản xuất phần lớn các sản phẩm âm nhạc của họ.</p>
+                </li>
+                <li>
+                    <p>
+                        Các sản phẩm tiêu biểu: Butter, Dynamite, Life goes on, ...
+                    </p>
+                </li>
+            </ul>
+            </div>
+            <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+            
+        </div>
+        <hr id="hyper1">
+        <div class="idol" id="starship">
+          <div id="thumb">
+              <img src="assets/Image/PageIdol/ive-ava.jpeg">
+              </div>
+              <div id="logo">
+              <img src="assets/Image/PageIdol/ivelogo.png">
+              </div>
+          <div id="info">
+          <h2>IVE</h2> 
+          <ul>
+              <li>
+                <p>IVE là một nhóm nhạc nữ Hàn Quốc được thành lập và quản lý bởi công ty Starship Entertainment. Nhóm gồm sáu thành viên: Gaeul, Yujin, Rei, Wonyoung, Liz và Leeseo. Nhóm chính thức ra mắt công chúng vào ngày 1 tháng 12 năm 2021 với album đĩa đơn đầu tay Eleven.</p>
+              </li>
+              <li>
+                  <p>
+                      Các sản phẩm tiêu biểu: Eleven, Love Dive, After Like, ...
+                  </p>
+              </li>
+          </ul>
+          </div>
+          <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+          
+      </div>
+      <hr id="starshipr1">
+      <div class="idol" id="cube">
+        <div id="thumb">
+            <img src="assets/Image/PageIdol/gidle.jpeg">
+            </div>
+            <div id="logo">
+            <img src="assets/Image/PageIdol/gidle logo.png">
+            </div>
+        <div id="info">
+        <h2>(G)-IDLE</h2> 
+        <ul>
+            <li>
+              <p>(G)I-dle là một nhóm nhạc nữ đa quốc tịch hoạt động tại Hàn Quốc, được thành lập và quản lý bởi công ty Cube Entertainment. Nhóm hiện có 5 thành viên gồm Miyeon, Minnie, Soyeon, Yuqi, và Shuhua sau khi Soojin chính thức rời nhóm vì scandal</p>
+            </li>
+            <li>
+                <p>
+                    Các sản phẩm tiêu biểu: Oh my god, Senorita, Uh-oh, ...
+                </p>
+            </li>
+        </ul>
+        </div>
+        <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+        
+    </div>
+    <hr id="cuber1">
+    <div class="idol" id="yg2">
+      <div id="thumb">
+          <img src="assets/Image/PageIdol/win.jpg">
+          </div>
+          <div id="logo">
+          <img src="assets/Image/PageIdol/winlogo.png">
+          </div>
+      <div id="info">
+      <h2>WINNER</h2> 
+      <ul>
+          <li>
+            <p>WINNER là một nhóm nhạc nam thần tượng Hàn Quốc được thành lập vào ngày 17 tháng 8 năm 2014 bởi YG Entertainment. Nhóm ra mắt với đội hình ban đầu gồm 5 thành viên: Kang Seung-yoon, Song Min-ho, Nam Taehyun, Kim Jinwoo và Lee Seunghoon.</p>
+          </li>
+          <li>
+              <p>
+                  Các sản phẩm tiêu biểu: Really Really, Sentimental, Fool, ...
+              </p>
+          </li>
+      </ul>
+      </div>
+      <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+      
+  </div>
+  <hr id="ygr2">
+  
+  <div class="idol" id="hype2">
+    <div id="thumb">
+        <img src="assets/Image/PageIdol/less.jpeg">
+        </div>
+        <div id="logo">
+        <img style="border-radius: 0px" src="assets/Image/PageIdol/lelogo.png">
+        </div>
+    <div id="info">
+    <h2>LE SSERAFIM</h2> 
+    <ul>
+        <li>
+          <p>Le Sserafim là một nhóm nhạc nữ thần tượng Hàn Quốc được thành lập và quản lý bởi Source Music trực thuộc Hybe Corporation; bao gồm 5 thành viên: Sakura, Kim Chae-won, Huh Yun-jin, Kazuha và Hong Eun-chae.</p>
+        </li>
+        <li>
+            <p>
+                Các sản phẩm tiêu biểu: ANTIFRAGILE, Fearless, ...
+            </p>
+        </li>
+    </ul>
+    </div>
+    <div id="next"><a href="Product Page.html">Chi tiết sản phẩm &rsaquo; </a></div>
+    
+</div>
+<hr id="hyper2">
+         
         </div>
         </div>
         
-        </div>
+        
     </div>
-    <div class="seemore">
-    <button type="button">XEM THÊM</button>
-  </div>
+
     <footer class="footer">
         <div class="grid2">
           <div class="grid2__row">
@@ -324,6 +511,7 @@
         </div>
     </footer>
   </div>
+</script>  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
