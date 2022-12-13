@@ -182,6 +182,10 @@ nav ul li.active a{
     background: #FF9E8F;
     border-left-color: white;
 } 
+nav ul li a:hover {
+    color: #e9624d;
+}
+
 nav ul ul {
     position: static;
     display: none;
