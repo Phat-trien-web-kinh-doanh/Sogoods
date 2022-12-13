@@ -5,19 +5,15 @@ body{
     --text-main-color: #272F40;
     --text-sub-color: white;
     --hover-color: #FF9E8F;
+    --hover-color-2: #e9624d;
     --hover-text-color: #973aa8; 
     --hover-menu1-color: #FCD3F3;
     --hover-menu2-color: #FFEED9;
-    --light-purple: #FFEBFB; 
     --header-with-search-height:50px; 
-    --price-color: #F80808;
-    --orange: #FF7917;
-    --yellow: #FFD43E; 
     }
 p{
     color:var(--text-main-color);
     margin:10px 0;
-    text-align: justify;
 }
 .header{
     background-color: white;
@@ -56,7 +52,6 @@ p{
     margin: -3px auto 0;
     display: block;
     text-align: center;
-    
 }
 .header__navbar-list{
     list-style:none;
@@ -101,6 +96,11 @@ p{
     margin:40px;
 }
 
+/* .grid{
+    width: 1500px;
+    max-width:100%;
+    margin:0 auto; 
+} */
 .grid2{
     width: 1200px;
     max-width:100%;
@@ -137,7 +137,7 @@ p{
     margin: 0 0 0 30px;
  
 }
-.header__search-bar input{
+/* .header__search-bar input{
     background: transparent;
     flex:1;
     border:0;
@@ -145,7 +145,7 @@ p{
     padding: 24px 10px;
     font-size: 13px;
     color: var(--text-main-color) ;
-}
+} */
 .header__search-bar-icon{
     color:var(--text-main-color); 
 }
@@ -247,7 +247,14 @@ p{
 }
 .footer__email input{
     background:transparent;
-    border:0;
+    border: none;
+    outline: none;
+    color:var(--text-main-color);
+    font-size: 13px;
+}  
+#email_footer {
+    background:transparent;
+    border: none;
     outline: none;
     color:var(--text-main-color);
     font-size: 13px;
@@ -276,155 +283,13 @@ p{
 .footer-icon{
     color:var(--text-main-color);
 }
-
-
-.banner{
-    display: flex;
-    justify-content: center;
+#header_search {
+    background: transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 24px 10px;
+    font-size: 13px;
+    color: var(--text-main-color) ;
 }
 
-.about-us{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* goals*/
-.services{
-    background: #fff;
-    text-align: center;
-  }
-  .services h1{
-    display: inline-block;
-    text-transform: uppercase;
-    border-bottom: 4px solid #FF9E8F;
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin-top: 40px;
-  }
-  .cen{
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-  }
-  .service{
-    display: inline-block;
-    width: calc(100% / 3);
-    margin: 0 -2px;
-    padding: 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  .service:hover{
-    background: #ddd;
-  }
-  .service i{
-    color: --orange;
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
-  .service h2{
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 0;
-  }
-  .service p{
-    color: gray;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  @media screen and (max-width: 800px) {
-    .service{
-      width: 50%;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .service{
-      width: 100%;
-    }
-  }
-  /* mission */
-  .mission-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-  }
-  /* our team */
-  .team{
-    background: #fff;
-    text-align: center;
-    margin: 1rem;
-  }
-  .our-team{
-    margin-top:10px; padding:0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    transition: all .2s linear;
-    
-  }
-  .team-card{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-    .team-card .card{
-        width: 270px;
-        height: 450px;
-        background: #fff;
-        margin: 10px;
-        border-radius: 10px;
-        box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-        overflow: hidden;
-        text-align: center;
-        background-color: #fff;
-    }
-    .team-card .card .bg-image img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 45% 100%,0 70%);
-    }
-    .team-card .card .pic img{
-        height: 100px;
-        width: 100px;
-        border-radius:50%;
-        margin-top: -90px;
-        position: relative;
-    }
-    .team-card .card .info h3{
-        color:#FF9E8F;
-        font-size: 20px;
-        padding: 10px 0;
-    
-    }
-    .team-card .card .info span{
-        font-size: 15px;
-        color: #272F40;
-
-    }
-    .team-card .card .info p{
-        font-size: 12px;
-        color: #272F40;
-        padding: 10px 20px;
-    }
-    .team-card .card .info .icons a{
-        font-size: 20px;
-        text-decoration: none;
-        color:#FF9E8F;
-        margin-top: 20px;
-        padding: 0 5px;
-    }
-    .team-card .card .info .icons a:hover{
-        color: #98C4EC;
-    }
