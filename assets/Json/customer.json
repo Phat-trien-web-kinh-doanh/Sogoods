@@ -1,0 +1,62 @@
+[ 
+{"cusid": "KH100031", 
+  "name": "Nguyễn Ngọc Yến Nhi", 
+  "date": "25/05/2022", 
+  "rank": "Vàng",
+  "total": "100"
+},
+{"cusid": "KH100030", 
+  "name": "Võ Ngọc Tường Vy", 
+  "date": "25/11/2022", 
+  "rank": "Đồng",
+  "total": "600.000"
+},
+{"cusid": "KH100029", 
+  "name": "Huỳnh Nhi Thanh Thảo", 
+  "date": "27/09/2022", 
+  "rank": "Bạc",
+  "total": "1.200.000"
+},
+{"cusid": "KH100028", 
+  "name": "Hồ Thị Minh Nguyên", 
+  "date": "27/05/2022", 
+  "rank": "Vàng",
+  "total": "3.450.000"
+},
+{"cusid": "KH100027", 
+  "name": "Trịnh Thị Minh Khai", 
+  "date": "25/08/2022", 
+  "rank": "Đồng",
+  "total": "240.000"
+},
+{"cusid": "KH100026", 
+  "name": "Naomi Trịnh", 
+  "date": "15/09/2022", 
+  "rank": "Vàng",
+  "total": "2.730.000"
+},
+{"cusid": "KH100025", 
+  "name": "Alexa Hồ", 
+  "date": "06/05/2022", 
+  "rank": "Vàng",
+  "total": "3.230.000"
+},
+{"cusid": "KH100024", 
+  "name": "Trần Minh Hiếu", 
+  "date": "03/10/2022", 
+  "rank": "Bạc",
+  "total": "1.200.000"
+},
+{"cusid": "KH100023", 
+  "name": "Sakura Khai", 
+  "date": "25/10/2022", 
+  "rank": "Đồng",
+  "total": "530.000"
+},
+{"cusid": "KH100022", 
+  "name": "Victoria Huỳnh", 
+  "date": "04/05/2022", 
+  "rank": "Vàng",
+  "total": "2.900.000"
+}
+]

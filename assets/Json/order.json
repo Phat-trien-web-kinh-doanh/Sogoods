@@ -1,0 +1,33 @@
+{
+    "order": [{
+            "orderID": "SG10004321356",
+            "orderDate": "12:00 11/11/2022",
+            "orderCus": "VÕ NGỌC TƯỜNG VY",
+            "orderTotal": 1200000
+        },
+        {
+            "orderID": "SG10004321355",
+            "orderDate": "11:49 11/11/2022",
+            "orderCus": "NGUYỄN THÙY LÂM",
+            "orderTotal": 830000
+        },
+        {
+            "orderID": "SG10004321354",
+            "orderDate": "11:37 11/11/2022",
+            "orderCus": "TRỊNH THỊ MINH KHAI",
+            "orderTotal": 643000
+        },
+        {
+            "orderID": "SG10004321353",
+            "orderDate": "11:35 11/11/2022",
+            "orderCus": "NGUYỄN VIỆT HOÀNG",
+            "orderTotal": 1540000
+        },
+        {
+            "orderID": "SG10004321352",
+            "orderDate": "11:31 11/11/2022",
+            "orderCus": "HOÀNG ĐỨC HIẾU",
+            "orderTotal": 1200000
+        }
+    ]
+}

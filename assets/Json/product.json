@@ -1,6 +1,75 @@
-{"employees"[
-  {"firstName":"John", "lastName":"Doe"},
-  {"firstName":"Anna", "lastName":"Smith"},
-  {"firstName":"Peter", "lastName":"Jones"}
-]
+[ 
+  {"avatar": "assets/Image/Admin_ProductDetail/albumbe.jpg", 
+  "productid": "Album Be", 
+  "id": "PD100031", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+
+{"avatar": "assets/Image/Admin_ProducDetail/albumanti.jpg", 
+  "productid": "Album Antifragile", 
+  "id": "PD100030", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+
+{"avatar": "assets/Image/Admin_ProducDetail/albumbutter.jpg", 
+  "productid": "Album Butter", 
+  "id": "PD100029", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/albumloveurself.jpg", 
+  "productid": "Album Love Yourself", 
+  "id": "PD100028", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/albumnxde.jpg", 
+  "productid": "Album Nxde", 
+  "id": "PD100027", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/ltbts.jpg", 
+  "productid": "Lightstick BTS", 
+  "id": "PD100026", 
+  "group": "Lightstick",
+  "quantity": "100", 
+  "price": "600.000"
+},
+{"avatar": "assets/Image/Admin_ProducDetail/ltnct.jpg", 
+  "productid": "Lightstick NCT", 
+  "id": "PD100025", 
+  "group": "Lightstick",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/lightstickbp.jpg", 
+  "productid": "Lightstick Blackpink", 
+  "id": "PD100024", 
+  "group": "Lightstick",
+  "quantity": "100", 
+  "price": "600.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/cardbts.jpg", 
+  "productid": "Card BTS", 
+  "id": "PD100023", 
+  "group": "Card",
+  "quantity": "300", 
+  "price": "200.000" 
+},
+{"avatar": "assets/Image/Admin_ProducDetail/bornpink.jpg", 
+  "productid": "Album Born Pink",
+  "id": "PD100022", 
+  "group": "Album",
+  "quantity": "100", 
+  "price": "600.000" 
 }
+
+]

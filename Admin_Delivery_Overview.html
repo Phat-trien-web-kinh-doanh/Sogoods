@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Admin Order Detail</title>
+    <title>Admin Delivery Overview</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Our Style-->
     <link rel="stylesheet" href="assets/CSS/Main.css">
     <link rel="stylesheet" href="assets/CSS/Admin_Overview.css">
-    <link rel="stylesheet" href="assets/CSS/Admin_Edit_Order.css">
+    <link rel="stylesheet" href="assets/CSS/Admin_Delivery_Overview.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,60 +178,14 @@
                         <div class="col-md-9">
                             <div class="row">
                                 <div class="col-4">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h3 class="card-title text-bold">Đơn hàng</h3>
-                                            <br>
-                                            <p>SG10004321353</p>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title text-bold">Ghi chú</h3>
-                                            <br>
-                                            <input type="text" class="txt-note">
-                                            <br>
-                                            <button type="button" class="btn-save">Lưu</button>
-                                        </div>
-                                    </div>
+                                    <select name="day" class="day">
+                                        <option value="Hôm nay">Hôm nay</option>
+                                        <option value="Hôm qua">Hôm qua</option>
+                                        <option value="Ngày mai">Ngày mai</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a>   
-                                                <h3 class="card-title text-bold">Thông tin người mua</h3>
-                                                <i class="fa-solid fa-pen-to-square"></i>
-                                            </a>
-                                            <br>
-                                            <div class="customer-info">
-                                                <p> Tên: NGUYỄN VIỆT HOÀNG</p>
-                                                <p> ID: KH1101503</p>
-                                                <p> Email: nvhoang@gmail.com</p>
-                                                <p> SĐT: 0943589879</p>
-                                                <p> Ngày tạo: 13:00 10/11/2022 </p>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="transaction-info">
-                                                <p> Tổng cộng: 1.540.000 VNĐ</p>
-                                                <p> Sản phẩm đã mua: 1 sản phẩm</p>
-                                                <p> Ngày tạo đơn: 11:35 11/11/2022 </p>
-                                            </div>
-                                            <div class="delivery-info">
-                                                <h3 class="card-title text-bold">Địa chỉ giao hàng:</h3>
-                                                <br>
-                                                <p>NGUYỄN VIỆT HOÀNG</p>
-                                                <p>0943589879</p>
-                                                <p>104 Lê Đức Thọ,  P.13, Q. Gò Vấp, TP. Hồ Chí Minh </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -239,7 +193,13 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h3 class="card-title text-bold">Chi tiết đơn hàng</h3>
+                                            <h2 class="card-title text-bold"> Vận chuyển hôm nay</h2>
+                                            <div class="card-tools">
+                                                <a href="#" class="text-dark">
+                                                    <span>Xem chi tiết</span>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="card-body">
                                             <div class="table-data">
@@ -247,35 +207,24 @@
                                                     <thead>
                                                         <tr class="table-title">
                                                             <th>
-                                                                <p><b> Mã sản phẩm</b></p>
+                                                                <p><b> TỔNG SỐ ĐƠN HÀNG</b></p>
                                                             </th>
                                                             <th>
-                                                                <p><b>Tên sản phẩm</b></p>
+                                                                <p><b>ĐƠN HÀNG CHƯA TẠO CHUYỂN:</b></p>
                                                             </th>
                                                             <th>
-                                                                <p><b>Số lượng</b></p>
-                                                            </th>
-                                                            <th>
-                                                                <p><b>Đơn giá</b></p>
-                                                            </th>
-                                                            <th>
-                                                                <p><b>Thành tiền</b></p>
+                                                                <p><b>TỔNG SỐ ĐƠN HÀNG CHUYỂN HOÀN:</b></p>
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><p>SP12090020</p></td>
-                                                            <td><p>Lightstick BLACKPINK</p></td>
-                                                            <td><p>1</p></td>
-                                                            <td><p>1.540.000 VNĐ</p></td>
-                                                            <td><p>1.540.000 VNĐ</p></td>
+                                                            <td><p>44 đơn</p></td>
+                                                            <td><p>10 đơn</p></td>
+                                                            <td><p>0 đơn</p></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                            <div class="delete-order">
-                                                <button type="button" class="btn-delete-order">Xóa đơn hàng</button>
                                             </div>
                                             <div class="table-data">
                                                 <table class="table-footer">

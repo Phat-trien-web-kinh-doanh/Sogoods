@@ -26,16 +26,22 @@ var totalPrice = localStorage.getItem("totalPrice");
 //function set the text in total cart to the total price from local storage
 document.getElementById("cart-total").innerHTML = localStorage.getItem("totalPrice");
 
+function calculateTotalPrice1() {
+  var cartTotalPrice = document.getElementById("cart-total").innerHTML;
+  var totalPrice = document.getElementById("total");
+  totalPrice.innerHTML = parseInt(cartTotalPrice) + ".000đ";
+}
+calculateTotalPrice1();
 
  //calculate total price by cart total price minus shipping fee
 
- function calculateTotalPrice() {
+ function calculateTotalPrice2() {
   var cartTotalPrice = document.getElementById("cart-total").innerHTML;
   var shippingFee = document.getElementById("shipping-fee").innerHTML;
   var totalPrice = document.getElementById("total");
-  totalPrice.innerHTML = parseInt(cartTotalPrice) - parseInt(shippingFee) + ".000đ";
+  totalPrice.innerHTML = parseInt(cartTotalPrice) + parseInt(shippingFee) + ".000đ";
 }
-calculateTotalPrice();
+
 
 
 
@@ -80,95 +86,63 @@ btnThanhtoan.addEventListener('click', function() {
   if (forms.checkValidity() === true) {
     alert("Bạn đã thanh toán thành công đơn hàng của mình");
     document.getElementById("total").innerHTML = "0";
-    document.getElementById("total").innerHTML = "0";
+    document.getElementById("shipping-fee").innerHTML = "0";
     document.getElementById("cart-total").innerHTML = "0";
   }
 }
 );
-// //click on button thanh toan if validation form is pass to show notification "Bạn đã thanh toán thành công đơn hàng của mình" and set the total price to 0
-// var btnThanhtoan = document.getElementsByClassName('btn-thanhtoan')[0];
-// btnThanhtoan.addEventListener('click', function() {
- 
 
-//   alert("Bạn đã thanh toán thành công đơn hàng của mình");
-//   document.getElementById("total").innerHTML = "0";
-//   document.getElementById("total").innerHTML = "0";
-//   document.getElementById("cart-total").innerHTML = "0";
-  
-//   }
-// );
 
-// Get tỉnh thành, quận huyện, phường xã
-//<![CDATA[
-  if (address_2 = localStorage.getItem('address_2_saved')) {
-    $('select[id="city"] option').each(function() {
-      if ($(this).text() == address_2) {
-        $(this).attr('selected', '')
-      }
-    })
-    $('input.billing_address_2').attr('value', address_2)
+//if the radio id='card'is checked, its input is required , if not, it is not required
+var btnCard = document.getElementById("card");
+
+btnCard.addEventListener('click', function() {
+  document.getElementById("cc-number").setAttribute("required", "true");
+  document.getElementById("cc-name").setAttribute("required", "true");
+  document.getElementById("cc-date").setAttribute("required", "true");
+  document.getElementById("cc-cvv").setAttribute("required", "true");
+}
+);
+
+var btnBanking = document.getElementById("banking");
+btnBanking.addEventListener('click', function() {
+  document.getElementById("b-number").setAttribute("required", "true");
+  document.getElementById("b-name").setAttribute("required", "true");
+  document.getElementById("b-expiration").setAttribute("required", "true");
+
+}
+);
+//if select tỉnh thành is checked , display the shipping fee, if not select, display none
+var selectTinhThanh = document.getElementById("province");
+var ship = document.getElementById("shipping-fee");
+selectTinhThanh.addEventListener('change', function() {
+  ship.style.display = "block";
+  calculateTotalPrice2();
+}
+);
+
+//if tỉnh thành is "Tỉnh Đồng Nai" , the shipping fee is free, if not, the shipping fee is 22.000đ
+var selectTinhThanh = document.getElementById("province");
+var ship = document.getElementById("shipping-fee");
+selectTinhThanh.addEventListener('change', function() {
+  if (selectTinhThanh.value == "75") {
+    ship.innerHTML = "0.000đ";
   }
-  if (district = localStorage.getItem('district')) {
-    $('select[name="calc_shipping_district"]').html(district)
-    $('select[name="calc_shipping_district"]').on('change', function() {
-      var target = $(this).children('option:selected')
-      target.attr('selected', '')
-      $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
-      address_2 = target.text()
-      $('input.billing_address_2').attr('value', address_2)
-      district = $('select[name="calc_shipping_district"]').html()
-      localStorage.setItem('district', district)
-      localStorage.setItem('address_2_saved', address_2)
-    })
+  else if (selectTinhThanh.value == "82") {
+    ship.innerHTML = "100.000đ";
+  } 
+  else {
+    ship.innerHTML = "22.000đ";
   }
-  $('select[name="calc_shipping_provinces"]').each(function() {
-    var $this = $(this),
-      stc = ''
-    c.forEach(function(i, e) {
-      e += +1
-      stc += '<option value=' + e + '>' + i + '</option>'
-      $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
-      if (address_1 = localStorage.getItem('address_1_saved')) {
-        $('select[name="calc_shipping_provinces"] option').each(function() {
-          if ($(this).text() == address_1) {
-            $(this).attr('selected', '')
-          }
-        })
-        $('input.billing_address_1').attr('value', address_1)
-      }
-      $this.on('change', function(i) {
-        i = $this.children('option:selected').index() - 1
-        var str = '',
-          r = $this.val()
-        if (r != '') {
-          arr[i].forEach(function(el) {
-            str += '<option value="' + el + '">' + el + '</option>'
-            $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>' + str)
-          })
-          var address_1 = $this.children('option:selected').text()
-          var district = $('select[name="calc_shipping_district"]').html()
-          localStorage.setItem('address_1_saved', address_1)
-          localStorage.setItem('district', district)
-          $('select[name="calc_shipping_district"]').on('change', function() {
-            var target = $(this).children('option:selected')
-            target.attr('selected', '')
-            $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
-            var address_2 = target.text()
-            $('input.billing_address_2').attr('value', address_2)
-            district = $('select[name="calc_shipping_district"]').html()
-            localStorage.setItem('district', district)
-            localStorage.setItem('address_2_saved', address_2)
-          })
-        } else {
-          $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>')
-          district = $('select[name="calc_shipping_district"]').html()
-          localStorage.setItem('district', district)
-          localStorage.removeItem('address_1_saved', address_1)
-        }
-      })
-    })
-  })
-  //]]
+  calculateTotalPrice2();
+}
+);
+
+
+
+
+
+
 
 
 
