@@ -107,7 +107,7 @@
   }
 </script>
 </head>
-<body>
+<body onload="time()" style="font-family: 'Work Sans', sans-serif;">
     <div class="app">
         <header class="header">
             <div class="grid">
@@ -115,7 +115,7 @@
                     <span class="fas fa-bars"></span>
                 </div>
                 <div class="header-with-search">
-                    
+                    <div class="header__logo"><a href=""><img src="assets/Image/logo.png" height="55px"></a></div>
                     <form action="" class="header__search-bar">
                         <button type="submit">
                             <i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i>
@@ -174,15 +174,16 @@
             </div>
         </header>
         <!--Sidebar-->
+        <!--Sidebar-->
         <div class="sidebarmain">
             <nav class="sidebar">
                 <div class="text">MENU</div>
                 <ul>
                     <li>
-                        <a href="#">Tổng quan</a>
+                        <a href="Admin_Overview.html">Tổng quan</a>
                     </li>
                     <li>
-                        <a href="#" class="feat-btn">
+                        <a href="Admin_Dashboard.html" class="feat-btn">
                             Dashboard
                             <i class="fa-solid fa-chevron-right first"></i>
                         </a>
@@ -199,7 +200,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="feat-btn1">
+                        <a href="Admin_Order.html" class="feat-btn1">
                             Đơn hàng
                             <i class="fa-solid fa-chevron-right second"></i>
                         </a>
@@ -213,7 +214,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="feat-btn2">
+                        <a href="Admin_Delivery_Detail.html" class="feat-btn2">
                             Vận chuyển
                             <i class="fa-solid fa-chevron-right third"></i>
                         </a>
@@ -227,24 +228,24 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="feat-btn3">
+                        <a href="Admin_ProductDetail.html" class="feat-btn3">
                             Sản phẩm
                             <i class="fa-solid fa-chevron-right fourth"></i>
                         </a>
                         <ul class="feat-show3">
                             <li>
-                                <a href="#">Tất cả sản phẩm</a>
+                                <a href="Admin_ProductDetail.html">Tất cả sản phẩm</a>
                             </li>
                             <li>
-                                <a href="#">Nhóm sản phẩm</a>
+                                <a href="Admin_ProductGroup.html">Nhóm sản phẩm</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Khách hàng</a>
+                        <a href="Admin_Customer.html">Khách hàng</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="Admin_Blog.html">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -270,7 +271,7 @@
           </form>
           <b>CHỨC NĂNG CHÍNH:</b><Br>
           <button class="nv addto" type="button" data-toggle="tooltip" data-placement="top"
-              title="Thêm Nhân Viên"><i class="fas fa-user-plus"></i></button>
+              title="Thêm Sản Phẩm"><i class="fas fa-user-plus"></i></button>
           <button class="nv" type="button" onclick="sortTable()" data-toggle="tooltip" data-placement="top"
               title="Lọc Dữ Liệu"><i class="fa fa-filter" aria-hidden="true"></i></button>
           <button class="nv xuat" data-toggle="tooltip" data-placement="top" title="Xuất File"><i
@@ -291,7 +292,7 @@
                       <th width="auto">Mã Sản Phẩm</th>
                       <th>Nhóm Sản Phẩm</th>
                       <th>Số lượng</th>
-                      <th>Đơn Giá</th>
+                      <th>Đơn Giá (VNĐ)</th>
                       <th width="5px; !important">Tính Năng</th>
                   </tr>
               </thead>
@@ -592,11 +593,11 @@
                   var row = '<tr>' +
                       // Insert avatar
                       '<td><img alt="Avatar" class="avatar" src="assets/Image/Admin_ProducDetail/twice.png"></td>' +
-                      '<td><input type="text" class="form-control" name="name" id="name" placeholder="Nhập Mã Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="gioitinh" id="gioitinh" placeholder="Nhập Tên Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="namsinh" id="namsinh" value="" placeholder="Nhập Nhóm Sản Phẩm"></td>' +
-                      '<td><input type="text" class="form-control" name="diachi" id="diachi" value="" placeholder="Nhập Số Lượng"></td>' +
-                      '<td><input type="text" class="form-control" name="chucvu" id="chucvu" value="" placeholder="Nhập Đơn Giá"></td>' +
+                      '<td><input type="text" class="form-control" name="productid" id="productid" placeholder="Nhập Mã Sản Phẩm"></td>' +
+                      '<td><input type="text" class="form-control" name="name" id="name" placeholder="Nhập Tên Sản Phẩm"></td>' +
+                      '<td><input type="text" class="form-control" name="group" id="group" value="" placeholder="Nhập Nhóm Sản Phẩm"></td>' +
+                      '<td><input type="text" class="form-control" name="quantity" id="quantity" value="" placeholder="Nhập Số Lượng"></td>' +
+                      '<td><input type="text" class="form-control" name="price" id="price" value="" placeholder="Nhập Đơn Giá"></td>' +
                       '<td>' + actions + '</td>' +
                       '</tr>';
                   $(".table").append(row);
@@ -616,8 +617,8 @@
                           empty = true;
                       } else {
                           $(this).removeClass("error");
-                          alert("Bạn chưa nhập dữ liệu!")
-                          alert.close()
+                        //   alert("Bạn chưa nhập dữ liệu!")
+                        //   alert.close()
 
                       }
                   });
@@ -625,11 +626,12 @@
                   if (!empty) {
                       input.each(function () {
                           $(this).parent("td").html($(this).val());
-                          alert("Thêm thành công!");
-                          alert.close()
+                        //   alert("Thêm thành công!");
+                        //   alert.close()
 
                         
                       });
+                      alert("Lưu thành công!");
                       $(this).parents("tr").find(".addsp, .editsp").toggle();
                       $(".addto").removeAttr("disabled");
                   }
@@ -649,17 +651,23 @@
                   $(this).parents("tr").find(".addsp, .editsp").toggle();
                   $(".addto").attr("disabled", "disabled");
               });
-              jQuery(function () {
-                  jQuery(".addsp").click(function () {
-                    alert("Sửa thành công!")
+            //   jQuery(function () {
+            //       jQuery(".addsp").click(function () {
+            //         alert("Sửa thành công!")
                     
-                  });
-              });
+            //       });
+            //   });
               // Xóa
               $(document).on("click", ".deletesp", function () {
                   $(this).parents("tr").remove();
                   alert("Xóa thành công!");
                   $(".addto").removeAttr("disabled");
+              });
+          });
+          //Xuất File
+          jQuery(function () {
+              jQuery(".xuat").click(function () {
+                alert("Xuất file thành công!")
               });
           });
           //Not use

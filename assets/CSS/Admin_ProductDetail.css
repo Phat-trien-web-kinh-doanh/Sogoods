@@ -1,3 +1,7 @@
+body{
+  background: #F5F5F5;
+  
+}
 .nv{
   background: #FF9E8F;
   border: 1px solid rgb(255, 255, 255);  
@@ -34,7 +38,7 @@ font-weight: 600;
 }
 thead tr th{
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   background: #FF9E8F;
   text-align: center !important;
@@ -42,7 +46,8 @@ thead tr th{
 tbody tr td{
   text-align: left;
   color: black;
-  font-weight: 600;
+  font-weight: 200;
+  font-size: 16px;
 }
 .ds{
   font-size: 30px;
@@ -129,7 +134,8 @@ margin-top: -40px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .background-modal {
   display: none; 
@@ -191,7 +197,7 @@ padding-bottom: 20px;
     margin: 6px 0 0;
     font-size: 22px;
 }
-.table-title .add-new {
+/* .table-title .addto {
     float: right;
 height: 30px;
 font-weight: bold;
@@ -201,9 +207,9 @@ min-width: 100px;
 border-radius: 50px;
 line-height: 13px;
 }
-.table-title .add-new i {
+.table-title .addto i {
 margin-right: 4px;
-}
+} */
 table.table {
     table-layout: fixed;
 }
@@ -236,12 +242,12 @@ table.table td a.deletesp {
 table.table td i {
     font-size: 15px;
 }
-table.table td a.add i {
+/* table.table td a.add i {
     font-size: 15px;
   margin-right: -1px;
     position: relative;
     top: 3px;
-}    
+}     */
 table.table .form-control {
     height: 32px;
     line-height: 32px;
@@ -251,9 +257,9 @@ table.table .form-control {
 table.table .form-control.error {
 border-color: #f50000;
 }
-table.table td .add {
+/* table.table td .add {
 display: none;
-}
+} */
 .modal-3 li a{
 border: 1px solid black !important;
 color: #000000 !important;
@@ -297,3 +303,9 @@ float: right;
   max-width: 90%; height: 70px; border-radius: 5px; justify-content: center; align-items: center; display: flex; margin: 0 auto;
 }
 .img{max-width: 90%; height: 70px; border-radius: 5px; justify-content: center; align-items: center; display: flex; margin: 0 auto;}
+.blogchitiet{
+  color: #FF9E8F;
+}
+.blogchitiet:hover{
+  color: #e9624d;
+}
