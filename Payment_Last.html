@@ -144,17 +144,154 @@
     <div class="container">
 
       <div class="row">
-          <div class="col-md-4 order-md-2 mb-4">
+        <div class="col-lg-8 col-md-6">
+          <h3 class="mb-3">THANH TOÁN</h3>
+            <h4 class="mb-3">Thông tin vận chuyển</h4>
+            <form class="needs-validation" novalidate="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="Name">Họ và tên</label>
+                        <input type="text" class="form-control" id="Name" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Vui lòng nhập họ và tên. </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="phoneNumber">Số điện thoại</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Vui lòng nhập số điện thoại. </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback"> Vui lòng nhập đúng Email. </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                    <div class="invalid-feedback"> Vui lòng nhập địa chỉ. </div>
+                </div>
+          
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="province">Tỉnh thành</label>
+                        <select class="custom-select d-block w-100" id="province" required="">
+                            <option value="" selected>Tỉnh thành...</option>
+                            <option>Đồng Nai</option>
+                        </select>
+                        <div class="invalid-feedback"> Vui lòng chọn tỉnh thành. </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="district">Quận huyện</label>
+                        <select class="custom-select d-block w-100" id="district" required="">
+                            <option class="form-control" value="" selected>Quận huyện...</option>
+                            <option>Biên Hòa</option>
+                        </select>
+                        <div class="invalid-feedback"> Vui lòng chọn quận huyện. </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="ward">Phường xã</label>
+                      <select class="custom-select d-block w-100" id="ward" required="">
+                          <option value="" selected>Phường xã...</option>
+                          <option>Thanh Bình</option>
+                      </select>
+                      <div class="invalid-feedback"> Vui lòng chọn phường xã. </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                  <label for="note">Ghi chú <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="note" >
+              </div>
+                
+                <br>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="save-info">
+                    <label class="custom-control-label" for="save-info">Lưu thông tin vận chuyển của tôi</label>
+                </div>
+                <br>
+                <h4 class="mb-3">Hình thức thanh toán</h4>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="cod" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="cod">Thanh toán khi giao hàng</label>
+                    </div>
+                    
+                    <div class="custom-control custom-radio">
+                        <input id="banking" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="banking">Chuyển khoản ngân hàng</label>
+                        <div class="listBank bank99; display:none;">
+                          <div class="row">
+                              <div class=" mb-3">
+                                  <label for="b-name">Tên thẻ</label>
+                                  <input type="text" class="form-control" id="b-name" placeholder="">
+                                  <small class="text-muted">Tên đầy đủ trên thẻ</small>
+                                  <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <label for="b-number">Số thẻ</label>
+                                  <input type="text" class="form-control" id="b-number" placeholder="">
+                                  <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label for="b-expiration">Tháng/năm phát hành</label>
+                                <input type="text" class="form-control" id="b-expiration" placeholder="">
+                                <div class="invalid-feedback"> Vui lòng nhập tháng năm phát hành. </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+                      </div>
+                      
+
+                    <div class="custom-control custom-radio">
+                        <input id="card" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="card">Thanh toán bằng thẻ quốc tế</label>
+                        <div class="listCard bank99; display:none;">
+                          <div class="row">
+                              <div class="col-md-6 mb-3">
+                                  <label for="cc-name">Tên thẻ</label>
+                                  <input type="text" class="form-control" id="cc-name" placeholder="" >
+                                  <small class="text-muted">Tên đầy đủ trên thẻ</small>
+                                  <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <label for="cc-number">Số thẻ</label>
+                                  <input type="text" class="form-control" id="cc-number" placeholder="" >
+                                  <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Tháng/năm hết hạn</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" >
+                                <div class="invalid-feedback"> Vui lòng nhập thời gian hết hạn. </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" >
+                                <div class="invalid-feedback"> Vui lòng nhập mã CVV </div>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+          
+
+                    <div class="custom-control custom-radio">
+                      <input id="momo" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="momo">Thanh toán bằng ví điện tử Momo</label>
+                  </div>
+                </div>
+                
+            </form>
+        </div>
+          <div class="col-lg-4 col-md-6 ">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
                   <span class="text-muted">Đơn hàng</span>
                   <span class="badge badge-secondary badge-pill">3</span>
               </h4>
               <ul class="list-group mb-3 sticky-top" id="cart__container" >
-                  
-               
-                  
 
-                 
                   <li class="list-group-item d-flex justify-content-between bg-light">
                     <div class="text-success">
                         <h6 >Tổng tiền đơn hàng</h6>
@@ -186,147 +323,7 @@
                   
               
           </div>
-          <div class="col-md-8 order-md-1">
-            <h3 class="mb-3">THANH TOÁN</h3>
-              <h4 class="mb-3">Thông tin vận chuyển</h4>
-              <form class="needs-validation" novalidate="">
-                  <div class="row">
-                      <div class="col-md-6 mb-3">
-                          <label for="Name">Họ và tên</label>
-                          <input type="text" class="form-control" id="Name" placeholder="" value="" required="">
-                          <div class="invalid-feedback"> Vui lòng nhập họ và tên. </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                          <label for="phoneNumber">Số điện thoại</label>
-                          <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required="">
-                          <div class="invalid-feedback"> Vui lòng nhập số điện thoại. </div>
-                      </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback"> Vui lòng nhập đúng Email. </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="address">Địa chỉ</label>
-                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                      <div class="invalid-feedback"> Vui lòng nhập địa chỉ. </div>
-                  </div>
-            
-                  <div class="row">
-                      <div class="col-md-4 mb-3">
-                          <label for="province">Tỉnh thành</label>
-                          <select class="custom-select d-block w-100" id="province" required="">
-                              <option value="" selected>Tỉnh thành...</option>
-                              <option>Đồng Nai</option>
-                          </select>
-                          <div class="invalid-feedback"> Vui lòng chọn tỉnh thành. </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                          <label for="district">Quận huyện</label>
-                          <select class="custom-select d-block w-100" id="district" required="">
-                              <option class="form-control" value="" selected>Quận huyện...</option>
-                              <option>Biên Hòa</option>
-                          </select>
-                          <div class="invalid-feedback"> Vui lòng chọn quận huyện. </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label for="ward">Phường xã</label>
-                        <select class="custom-select d-block w-100" id="ward" required="">
-                            <option value="" selected>Phường xã...</option>
-                            <option>Thanh Bình</option>
-                        </select>
-                        <div class="invalid-feedback"> Vui lòng chọn phường xã. </div>
-                      </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="note">Ghi chú <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="note" >
-                </div>
-                  
-                  <br>
-                  <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="save-info">
-                      <label class="custom-control-label" for="save-info">Lưu thông tin vận chuyển của tôi</label>
-                  </div>
-                  <br>
-                  <h4 class="mb-3">Hình thức thanh toán</h4>
-                  <div class="d-block my-3">
-                      <div class="custom-control custom-radio">
-                          <input id="cod" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                          <label class="custom-control-label" for="cod">Thanh toán khi giao hàng</label>
-                      </div>
-                      
-                      <div class="custom-control custom-radio">
-                          <input id="banking" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="banking">Chuyển khoản ngân hàng</label>
-                          <div class="listBank bank99; display:none;">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="b-name">Tên thẻ</label>
-                                    <input type="text" class="form-control" id="b-name" placeholder="">
-                                    <small class="text-muted">Tên đầy đủ trên thẻ</small>
-                                    <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="b-number">Số thẻ</label>
-                                    <input type="text" class="form-control" id="b-number" placeholder="">
-                                    <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-4 mb-4">
-                                  <label for="b-expiration">Tháng/năm phát hành</label>
-                                  <input type="text" class="form-control" id="b-expiration" placeholder="">
-                                  <div class="invalid-feedback"> Vui lòng nhập tháng năm phát hành. </div>
-                              </div>
-                              
-                          </div>
-                        </div>
-                        </div>
-                        
-
-                      <div class="custom-control custom-radio">
-                          <input id="card" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="card">Thanh toán bằng thẻ quốc tế</label>
-                          <div class="listCard bank99; display:none;">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-name">Tên thẻ</label>
-                                    <input type="text" class="form-control" id="cc-name" placeholder="" >
-                                    <small class="text-muted">Tên đầy đủ trên thẻ</small>
-                                    <div class="invalid-feedback"> Vui lòng nhập tên thẻ. </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-number">Số thẻ</label>
-                                    <input type="text" class="form-control" id="cc-number" placeholder="" >
-                                    <div class="invalid-feedback"> Vui lòng nhập số thẻ. </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3 mb-3">
-                                  <label for="cc-expiration">Tháng/năm hết hạn</label>
-                                  <input type="text" class="form-control" id="cc-expiration" placeholder="" >
-                                  <div class="invalid-feedback"> Vui lòng nhập thời gian hết hạn. </div>
-                              </div>
-                              <div class="col-md-3 mb-3">
-                                  <label for="cc-cvv">CVV</label>
-                                  <input type="text" class="form-control" id="cc-cvv" placeholder="" >
-                                  <div class="invalid-feedback"> Vui lòng nhập mã CVV </div>
-                              </div>
-                          </div>
-                        </div>
-                        </div>
-            
-
-                      <div class="custom-control custom-radio">
-                        <input id="momo" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                        <label class="custom-control-label" for="momo">Thanh toán bằng ví điện tử Momo</label>
-                    </div>
-                  </div>
-                  
-              </form>
-          </div>
+         
       </div>
       
   </div>
