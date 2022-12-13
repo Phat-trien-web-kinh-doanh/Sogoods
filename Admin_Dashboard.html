@@ -112,35 +112,35 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="#" class="feat-btn1">
+                      <a href="Admin_Order.html" class="feat-btn1">
                           Đơn hàng
                           <i class="fa-solid fa-chevron-right second"></i>
                       </a>
                       <ul class="feat-show1">
                           <li>
-                              <a href="Admin_Order.html">Tất cả đơn hàng</a>
+                              <a href="#">Tất cả đơn hàng</a>
                           </li>
                           <li>
-                              <a href="Admin_Edit_Order.html">Chưa hoàn tất</a>
+                              <a href="#">Chưa hoàn tất</a>
                           </li>
                       </ul>
                   </li>
                   <li>
-                      <a href="#" class="feat-btn2">
+                      <a href="Admin_Delivery_Detail.html" class="feat-btn2">
                           Vận chuyển
                           <i class="fa-solid fa-chevron-right third"></i>
                       </a>
                       <ul class="feat-show2">
                           <li>
-                              <a href="Admin_Delivery_Overview.html">Tổng quan</a>
+                              <a href="#">Tổng quan</a>
                           </li>
                           <li>
-                              <a href="Admin_Delivery_Detail.html">Vận chuyển</a>
+                              <a href="#">Vận chuyển</a>
                           </li>
                       </ul>
                   </li>
                   <li>
-                      <a href="#" class="feat-btn3">
+                      <a href="Admin_ProductDetail.html" class="feat-btn3">
                           Sản phẩm
                           <i class="fa-solid fa-chevron-right fourth"></i>
                       </a>
@@ -267,7 +267,7 @@
                 </ul>
                 </div>
                 <div class="buttonseeall">
-                  <a href="#">Xem tất cả</a>
+                  <a href="Admin_Order.html">Xem tất cả</a>
                 </div>
               </div>
               <div class="top-sales box">
@@ -333,22 +333,35 @@
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
             <div class="chart-container">
+              <div class="barchart">
+                <div class="title">Đơn hàng theo ngày</div>
+                <div class="chart">
+<<<<<<< HEAD
+                  <canvas id="myChart3" style="width:100%"></canvas>
+                </div>
+              </div>
+              <div class="linechart">
+                <div class="title">Biểu đồ doanh thu</div>
+                <div class="chart">
+              <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
+              </div>
+=======
+                  <canvas id="myChart3" style="width:100%;"></canvas>
+                </div>
+              </div>
             <div class="linechart">
               <div class="title">Biểu đồ doanh thu</div>
               <div class="chart">
-            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <canvas id="myChart" style="width:100%;"></canvas>
               </div>
             </div>
-            <div class="barchart">
-              <div class="title">Đơn hàng theo ngày</div>
-              <div class="chart">
-                <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
-              </div>
-            </div>
+            
+>>>>>>> 3916fdcc812d654cbc588e9615792f4f131584fb
             <div class="piechart">
               <div class="title">Tình trạng sản phẩm</div>
               <div class="chart">
-                <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                <canvas id="myChart2" style="width:100%;"></canvas>
               </div>
             <script>
               var xValues = [50,60,70,80,90,100,110,120,130,140,150];
@@ -395,8 +408,13 @@
                 });
                 </script>
                 <script>
-                  var xValues = ["1/12", "2/12", "3/12", "4/12", "5/12"];
-                  var yValues = [55, 49, 44, 24, 35];
+<<<<<<< HEAD
+                  var xValues = ["1/12", "2/12", "3/12", "4/12", "5/12", "6/12", "7/12", "8/12", "9/12", "10/12"];
+                  var yValues = [55, 49, 44, 24, 35, 40, 50, 55, 60, 65];
+=======
+                  var xValues = ["1/12", "2/12", "3/12", "4/12", "5/12", "6/12", "7/12", "8/12", "9/12", "10/12", "11/12", "12/12"];
+                  var yValues = [55, 49, 44, 24, 35, 40, 50, 55, 60, 65, 70, 75];
+>>>>>>> 3916fdcc812d654cbc588e9615792f4f131584fb
                   var barColors = "#FF9E8F";
                   
                   new Chart("myChart3", {
