@@ -474,6 +474,7 @@ nav .profile-details i{
     margin: 10px 0;
 }
 .btn-save {
+    text-align: center;
     width: 50px;
     height: 35px;
     background: var(--hover-color);
