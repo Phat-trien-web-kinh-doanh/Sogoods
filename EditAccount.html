@@ -171,7 +171,7 @@
                     <div class="text-center">
                         <div class="account__right-box2">
                                 <div class="edit__content-item">
-                                    <Table class="tbl__editaccount">
+                                    <Table id="table" class="tbl__editaccount">
                                         <tr>
                                             <th class="edit__title">Họ tên:</th>
                                             <th class="edit__title">Email:</th>
@@ -190,27 +190,27 @@
                                         <tr>
                                             <td id="address">KTX khu B ĐHQG tp.HCM</td>
                                             <td id="gender">Nữ</td>
-                                            <td id="date">25/04/2002</td>
+                                            <td type="date" id="date">2002-04-25</td>
                                         </tr>
                                     </Table>
                                 </div>
                             <div>
                                 <button class="btn_edit">Chỉnh sửa</button>
-                               
                             </div>
                         </div>
+
                         <div class="account__right-box3">
                           <div class="edit__content-item2">
-                            <Table class="tbl__editaccount">
+                            <Table class="tbl__editaccount2">
                                 <tr>
                                     <th class="edit__title">Họ tên:</th>
                                     <th class="edit__title">Email:</th>
                                     <th class="edit__title">Số điện thoại:</th>
                                 </tr>
                                 <tr>
-                                    <td><input type="text"></td>
-                                    <td><input type="text"></td>
-                                    <td><input type="text"></td>
+                                    <td><input name="name" id="edt_name" type="text"></td>
+                                    <td><input name="mail" id="edt_mail" type="text"></td>
+                                    <td><input name="numb" id="edt_numb" type="text"></td>
                                 </tr>
                                 <tr>
                                     <th class="edit__title">Địa chỉ:</th>
@@ -218,17 +218,13 @@
                                     <th class="edit__title">Ngày sinh:</th>
                                 </tr>
                                 <tr>
-                                    <td><input type="text"></td>
-                                    <td ><select style=" height: 30px;">
-                                      <option>Giới tính</option>
-                                      <option>Nam</option>
-                                      <option>Nữ</option>
-                                    </select></td>
-                                    <td><input type="date"></td>                                    
+                                    <td><input id="edt_address" type="text"></td>
+                                    <td><input id="edt_gender" type="text"></td>
+                                    <td><input id="edt_date" type="date"></td>                                    
                                 </tr>
                             </Table>
                             <div>
-                              <button class="btn_update">Cập nhật</button>
+                              <button onclick="updateRow()" class="btn_update">Cập nhật</button>
                           </div>
                         </div>
                         </div>
@@ -316,31 +312,63 @@
         </div>
     </footer>
   </div>
+  
 
   
   <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function showtable(){
       $('.account__right-box3').hide();
       $('.edit__content-item').show();
       $('.btn_edit').click(function(){
     //show menu__content when click
       $('.account__right-box3').show();
+      alert("Vui lòng nhấp vào dòng cần sửa.");
       
       return false;
     });
   });
-</script>
-<script>
-    $(document).ready(function(){
-        $('.btn_update').click(function(){
-            alert("Chức năng này hiện chưa khả dụng. Xin lỗi vì sự bất tiện này!")            
-            $('.account__right-box3').hide();
-
-        });
+</script> 
+<script> 
             
-    });
-</script>
+            
+  // click the button to select row
+  
+      var table = document.getElementById("table");
+      var rIndex;
+      for(var i = 1; i < table.rows.length; i++)
+      {
+          table.rows[1].onclick = function()
+          {
+              rIndex = this.rowIndex;
+              console.log(rIndex);
+              document.getElementById("edt_name").value = this.cells[0].innerHTML;
+              document.getElementById("edt_mail").value = this.cells[1].innerHTML;
+              document.getElementById("edt_numb").value = this.cells[2].innerHTML;
+          };
+          table.rows[3].onclick = function()
+          {
+              rIndex = this.rowIndex;
+              console.log(rIndex);
+              document.getElementById("edt_address").value = this.cells[0].innerHTML;
+              document.getElementById("edt_gender").value = this.cells[1].innerHTML;
+              document.getElementById("edt_date").value = this.cells[2].innerHTML;
+          };
+      }  
+ // edit the row
+  function updateRow()
+  {
+      table.rows[1].cells[0].innerHTML = document.getElementById("edt_name").value;
+      table.rows[1].cells[1].innerHTML = document.getElementById("edt_mail").value;
+      table.rows[1].cells[2].innerHTML = document.getElementById("edt_numb").value;
+      table.rows[3].cells[0].innerHTML = document.getElementById("edt_address").value;
+      table.rows[3].cells[1].innerHTML = document.getElementById("edt_gender").value;
+      table.rows[3].cells[2].innerHTML = document.getElementById("edt_date").value;
+      alert("Cập nhật thành công.")            
+      $('.account__right-box3').hide();
+  }
+  
+</script>    
 <!-- ask for logout -->
 <script>
   $(document).ready(function(){
@@ -353,6 +381,8 @@
   });
   
   </script>
+
+  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
