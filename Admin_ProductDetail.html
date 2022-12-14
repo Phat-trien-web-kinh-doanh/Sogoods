@@ -157,7 +157,7 @@
                 <span class="links_name">Blog</span>
             </a>
             </li>
-            <li class="log_out">
+            <li class="log_out" onclick="askForLogOut()">
               <a href="Login.html">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
@@ -624,5 +624,16 @@
         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
     }
     </script>
+    <!-- ASK FOR LOG OUT -->
+  <script>
+    function askForLogOut() {
+      var r = confirm("Bạn có muốn đăng xuất không?");
+      if (r == true) {
+        window.location.href = "Login.html";
+      } else {
+        return false;
+      }
+    }
+  </script>
 </body>
 </html>
