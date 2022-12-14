@@ -186,6 +186,7 @@ p{
     position:absolute;
     display:none;
     width:10em;
+	padding-left: 0px;
     background-color: white;
 } 
 .header__menu-item:hover .header__menu-list2{

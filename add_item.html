@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Our Style-->
     <link rel="stylesheet" href="assets/CSS/Main.css">
-    <link rel="stylesheet" href="assets/CSS/productdetail.css">
+    <link rel="stylesheet" href="assets/CSS/add_item.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,72 +27,108 @@
           <ul class="header__navbar-list">
               <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
           </ul>
-          <ul class="header__navbar-list">
-            <li class="header__navbar-item">
-            <div class="header_cart">
-            <a class="header__navbar-icon-link" href="Cart.html">
-            <i class="fa-solid fa-bag-shopping"></i>
-        
-           
-            <div class="header__cart-list header__cart-list--no-cart">
-            <img src="assets\Image\no-cart.png" alt="" class="header__cart-no-cart-img">
-            <span class="header__cart-list-no-cart-msg">
-                Chưa có sản phẩm nào trong giỏ hàng
-            </span>
-            
-            <!-- <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
-            <ul class="header__cart-list-item">
-                <li class="header__cart-item">
-                    <div class="header__cart-item-img">
-                    <img src="assets\Image\Cart\The_Astronaut_by_Jin_of_BTS_digital_single_cover_art.jpg" alt="">
-                    </div>
-                    <div class="header__cart-item-info">
-                       
-                        <h5 class="header__cart-item-name">Album Born Pink BlackPink</h3>
-                        <span class="header__cart-item-price">1.000.000đ</span>
-                    <span class ="header__cart-item-multiply">x</span>
-                        <span class="header__cart-item-quantity">1</span>
-                    
-                    </div>
-                    <div class="header__cart-item-remove">
-                        <i class="fa-solid fa-times"></i>
-                    </div>
-                </li>
-                <li class="header__cart-item">
-                    <div class="header__cart-item-img">
-                        <img src="assets\Image\product\lightstick\lightstick1.jpg" alt="">
-                    </div>
-                    <div class="header__cart-item-info">
-                        <h3 class="header__cart-item-name">Lightstick BTS</h3>
-                        <span class="header__cart-item-price">1.000.000đ</span>
-                        <span class="header__cart-item-quantity">x1</span>
-                    </div>
-                    <div class="header__cart-item-remove">
-                        <i class="fa-solid fa-times"></i>
-                    </div>
-                </li>
-                <li class="header__cart-item">
-                    <div class="header__cart-item-img">
-                        <img src="assets\Image\product\lightstick\lightstick1.jpg" alt="">
-                    </div>
-                    <div class="header__cart-item-info">
-                        <h3 class="header__cart-item-name">Lightstick BTS</h3>
-                        <span class="header__cart-item-price">1.000.000đ</span>
-                        <span class="header__cart-item-quantity">x1</span>
-                    </div>
-                    <div class="header__cart-item-remove">
-                        <i class="fa-solid fa-times"></i>
-                    </div>
-                </li>
-                </ul>
-                <button class="btn--full">Xem giỏ hàng</button> -->
-        </div>
-    </a>
-    </div>
-            </li>
+          <ul  class="header__navbar-list">
             <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
-             
-          </ul>
+            <li class="header__navbar-item">
+              <div class="header_cart">
+                <div class="header_cart-wrap">
+                  <i class="cart__icon fa-solid fa-bag-shopping"></i>
+                  <div class="cart-number-badge"><span>4</span></div>
+                  <!-- no cart header__cart-list--no-cart -->
+                  <div class="header__cart-list">
+                    <img src="assets\Image\no-cart.png" alt="" class="header__cart-no-cart-img">
+                    <span class="header__cart-list-no-cart-msg">
+                    Chưa có sản phẩm nào trong giỏ hàng
+                    </span>
+
+                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                      <ul class="header__cart-list-item">
+                        <!-- cart item -->
+                        <li class="header__cart-item">
+                          <img src="assets\Image\Cart\The_Astronaut_by_Jin_of_BTS_digital_single_cover_art.jpg" class="header__cart-img" alt="">
+                          <div class="header__cart-item-info">
+                            <div class="header__cart-item-head">
+                              <span class="header__cart-item-name">ALBUM JIN - THE ASTRONAUT</span>
+                              <div class="header__cart-item-price-wrap">
+                                <span class="header__cart-item-price">500.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">1</span>
+                              </div>
+                            </div>
+                            <div class="header__cart-item-body">
+                              <span class="header__cart-item-description">Phân loại: 1</span>
+                              <span class="header__cart-item-remove">Xóa</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__cart-item">
+                          <img width="35px" src="assets\Image\Cart\56611660_784756348563284_6363417592928927744_n.jpg" alt="" class="header__cart-img">
+                          <div class="header__cart-item-info">
+                            <div class="header__cart-item-head">
+                              <span class="header__cart-item-name">DOLL STEALLA TAE 20CM</span>
+                              <div class="header__cart-item-price-wrap">
+                                <span class="header__cart-item-price">550.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">1</span>
+                              </div>
+                            </div>
+                            <div class="header__cart-item-body">
+                              <span class="header__cart-item-description">Phân loại: 2</span>
+                              <span class="header__cart-item-remove">Xóa</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__cart-item">
+                          <img width="35px" src="assets\Image\Cart\vong_co_bt21_titan_555x523.jpg" alt="" class="header__cart-img">
+                          <div class="header__cart-item-info">
+                            <div class="header__cart-item-head">
+                              <span class="header__cart-item-name">VÒNG CỔ BT21</span>
+                              <div class="header__cart-item-price-wrap">
+                                <span class="header__cart-item-price">30.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">1</span>
+                              </div>
+                            </div>
+                            <div class="header__cart-item-body">
+                              <span class="header__cart-item-description">Phân loại: 1</span>
+                              <span class="header__cart-item-remove">Xóa</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__cart-item">
+                          <img src="assets/Image/Product detail/ls4.jpg" alt="" class="header__cart-img">
+                          <div class="header__cart-item-info">
+                            <div class="header__cart-item-head">
+                              <span class="header__cart-item-name">Lightstick BLACKPINK</span>
+                              <div class="header__cart-item-price-wrap">
+                                <span class="header__cart-item-price">1.000.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">1</span>
+                              </div>
+                            </div>
+                            <div class="header__cart-item-body">
+                              <span class="header__cart-item-description">Phân loại: 2</span>
+                              <span class="header__cart-item-remove">Xóa</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <a href="Cart.html"><button class="btn_cart">Xem giỏ hàng</button></a>
+                  </div>
+                <!-- <a class="header__navbar-icon-link" href="Cart.html"></a> -->
+              </div>
+              </div>      
+            </li>
+          </ul>  
+                  
+                   
+
+        
+          
+            
+          
+            
+    
       </nav>
         <div class="header-with-search">
           <div class="header__logo"><a href="Homepage.html"><img src="assets/Image/logo.png" height="55px"></a></div>
