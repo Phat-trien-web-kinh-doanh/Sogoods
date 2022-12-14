@@ -125,23 +125,14 @@ p{
     margin-left: width 100%;
 }
 /* sidebar is on the content-wrapper when click btn */
-.sidebarmain {
+/* .sidebarmain {
     position: relative;
     z-index: 1;
     
      
     z-index: 1;
 }
-.sidebar {
-    
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    left: -250px;
-    background: white;
-    box-shadow:0 4px 25px 0 rgba(214, 214, 214, 0.425);
-    transition: left 0.4s ease;
-}
+
 .sidebar.show {
     background: white;
     left: -0px;
@@ -256,8 +247,10 @@ nav ul li a i.rotate {
     vertical-align: baseline;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
 .content-wrapper {
+    margin-left: 10px;
+    margin-right: 20px;
     height: 100%;
     background-color: #f4f6f9;
     transition: margin-left 300ms;
@@ -267,9 +260,10 @@ nav ul li a i.rotate {
 }
 .container-fluid{
     width: 100%;
+    padding-top: 0px;
     padding-right: 7.5px;
     padding-left: 7.5px;
-    margin-right: auto;
+    margin-right: 20px;
     margin-left: auto;
 }
 .row {
@@ -442,6 +436,7 @@ nav ul li a i.rotate {
     float: left;
 }
 .prev {
+    text-align: center;
     width: 50px;
     height: 35px;
     background: var(--hover-color);
@@ -451,6 +446,7 @@ nav ul li a i.rotate {
     float: right;
 }
 .next {
+    text-align: center;
     width: 50px;
     height: 35px;
     background: var(--hover-color);

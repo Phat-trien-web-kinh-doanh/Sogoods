@@ -124,7 +124,7 @@ p{
 .btn:click ~ .content-wrapper {
     margin-left: width 100%;
 }
-/* sidebar is on the content-wrapper when click btn */
+/* sidebar is on the content-wrapper when click btn
 .sidebarmain {
     position: relative;
     z-index: 1;
@@ -256,8 +256,9 @@ nav ul li a i.rotate {
     vertical-align: baseline;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
 .content-wrapper {
+    margin-left: 15px;
     height: 100%;
     background-color: #f4f6f9;
     transition: margin-left 300ms;
