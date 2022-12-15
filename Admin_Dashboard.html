@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="assets/CSS/Admin_Dashboard.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" rel="stylesheet"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>           
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
@@ -77,8 +87,8 @@
             <span class="links_name">Blog</span>
         </a>
         </li>
-        <li class="log_out" onclick="askForLogOut()">
-          <a href="Login.html">
+        <li class="log_out">
+          <a href="#">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -357,28 +367,29 @@
           </div>
         </section>
     </div>
+    <!-- Sidebar Script -->
     <script>
       let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".sidebarBtn");
-    sidebarBtn.onclick = function() {
-    sidebar.classList.toggle("active");
-    if(sidebar.classList.contains("active")){
-        sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-
-    }else
-        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-    }
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+          sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+  
+      }else
+          sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
       </script>
     <!-- ASK FOR LOG OUT -->
-  <script>
-    function askForLogOut() {
-      var r = confirm("Bạn có muốn đăng xuất không?");
-      if (r == true) {
-        window.location.href = "Login.html";
-      } else {
-        return false;
-      }
-    }
-  </script>
+    <script>
+      $(document).ready(function(){
+        $('.log_out').click(function(){
+          let logout = confirm("Bạn có muốn đăng xuất không?");
+          if(logout){
+            window.location.href = "Login.html";
+          }
+        });
+      });
+      </script>
 </body>
 </html>

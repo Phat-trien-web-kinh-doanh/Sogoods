@@ -415,7 +415,7 @@ h2{
     border-radius: 2px;
     box-shadow: 0 2px 10px #ccc;
     z-index: 1;
-    /* display:none; */
+    display:none;
     cursor:default;
 
 }
@@ -453,7 +453,7 @@ h2{
   -webkit-user-select: none;
 }
 
-.header__cart-wrap:hover .header__cart-list {
+.header__cart-wrap:hover .header__cart-list{
   display: block;
 }
 .header__navbar-icon-link:hover .header__cart-list {
