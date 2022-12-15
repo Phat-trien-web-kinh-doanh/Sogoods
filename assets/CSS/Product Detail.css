@@ -77,7 +77,7 @@ h2{
   outline:none; 
   
 }
-#add-btn{
+#add-cart{
     background: var(--hover-menu2-color);
     color:var(--hover-color);
     font-weight:600; 
@@ -89,7 +89,7 @@ h2{
     width:200px; 
     height:40px; 
 }
-#add-btn:hover{
+#add-cart:hover{
     background: var(--hover-color);
     color:var(--text-sub-color);
     font-weight:600; 
@@ -100,7 +100,7 @@ h2{
     width:200px; 
     height:40px; 
 }
-#add-btn:focus{
+#add-cart:focus{
   outline:none;
 }
 #like-btn{

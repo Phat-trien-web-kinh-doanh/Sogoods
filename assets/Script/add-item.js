@@ -33,7 +33,7 @@ function addToCartClicked(event) {
     var shopItem = document.getElementsByClassName("container product my-5 pt-2")[0];
     var title = shopItem.getElementsByClassName("item-title")[0].innerText;
     var price = shopItem.getElementsByClassName("item-price")[0].innerText;
-    var imageSrc = shopItem.getElementsByClassName("item-img")[4].src;
+    var imageSrc = shopItem.getElementsByClassName("item-img")[0].src;
     var quantity = shopItem.getElementsByClassName("item-quantity")[0].value;
     addItemToCart(title, price, imageSrc, quantity);
     alert("Đã thêm vào giỏ hàng.");
