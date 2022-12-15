@@ -13,15 +13,6 @@ function noCart () {
   }
 }
 
-
-var btnLike = document.getElementById('like-btn');
-btnLike.onclick = function () {
-  
-    alert("Đã thêm vào yêu thích.");
-            ;}     
-
-
-
 //click on button to add to cart
 var addToCartButtons = document.getElementsByClassName("add-btn");
 for (var i = 0; i < addToCartButtons.length; i++) {
