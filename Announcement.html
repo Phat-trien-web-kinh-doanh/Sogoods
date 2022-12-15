@@ -10,6 +10,7 @@
     <!--Our Style-->
     <link rel="stylesheet" href="assets/CSS/Main.css">
     <link rel="stylesheet" href="assets/CSS/SearchOrder.css">
+    <link rel="stylesheet" href="assets/CSS/add_item.css">
     <link rel="stylesheet" href="assets/CSS/Announcement.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,124 +21,234 @@
 <body>
     <div class="app">
       <header class="header">
-       
-          <div class="grid">
-              <nav class="header__navbar1">
-                  <ul class="header__navbar-list">
-                      <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
-                  </ul>
-                  <ul class="header__navbar-list">
-                      <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
-                      <a class="header__navbar-icon-link" href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-                      <div class="cart-number-badge"><span>4</span></div>
-                  </ul>
-              </nav>
-                <div class="header-with-search">
-                  <div class="header__logo"><a href="Homepage.html"><img src="assets/Image/logo.png" height="55px"></a></div>
-                  <form action="" class="header__search-bar" >
-                    <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" placeholder="Tìm kiếm sản phẩm" name="q">
-                  </form>
-                  <div class="header__navbar">
-                 
-                    <ul >
-                      <li class="header__navbar-icon">
-                        <a class="header__navbar-icon-link2" href="Favourite.html">
-                          <span><i class="header_navbar-icon fa-solid fa-heart"></i></span>
-                          <span class="info">Thêm vào yêu thích</span>
-                        </a>
-                      </li>
-                    </ul>  
-                    <ul>
-                      <li class="header__navbar-icon">
-                        <a class="header__navbar-icon-link2" href="SearchOrder.html">
-                          <span><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></span>
-                          <span class="info">Tra cứu đơn hàng</span>
-                        </a>
-                      </li>
-                    </ul> 
-                    <ul>
-                      <li class="header__navbar-icon">
-                        <a class="header__navbar-icon-link2" href="EditAccount.html">
-                          <span><i class="header_navbar-icon fa-solid fa-user"></i></span>
-                          <span class="info">Tài khoản</span>
-                        </a>
-                      </li>
-                    </ul>     
-                  </div>
-              </div>
-              <div class="header__menu">
-                <ul class="header__menu-list">
-                  <li class="header__menu-item">
-                    <a href="Homepage.html" class="header__menu-item-link">Trang chủ</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="Product Page.html" class="header__menu-item-link">Sản phẩm</a>
-                    <ul class="header__menu-list2">
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Lightstick</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Album</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Phụ kiện</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="PageIdol.html" class="header__menu-item-link">Idol Kpop</a>
-                    <ul class="header__menu-list2">
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">BlackPink</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">BTS</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Red Velvet</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">(G)-idle</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Twice</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="AboutUs.html" class="header__menu-item-link">Về chúng tôi</a>
-                    <ul class="header__menu-list2">
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Giới thiệu</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Hệ thống cửa hàng</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Tuyển dụng</a>
-                      </li>
-                      <li class="header__menu-item2">
-                        <a class="header__menu-item-link2" href="">Các chính sách</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="Blog.html" class="header__menu-item-link">Blog</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="Guide.html" class="header__menu-item-link">Hướng dẫn mua hàng</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
-                  </li>
+          
+        <nav class="header__navbar1">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a class="header__navbar-item-link" href="">cskh.sogoods@gmail.com</a> / 1800 1990</li>
+            </ul>
+            <ul  class="header__navbar-list">
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="Signup.html">Đăng ký</a> / <a class="header__navbar-item-link"  href="Login.html">Đăng nhập</a> </li>
+              <li class="header__navbar-item">
+                <div class="header_cart">
+                  <div class="header_cart-wrap">
+                    <i class="cart__icon fa-solid fa-bag-shopping"></i>
+                    <div class="cart-number-badge"><span class="number">4</span></div>
+                      <!-- no cart header__cart-list--no-cart -->
+                    <div class="header__cart-list">
+                       
+                      <img src="assets\Image\no-cart.png" alt="" class="header__cart-no-cart-img">
+                      <span class="header__cart-list-no-cart-msg">
+                      Chưa có sản phẩm nào trong giỏ hàng
+                      </span>
   
-                </ul>
-              </div>
-              </div>
+                      <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                        <ul class="header__cart-list-item">
+                          <!-- cart item -->
+  
+                          <div class="cart--item">
+                          <li class="header__cart-item">
+                            <img src="assets\Image\Cart\The_Astronaut_by_Jin_of_BTS_digital_single_cover_art.jpg" class="header__cart-img" alt="">
+                            <div class="header__cart-item-info">
+                              <div class="header__cart-item-head">
+                                <span class="header__cart-item-name">ALBUM JIN - THE ASTRONAUT</span>
+                                <div class="header__cart-item-price-wrap">
+                                  <span class="header__cart-item-price">500.000đ</span>
+                                  <span class="header__cart-item-multiply">x</span>
+                                  <span class="header__cart-item-qnt">1</span>
+                                </div>
+                              </div>
+                              <div class="header__cart-item-body">
+                                <span class="header__cart-item-description">Phân loại: 1</span>
+                                <span class="header__cart-item-remove">Xóa</span>
+                              </div>
+                            </div>
+                          </li>
+                          </div>
+  
+                          <div class="cart--item">
+                          <li class="header__cart-item">
+                            <img width="35px" src="assets\Image\Cart\56611660_784756348563284_6363417592928927744_n.jpg" alt="" class="header__cart-img">
+                            <div class="header__cart-item-info">
+                              <div class="header__cart-item-head">
+                                <span class="header__cart-item-name">DOLL STEALLA TAE 20CM</span>
+                                <div class="header__cart-item-price-wrap">
+                                  <span class="header__cart-item-price">550.000đ</span>
+                                  <span class="header__cart-item-multiply">x</span>
+                                  <span class="header__cart-item-qnt">1</span>
+                                </div>
+                              </div>
+                              <div class="header__cart-item-body">
+                                <span class="header__cart-item-description">Phân loại: 2</span>
+                                <span class="header__cart-item-remove">Xóa</span>
+                              </div>
+                            </div>
+                          </li>
+                          </div>
+  
+                          <div class="cart--item">
+                          <li class="header__cart-item">
+                            <img width="35px" src="assets\Image\Cart\vong_co_bt21_titan_555x523.jpg" alt="" class="header__cart-img">
+                            <div class="header__cart-item-info">
+                              <div class="header__cart-item-head">
+                                <span class="header__cart-item-name">VÒNG CỔ BT21</span>
+                                <div class="header__cart-item-price-wrap">
+                                  <span class="header__cart-item-price">30.000đ</span>
+                                  <span class="header__cart-item-multiply">x</span>
+                                  <span class="header__cart-item-qnt">1</span>
+                                </div>
+                              </div>
+                              <div class="header__cart-item-body">
+                                <span class="header__cart-item-description">Phân loại: 1</span>
+                                <span class="header__cart-item-remove">Xóa</span>
+                              </div>
+                            </div>
+                          </li>
+                          </div>
+  
+                          <div class="cart--item">
+                          <li class="header__cart-item">
+                            <img src="assets/Image/Product detail/ls4.jpg" alt="" class="header__cart-img">
+                            <div class="header__cart-item-info">
+                              <div class="header__cart-item-head">
+                                <span class="header__cart-item-name">Lightstick BLACKPINK</span>
+                                <div class="header__cart-item-price-wrap">
+                                  <span class="header__cart-item-price">1.000.000đ</span>
+                                  <span class="header__cart-item-multiply">x</span>
+                                  <span class="header__cart-item-qnt">1</span>
+                                </div>
+                              </div>
+                              <div class="header__cart-item-body">
+                                <span class="header__cart-item-description">Phân loại: 2</span>
+                                <span class="header__cart-item-remove">Xóa</span>
+                              </div>
+                            </div>
+                          </li>
+                          </div>
+  
+                        </ul>
+                        <a class="more_cart" href="Cart.html"><button class="btn_cart">Xem giỏ hàng</button></a>
+                    </div>
+                  
+                </div>
+                </div>      
+              </li>
+            </ul>  
+                    
+                     
+  
+          
+            
+              
+            
+              
+      
+        </nav>
+          <div class="header-with-search">
+            <div class="header__logo"><a href="Homepage.html"><img src="assets/Image/logo.png" height="55px"></a></div>
+            <form action="" class="header__search-bar" >
+              <button type="submit"><i class="header__search-bar-icon fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Tìm kiếm sản phẩm" name="q">
+            </form>
+            <div class="header__navbar">
+           
+              <ul >
+                <li class="header__navbar-icon">
+                  <a class="header__navbar-icon-link2" href="Favourite.html">
+                    <span><i class="header_navbar-icon fa-solid fa-heart"></i></span>
+                    <span class="info">Thêm vào yêu thích</span>
+                  </a>
+                </li>
+              </ul>  
+              <ul>
+                <li class="header__navbar-icon">
+                  <a class="header__navbar-icon-link2" href="SearchOrder.html">
+                    <span><i class="header_navbar-icon fa-solid fa-magnifying-glass"></i></span>
+                    <span class="info">Tra cứu đơn hàng</span>
+                  </a>
+                </li>
+              </ul> 
+              <ul>
+                <li class="header__navbar-icon">
+                  <a class="header__navbar-icon-link2" href="EditAccount.html">
+                    <span><i class="header_navbar-icon fa-solid fa-user"></i></span>
+                    <span class="info">Tài khoản</span>
+                  </a>
+                </li>
+              </ul>     
+            </div>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="Homepage.html" class="header__menu-item-link">Trang chủ</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="Product Page.html" class="header__menu-item-link">Sản phẩm</a>
+              <ul class="header__menu-list2">
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Lightstick</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Album</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Phụ kiện</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="PageIdol.html" class="header__menu-item-link">Idol Kpop</a>
+              <ul class="header__menu-list2">
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">BlackPink</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">BTS</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Red Velvet</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">(G)-idle</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Twice</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="AboutUs.html" class="header__menu-item-link">Về chúng tôi</a>
+              <ul class="header__menu-list2">
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Giới thiệu</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Hệ thống cửa hàng</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Tuyển dụng</a>
+                </li>
+                <li class="header__menu-item2">
+                  <a class="header__menu-item-link2" href="">Các chính sách</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="Blog.html" class="header__menu-item-link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="Guide.html" class="header__menu-item-link">Hướng dẫn mua hàng</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="Contact.html" class="header__menu-item-link">Liên hệ</a>
+            </li>
+  
+          </ul>
+        </div>
        
-        
-      </header>
+  
+  
+  </header>
       
       <div class="account__container">
         <div class="pink__box"></div>
@@ -348,6 +459,7 @@
     });
   });
   </script>
+  <script src="assets/Script/add-item.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 

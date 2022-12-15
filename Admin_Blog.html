@@ -157,8 +157,8 @@
                 <span class="links_name">Blog</span>
             </a>
             </li>
-            <li class="log_out" onclick="askForLogOut()">
-              <a href="Login.html">
+            <li class="log_out" >
+              <a href="#"> 
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
               </a>
@@ -617,14 +617,14 @@
     </script>
     <!-- ASK FOR LOG OUT -->
   <script>
-    function askForLogOut() {
-      var r = confirm("Bạn có muốn đăng xuất không?");
-      if (r == true) {
-        window.location.href = "Login.html";
-      } else {
-        return false;
-      }
-    }
-  </script>
+    $(document).ready(function(){
+      $('.log_out').click(function(){
+        let logout = confirm("Bạn có muốn đăng xuất không?");
+        if(logout){
+          window.location.href = "Login.html";
+        }
+      });
+    });
+    </script>
 </body>
 </html>
