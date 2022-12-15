@@ -1,9 +1,9 @@
 
 //if number on cart icon is 0, hide the cart
 function noCart () {
-  var rowCount = document.getElementsByClassName("header__cart-list-item")[0].getElementsByTagName("li").length;
-    document.getElementsByClassName("number")[0].innerHTML = rowCount;
-  if (rowCount == 0)
+  var count =  document.getElementsByClassName("number")[0].innerHTML
+    
+  if (count = "0")
      {
       document.getElementsByClassName("header__cart-list-item")[0].style.display = "none";
       document.getElementsByClassName("header__cart-heading")[0].style.display = "none";
