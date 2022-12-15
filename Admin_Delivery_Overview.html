@@ -1,181 +1,269 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
     <title>ADMIN | TỔNG QUAN VẬN CHUYỂN</title>
-    <link rel="stylesheet" href="hi.css">
     <link rel="stylesheet" href="assets/CSS/Admin_Delivery_Overview.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <body style="font-family: 'Work Sans', sans-serif">
-        <div class="sidebar">
-          <div class="header__logo"><a href=""><img src="assets/Image/Admin_Overview/logo1.png" height="55px"></img>
-          <span class="logo_name"><img src="assets/Image/Admin_Overview/logo2.png" height="55px"></span></a>
-          </div>
-                          
-            <ul class="nav-links">
-              <li>
-                  <a href="Admin_Overview.html" class="active">
-                    <i class='bx bx-pie-chart-alt-2' ></i>
-                    <span class="links_name">Tổng quan</span>
-                  </a>
-                </li>
-              <li>
-                <a href="Admin_Dashboard.html" class="active">
-                  <i class='bx bx-grid-alt' ></i>
-                  <span class="links_name">Dashboard</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_Order.html">
-                  <i class='bx bx-list-ul' ></i>
-                  <span class="links_name">Đơn hàng</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_Edit_Order.html">
-                  <i class='bx bx-box' ></i>
-                  <span class="links_name">Chi tiết đơn hàng</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_Delivery_Overview.html">
-                  <i class='bx bx-package'></i>
-                  <span class="links_name">Vận chuyển</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_Delivery_Detail.html">
-                  <i class='bx bxs-package' ></i>
-                  <span class="links_name">Chi tiết vận chuyển</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_ProductDetail.html">
-                  <i class='bx bxl-product-hunt'></i>
-                  <span class="links_name">Sản phẩm</span>
-                </a>
-              </li>
-              <li>
-                <a href="Admin_ProductGroup.html">
-                  <i class='bx bxl-product-hunt'></i>
-                  <span class="links_name">Nhóm sản phẩm</span>
-                </a>
-              </li>
-              <li>
-                  <a href="Admin_Customer.html">
-                      <i class='bx bxs-game'></i>
-                    <span class="links_name">Khách hàng</span>
-                  </a>
-              </li>
-              <li>
-              <a href="Admin_Blog.html">
-                  <i class='bx bxl-blogger' ></i>
-                  <span class="links_name">Blog</span>
-              </a>
-              </li>
-              <li class="log_out">
-                <a href="Login.html">
-                  <i class='bx bx-log-out'></i>
-                  <span class="links_name">Log out</span>
-                </a>
-              </li>
-            </ul>
-        </div>
-        <section class="home-section">
-          <nav>
-            <div class="sidebar-button">
-              <i class='bx bx-menu sidebarBtn'></i>
-              <span class="dashboard">VẬN CHUYỂN</span>
-            </div>
-            <div class="search-box">
-              <input type="text" placeholder="Tìm kiếm">
-              <i class='bx bx-search' ></i>
-            </div>
-            <div class="profile-details">
-              <!--<img src="images/profile.jpg" alt="">-->
-              <span class="admin_name">Tường Vy</span>
-              <i class='bx bx-chevron-down' ></i>
-            </div>
-          </nav>
-        <!--Main content-->
-        <div class="content-wrapper">
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="font-family: 'Work Sans', sans-serif">
+  <div class="sidebar">
+    <div class="header__logo"><a href=""><img src="assets/Image/Admin_Overview/logo1.png" height="55px"></img>
+    <span class="logo_name"><img src="assets/Image/Admin_Overview/logo2.png" height="55px"></span></a>
+    </div>
+                    
+      <ul class="nav-links">
+        <li>
+            <a href="Admin_Overview.html" class="active">
+              <i class='bx bx-pie-chart-alt-2' ></i>
+              <span class="links_name">Tổng quan</span>
+            </a>
+          </li>
+        <li>
+          <a href="Admin_Dashboard.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_Order.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Đơn hàng</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_Edit_Order.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Chi tiết đơn hàng</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_Delivery_Overview.html">
+            <i class='bx bx-package'></i>
+            <span class="links_name">Vận chuyển</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_Delivery_Detail.html">
+            <i class='bx bxs-package' ></i>
+            <span class="links_name">Chi tiết vận chuyển</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_ProductDetail.html">
+            <i class='bx bxl-product-hunt'></i>
+            <span class="links_name">Sản phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="Admin_ProductGroup.html">
+            <i class='bx bxl-product-hunt'></i>
+            <span class="links_name">Nhóm sản phẩm</span>
+          </a>
+        </li>
+        <li>
+            <a href="Admin_Customer.html">
+                <i class='bx bxs-game'></i>
+              <span class="links_name">Khách hàng</span>
+            </a>
+        </li>
+        <li>
+        <a href="Admin_Blog.html">
+            <i class='bx bxl-blogger' ></i>
+            <span class="links_name">Blog</span>
+        </a>
+        </li>
+        <li class="log_out" onclick="askForLogOut()">
+          <a href="Login.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Đăng xuất</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">    
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">TỔNG QUAN VẬN CHUYỂN</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Tường Vy</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                  <select class="choose-date">
+                    <option class="date">Hôm nay</option>
+                    <option class="date">Hôm qua</option>
+                    <option class="date">7 ngày qua</option>
+                    <option class="date">30 ngày qua</option>
+                    <option class="date">Tháng này</option>
+                    <option class="date">Tháng trước</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-4">
-                                    <select name="day" class="day">
-                                        <option value="Hôm nay">Hôm nay</option>
-                                        <option value="Hôm qua">Hôm qua</option>
-                                        <option value="Ngày mai">Ngày mai</option>
-                                    </select>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title text-bold">Vận chuyển hôm nay</h3>
+                                    <div class="card-tools">
+                                      <a href="admin-deliver.html" class="text-dark" style="text-decoration: none;">
+                                          <span>Xem thêm</span>
+                                          <i class="fas fa-angle-right"></i>
+                                      </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h2 class="card-title text-bold"> Vận chuyển hôm nay</h2>
-                                            <div class="card-tools">
-                                                <a href="#" class="text-dark">
-                                                    <span>Xem chi tiết &rsaquo;</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-data">
-                                                <table class="order-detail">
-                                                    <thead>
-                                                        <tr class="table-title">
-                                                            <th>
-                                                                <p><b> TỔNG SỐ ĐƠN HÀNG</b></p>
-                                                            </th>
-                                                            <th>
-                                                                <p><b>ĐƠN HÀNG CHƯA TẠO CHUYỂN:</b></p>
-                                                            </th>
-                                                            <th>
-                                                                <p><b>TỔNG SỐ ĐƠN HÀNG CHUYỂN HOÀN:</b></p>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><p>44 đơn</p></td>
-                                                            <td><p>10 đơn</p></td>
-                                                            <td><p>0 đơn</p></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div id="pageNavPosition" class="text-right"></div>
-                                                <script type="text/javascript">
-                                                    var pager = new Pager('myTable', 5);
-                                                    pager.init();
-                                                    pager.showPageNav('pager', 'pageNavPosition');
-                                                    pager.showPage(1);
-                                                </script>
-                                            </div>
-                                        </div>
+                                <div class="card-body">
+                                    <div class="table-data">
+                                        <table class="order-detail">
+                                            <thead>
+                                                <tr class="table-title">
+                                                    <th>
+                                                        <p><b> Tổng số đơn hàng</b></p>
+                                                    </th>
+                                                    <th>
+                                                        <p><b>Đơn hàng chưa tạo chuyển</b></p>
+                                                    </th>
+                                                    <th>
+                                                        <p><b>Tổng số đơn hàng chuyển hoàn</b></p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><p>14 đơn</p></td>
+                                                    <td><p>5 đơn</p></td>
+                                                    <td><p>0 đơn</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                      <div class="col-div-4-1">
+                        <div class="box">
+                            <p class="head-1">Đang giao</p>
+                            <p class="number">10 đơn</p>
+                            <p class="percent"><i class="fa fa-long-arrow-down" aria-hidden="true"></i> 2.9% <span>Kể từ tháng trước</span></p>
+                            <i class="fa fa-spinner box-icon"></i>
+                        </div>
+                      </div>
+                      <div class="col-div-4-1">
+                          <div class="box">
+                              <p class="head-1">Thành công</p>
+                              <p class="number">5 đơn</p>
+                              <p class="percent"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> 5.64% <span>Kể từ tháng trước</span></p>
+                              <i class="fa fa-file box-icon"></i>
+                          </div>
+                      </div>
+                      <div class="col-div-4-1">
+                        <div class="box">
+                            <p class="head-1">Hoàn chuyển</p>
+                            <p class="number">2 đơn</p>
+                            <p class="percent" style="color: red!important"><i class="fa fa-long-arrow-down" aria-hidden="true"></i> 5.64% <span>Kể từ tháng trước</span></p>
+                            <i class="fa fa-xmark box-icon"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title text-bold">Vận chuyển<nav></nav></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="piechart">
+                                  <div class="chart">
+                                    <canvas id="myChart2""></canvas>
+                                  </div>
+                                  <script>
+                                    var xValues = ["Đơn shop hủy", "Không liên hệ được", "KH từ chối nhận hàng", "Khác"];
+                                    var yValues = [720, 160, 120, 80];
+                                    var barColors = [
+                                      "#FF9E8F",
+                                      "#FCD3F3",
+                                      "#FFEED9",
+                                      "#F9F9F9",
+                                    ];
+                                    new Chart("myChart2", {
+                                      type: "doughnut",
+                                      data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                          backgroundColor: barColors,
+                                          data: yValues
+                                        }]
+                                      }
+                                    });
+                                  </script>
+                                </div>
+                            </div>
+                            <div class="card-footer p-0">
+
+                              <ul class="list-group list-group-flush flex-column">
+                                  <li class="list-group-item ">
+                                      <a href="#" class="text-dark ">
+                                          Tổng số đơn hàng <span
+                                              class="float-right badge bg-primary">14</span>
+                                      </a>
+                                  </li>
+                                  <li class="list-group-item ">
+                                      <a href="#" class="text-dark ">
+                                          Doanh thu thuần <span
+                                              class="float-right badge bg-info">1,000,000</span>
+                                      </a>
+                                  </li>
+                                  <li class="list-group-item ">
+                                      <a href="#" class="text-dark ">
+                                          Lượng hàng đã bán <span
+                                              class="float-right badge bg-success">16</span>
+                                      </a>
+                                  </li>
+                                  <li class="list-group-item ">
+                                      <a href="#" class="text-dark ">
+                                          Sản phẩm bán chạy
+                                          <ul>
+                                              <li>Lightstick BLACKPINK</li>
+                                              <li>ALBUM BE</li>
+                                              <li>ALBUM ANTIFRAGILE</li>
+                                          </ul>
+                                      </a>
+                                  </li>
+                              </ul>
+                              
+                          </div>
+                          <div class="card-footer"></div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
-    <script>
+    </section>
+  </section>
+
+  <script>
     let sidebar = document.querySelector(".sidebar");
     let sidebarBtn = document.querySelector(".sidebarBtn");
     sidebarBtn.onclick = function() {
@@ -186,6 +274,19 @@
     }else
         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
     }
-    </script>
+ </script>
+ <!-- ASK FOR LOG OUT -->
+  <script>
+    function askForLogOut() {
+      var r = confirm("Bạn có muốn đăng xuất không?");
+      if (r == true) {
+        window.location.href = "Login.html";
+      } else {
+        return false;
+      }
+    }
+  </script>
+
 </body>
 </html>
+

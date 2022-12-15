@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>ADMIN | DASHBOARD</title>
-    <link rel="stylesheet" href="hi.css">
+    <link rel="stylesheet" href="assets/CSS/Admin_Edit_Order.css">
     <link rel="stylesheet" href="assets/CSS/Admin_Dashboard.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@
             <span class="links_name">Blog</span>
         </a>
         </li>
-        <li class="log_out">
+        <li class="log_out" onclick="askForLogOut()">
           <a href="Login.html">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
@@ -369,5 +369,16 @@
         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
     }
       </script>
+    <!-- ASK FOR LOG OUT -->
+  <script>
+    function askForLogOut() {
+      var r = confirm("Bạn có muốn đăng xuất không?");
+      if (r == true) {
+        window.location.href = "Login.html";
+      } else {
+        return false;
+      }
+    }
+  </script>
 </body>
 </html>
