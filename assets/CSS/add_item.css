@@ -516,6 +516,11 @@ h2{
   padding-left: 0;
 
 }
+.cart--item{
+  list-style: none;
+  padding-left: 0;
+
+}
 .header__cart-img{
   height: 35px;
   margin: 12px;
@@ -529,6 +534,7 @@ h2{
 .header__cart-item:hover{
   background-color: #f8f8f8;
 }
+
 .header__cart-item-info{
   width: 100%;
   margin-right:12px;
