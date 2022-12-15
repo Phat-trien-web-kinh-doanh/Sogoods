@@ -1,7 +1,12 @@
 body{
-  background: #F5F5F5;
+  background: white;
   
 }
+.home-section{
+  background: white;
+}
+.dashboard{
+  display: flex;}
 .nv{
   background: #FF9E8F;
   border: 1px solid rgb(255, 255, 255);  
@@ -302,7 +307,6 @@ float: right;
   outline: none;
   padding: 24px 10px;
   font-size: 13px;
-  color: #FF9E8F ;
 }
 .header__search-bar-icon2{
   color: #FF9E8F;; 

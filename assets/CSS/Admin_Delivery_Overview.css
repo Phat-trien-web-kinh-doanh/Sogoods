@@ -638,6 +638,7 @@ nav .profile-details i{
   border-radius: 5px;
 }
 .box{
+  display: inline-table;
 	width: 88%;
 	height: 130px;
 	background-color: #ffffff;
