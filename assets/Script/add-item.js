@@ -100,9 +100,9 @@ return true;
 
 function CountItem () {
     var rowCount = document.getElementsByClassName("header__cart-list-item")[0].getElementsByTagName("li").length;
-    document.getElementsByClassName("number")[0].innerHTML = rowCount;
-}
+    document.getElementsByClassName("number")[0].innerHTML = rowCount;   
 
+}
 //count the number of items in the cart and display it on the cart icon
 var rowCount = document.getElementsByClassName("header__cart-list-item")[0].getElementsByTagName("li").length;
 document.getElementsByClassName("number")[0].innerHTML = rowCount;
@@ -114,5 +114,8 @@ $(".header__cart-item-remove").on("click", function (e) {
     document.getElementsByClassName("number")[0].innerHTML = rowCount;
     return true;
 });
+
+
+
 
 
