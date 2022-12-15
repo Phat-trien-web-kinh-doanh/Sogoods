@@ -22,28 +22,16 @@
 .header__search-bar {
     justify-content: right; float: right;
 }
-/* .headerspace  #headname {
-    float: left;
-}
-.headerspace #search {
-    float: right;
-}
-.headerspace #search input{
-    width: 200px; height: 30px; border: 1px solid #FF9E8F; border-radius: 5px; padding-left: 10px;
-} */
 #listidol {
     display: flex; flex-wrap: wrap; justify-content: center; margin: 10px 0px;
 
 }
 #listidol > .idol {
-    text-align: left;  margin: 10px;
+    text-align: left;  margin: 10px; width: 100%;
 }
 #listidol > hr {
     width: 100%; border: 1px solid #FF9E8F;
 }
-/* #listidol > .idol >img {
-    max-width: 90%; height: 237px; margin-top: 10px; border-radius: 10px;
-} */
 #thumb > img {
     max-width: 90%; height: 237px; margin-top: 10px; border-radius: 10px; float: left;}
 #logo > img {
