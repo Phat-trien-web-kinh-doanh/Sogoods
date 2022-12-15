@@ -33,7 +33,7 @@ function addToCartClicked(event) {
     var shopItem = document.getElementsByClassName("container product my-5 pt-2")[0];
     var title = shopItem.getElementsByClassName("item-title")[0].innerText;
     var price = shopItem.getElementsByClassName("item-price")[0].innerText;
-    var imageSrc = shopItem.getElementsByClassName("item-img")[0].src;
+    var imageSrc = shopItem.getElementsByClassName("item-img")[4].src;
     var quantity = shopItem.getElementsByClassName("item-quantity")[0].value;
     addItemToCart(title, price, imageSrc, quantity);
     alert("Đã thêm vào giỏ hàng.");
@@ -100,9 +100,9 @@ return true;
 
 function CountItem () {
     var rowCount = document.getElementsByClassName("header__cart-list-item")[0].getElementsByTagName("li").length;
-    document.getElementsByClassName("number")[0].innerHTML = rowCount;
-}
+    document.getElementsByClassName("number")[0].innerHTML = rowCount;   
 
+}
 //count the number of items in the cart and display it on the cart icon
 var rowCount = document.getElementsByClassName("header__cart-list-item")[0].getElementsByTagName("li").length;
 document.getElementsByClassName("number")[0].innerHTML = rowCount;
@@ -114,5 +114,8 @@ $(".header__cart-item-remove").on("click", function (e) {
     document.getElementsByClassName("number")[0].innerHTML = rowCount;
     return true;
 });
+
+
+
 
 
