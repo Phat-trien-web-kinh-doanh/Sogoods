@@ -45,12 +45,24 @@ function login(){
             window.location.href = "Admin_Overview.html";
         }else if(name=="client"&& password == "123456"){
             alert('Đăng nhập thành công');
-            window.location.href = "Homepage.html";
+            window.location.href = "index.html";
         }else if(name==data.name && password == data.password){
             alert('Đăng nhập thành công');
-            window.location.href = "Homepage.html";
+            window.location.href = "index.html";
         }else{
             alert("Sai tài khoản hoặc mật khẩu!");
             }
         
+}
+// forgot password
+function forgotPassword(){
+    let name = document.getElementById('tên đăng nhập').value;
+    let password = document.getElementById('password').value;
+    let listAccount = localStorage.getItem('username');
+    let data=JSON.parse(listAccount);
+    if(name==data.name){
+        alert('Mật khẩu của bạn là: '+data.password);
+    }else{
+        alert('Tài khoản không tồn tại');
+    }
 }
